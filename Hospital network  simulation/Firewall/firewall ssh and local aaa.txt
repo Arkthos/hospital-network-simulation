@@ -1,0 +1,13 @@
+en
+conf t
+hostname firewall
+domain-name myhospital.local
+crypto key generate rsa modulus 2048
+enable password Project@123
+username prasanta password Project@123 
+aaa authentication ssh console LOCAL
+ssh 192.168.60.8 255.255.255.255 mls0
+ssh 192.168.60.8 255.255.255.255 mls1
+ssh timeout 10
+wr mem
+ex

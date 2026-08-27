@@ -1,0 +1,24 @@
+int gig 1/1
+ip add 60.60.60.2 255.255.255.248
+nameif edgerouter
+security-level 0
+no shut
+ex
+int gig 1/2
+ip add 192.168.120.1 255.255.255.252
+nameif mls0
+security-level 100
+no shut
+ex
+int gig 1/3
+ip add 192.168.130.1 255.255.255.252
+nameif mls1
+security-level 100
+no shut
+ex
+int gig 1/4
+ip add 192.168.100.1 255.255.255.252
+nameif dmz
+security-level 50
+no shut
+ex

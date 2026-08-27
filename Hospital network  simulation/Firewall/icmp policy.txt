@@ -1,0 +1,8 @@
+enable
+conf t
+policy-map global_policy
+ class inspection_default
+  inspect icmp
+exit
+exit
+write memory

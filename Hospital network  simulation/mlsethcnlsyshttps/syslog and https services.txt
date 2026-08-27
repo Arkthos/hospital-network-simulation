@@ -1,0 +1,6 @@
+!paste in both mls
+en
+conf t
+logging host 192.168.10.5
+logging trap debugging
+do wr

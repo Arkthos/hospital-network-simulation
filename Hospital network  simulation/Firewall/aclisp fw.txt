@@ -1,0 +1,15 @@
+conf t
+
+access-list INTERNET-ACCESS extended permit icmp any any
+access-list INTERNET-ACCESS extended permit tcp any any eq 53
+access-list INTERNET-ACCESS extended permit udp any any eq 53
+access-list INTERNET-ACCESS extended permit tcp any any eq 80
+access-list INTERNET-ACCESS extended permit tcp any any eq 8080
+access-list INTERNET-ACCESS extended permit tcp any any eq 443
+access-list INTERNET-ACCESS extended permit tcp any any eq 25
+access-list INTERNET-ACCESS extended permit tcp any any eq 110
+
+access-group INTERNET-ACCESS in interface edgerouter
+
+end
+write memory

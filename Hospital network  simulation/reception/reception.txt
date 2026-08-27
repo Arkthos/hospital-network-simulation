@@ -1,0 +1,45 @@
+en
+conf t
+no ip domain lookup
+vtp mode transparent
+vlan 20
+name reception
+ex
+vlan 90
+name voip
+ex
+vlan 99
+name native
+vlan 999
+name blackhole
+ex
+do wr
+int ra fa0/1-2
+sw mode tru
+sw tru nati vlan 99
+sw tru all vlan 20,99
+no sh
+ex
+do wr
+int ra fa0/3-4
+sw mode acc
+sw acc vlan 20
+no sh
+ex
+int fa0/5
+sw mode acc
+sw acc vlan 20
+sw voice vlan 90
+ex
+int ra fa0/6-24
+sw mode acc
+sw acc vlan 999
+sh
+ex
+int ra gig0/1-2
+sw mod acc
+sw acc vlan 999
+sh
+ex
+do wr
+

@@ -1,0 +1,15 @@
+conf t
+
+access-list DMZ-ACCESS extended permit icmp any any
+access-list DMZ-ACCESS extended permit tcp any any eq 443
+access-list DMZ-ACCESS extended permit tcp any any eq 25
+access-list DMZ-ACCESS extended permit tcp any any eq 110
+access-list DMZ-ACCESS extended permit udp any any eq 67
+access-list DMZ-ACCESS extended permit udp any any eq 68
+access-list DMZ-ACCESS extended permit tcp any any eq 53
+access-list DMZ-ACCESS extended permit udp any any eq 53
+
+access-group DMZ-ACCESS in interface dmz
+
+end
+write memory

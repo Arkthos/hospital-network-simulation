@@ -1,0 +1,15 @@
+en
+conf t
+int fa0/13
+no sw
+ip add 192.168.200.2 255.255.255.252
+no sh
+ex
+ip route 10.10.10.1 255.255.255.255 192.168.200.1
+ip route 10.10.10.1 255.255.255.255 192.168.90.3 200
+do wr
+ip dhcp pool vlan90
+net 192.168.90.0 255.255.255.0
+default-router 192.168.90.1
+option 150 ip 10.10.10.1
+ex

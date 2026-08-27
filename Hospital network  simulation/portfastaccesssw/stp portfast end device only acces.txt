@@ -1,0 +1,5 @@
+en
+conf t
+spanning-tree portfast default
+spanning-tree portfast bpduguard default
+do wr

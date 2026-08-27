@@ -1,0 +1,13 @@
+en
+conf t
+ip dhcp pool vlan40
+net 192.168.40.0 255.255.255.0
+default-router 192.168.40.1
+option 43 ip 192.168.70.5
+ex
+ip dhcp pool vlan50
+net 192.168.50.0 255.255.255.0
+default-router 192.168.50.1
+option 43 ip 192.168.70.5
+ex
+do wr

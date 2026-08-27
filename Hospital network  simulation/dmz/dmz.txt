@@ -1,0 +1,35 @@
+en
+conf t
+no ip domain lookup
+vtp mode transparent
+vlan 100
+name dmz
+ex
+do wr
+vlan 99
+name native
+ex
+vlan 999
+name blackhole
+ex
+int fa0/1
+sw mod acc
+sw acc vlan 100
+ex
+int ra fa0/2-3
+sw mode acc
+sw acc vlan 100
+ex
+do wr
+int ra fa0/4-24
+switchport mode access
+switchport access vlan 999
+shutdown
+ex
+int ra gig0/1-2
+switchport mode access
+switchport access vlan 999
+shutdown
+ex
+do wr
+

@@ -1,0 +1,10 @@
+en
+conf t
+ip access-list extended management
+ permit udp any eq 68 any eq 67
+ permit tcp host 192.168.60.8 any eq 22
+ permit tcp host 192.168.60.8 host 192.168.70.5 eq 443
+ deny ip any any 
+int vlan60
+ ip access-group management in
+

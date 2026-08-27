@@ -1,0 +1,13 @@
+! Create the unified Inside ACL
+access-list INSIDE-ACCESS extended permit icmp any any
+access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.5 eq 443
+access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 25
+access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 110
+access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 995
+access-list INSIDE-ACCESS extended permit udp any any eq domain
+access-list INSIDE-ACCESS extended permit tcp any any eq domain
+access-list INSIDE-ACCESS extended permit ip any any
+
+! Bind the ACL inbound to both inside interfaces
+access-group INSIDE-ACCESS in interface mls0
+access-group INSIDE-ACCESS in interface mls1

@@ -1,0 +1,50 @@
+en
+conf t
+ip dhcp excluded-addres 192.168.10.1  192.168.10.20
+ip dhcp excluded-addres 192.168.20.1  192.168.20.20
+ip dhcp excluded-addres 192.168.30.1  192.168.30.20
+ip dhcp excluded-addres 192.168.40.1  192.168.40.20
+ip dhcp excluded-addres 192.168.50.1  192.168.50.20
+ip dhcp excluded-addres 192.168.60.1  192.168.60.20
+ip dhcp excluded-addres 192.168.70.1  192.168.70.20
+ip dhcp excluded-addres 192.168.80.1  192.168.80.20
+ip dhcp excluded-addres 192.168.90.1  192.168.90.20
+do wr
+ip dhcp pool vlan10
+net 192.168.10.0 255.255.255.0
+default-rout 192.168.10.1
+ex
+ip dhcp pool vlan20
+net 192.168.20.0 255.255.255.0
+default-rout 192.168.20.1
+ex
+ip dhcp pool vlan30
+net 192.168.30.0 255.255.255.0
+default-rout 192.168.30.1
+ex
+ip dhcp pool vlan40
+net 192.168.40.0 255.255.255.0
+default-rout 192.168.40.1
+ex
+ip dhcp pool vlan50
+net 192.168.50.0 255.255.255.0
+default-rout 192.168.50.1
+ex
+ip dhcp pool vlan60
+net 192.168.60.0 255.255.255.0
+default-rout 192.168.60.1
+ex
+ip dhcp pool vlan70
+net 192.168.70.0 255.255.255.0
+default-rout 192.168.70.1
+ex
+ip dhcp pool vlan80
+net 192.168.80.0 255.255.255.0
+default-rout 192.168.80.1
+ex
+ip dhcp pool vlan90
+net 192.168.90.0 255.255.255.0
+default-rout 192.168.90.1
+ex
+
+

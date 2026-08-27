@@ -1,0 +1,15 @@
+enable
+conf t
+
+router ospf 50
+ router-id 1.1.1.3
+ network 192.168.120.0 255.255.255.252 area 0
+ network 192.168.130.0 255.255.255.252 area 0
+ network 192.168.100.0 255.255.255.0 area 0
+network 60.60.60.0 255.255.255.248 area 0
+ex
+
+route edgerouter 0.0.0.0 0.0.0.0 60.60.60.1
+
+end
+write memory

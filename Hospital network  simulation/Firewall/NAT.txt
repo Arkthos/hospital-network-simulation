@@ -1,0 +1,23 @@
+enable
+conf t
+
+object network MLS0-NET
+ subnet 0.0.0.0 0.0.0.0
+ nat (mls0,edgerouter) dynamic interface
+
+object network MLS1-NET
+ subnet 0.0.0.0 0.0.0.0
+ nat (mls1,edgerouter) dynamic interface
+
+object network DMZ-NET
+ subnet 192.168.100.0 255.255.255.0
+ nat (dmz,edgerouter) dynamic interface
+object network webserver
+host 192.168.100.5
+nat (dmz,edgerouter) static 60.60.60.3
+object network mailserver
+host 192.168.100.8
+nat (dmz,edgerouter) static 60.60.60.4
+
+end
+write memory

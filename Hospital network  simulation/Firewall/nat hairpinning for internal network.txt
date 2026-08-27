@@ -1,0 +1,15 @@
+object network WEBSERVER-HAIRPIN-MLS0
+ host 192.168.100.5
+ nat (dmz,mls0) static 60.60.60.3
+
+object network WEBSERVER-HAIRPIN-MLS1
+ host 192.168.100.5
+ nat (dmz,mls1) static 60.60.60.3
+
+object network MAILSERVER-HAIRPIN-MLS0
+ host 192.168.100.8
+ nat (dmz,mls0) static 60.60.60.4
+
+object network MAILSERVER-HAIRPIN-MLS1
+ host 192.168.100.8
+ nat (dmz,mls1) static 60.60.60.4

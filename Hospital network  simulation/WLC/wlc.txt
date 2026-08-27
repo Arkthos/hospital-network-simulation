@@ -1,0 +1,43 @@
+en
+conf t
+no ip domain lookup
+vtp mode transparent
+vlan 70
+name wlc
+ex
+vlan 40
+name wifi
+ex
+vlan 50 
+name guestwifi
+ex
+vlan 99
+name native
+vlan 999
+name blackhole
+ex
+do wr
+int ra fa0/1-2
+sw mode tru
+sw tru nati vlan 99
+sw tru all vlan 40,50,70,99
+no sh
+ex
+do wr
+int fa0/3
+sw mode acc
+sw acc vlan 70 
+no sh
+ex
+int ra fa0/4-24
+sw mode acc
+sw acc vlan 999
+sh
+ex
+int ra gig0/1-2
+sw mod acc
+sw acc vlan 999
+sh
+ex
+do wr
+

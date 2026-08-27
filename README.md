@@ -1,7 +1,5 @@
 Hospital Network Simulation
-
 An enterprise hospital network built in Cisco Packet Tracer, simulating a segmented, redundant, and secured healthcare environment.
-
 What I Built
 VLAN segmentation across 10+ zones — clinical staff, reception, wireless, voice, management, RADIUS, and DMZ
 Redundant core: EtherChannel (Po9) between two multilayer switches with active/active HSRP load-sharing
@@ -13,5 +11,5 @@ Wireless: WLC-managed SSIDs for staff and guest access via FlexConnect APs
 VoIP: Cisco CME telephony with a dual-homed gateway for call-control redundancy
 ACLs: department-level access control, enforced at the destination for reception/staff VLANs and at the source for wireless, management, and RADIUS traffic
 Status
-
 Fully built and verified end-to-end, including DMZ connectivity, NAT/hairpinning, wireless association, and VoIP redundancy.
+Check the Hospital network simulation folder for the `.pkt` file and all other config files — it's structured by component, along with a dedicated Testing folder.

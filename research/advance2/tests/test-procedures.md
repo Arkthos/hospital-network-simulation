@@ -14,7 +14,7 @@ Controles: T001. Registrar entrega/respuesta real por servicio; timeout solo no 
 
 C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. Seleccionar host externo real de la topología; no usar DMZ ni IP pública hairpin como sustituto de Internet. 203.0.113.254 solo se usa internamente como representante matemático; no es un objetivo a ejecutar.
 
-Evidencia: `evidence/raw/T001/` (plantilla únicamente); crear ejecución inmutable `T001-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T001/` (plantilla únicamente); crear ejecución inmutable `T001-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T002 — Guest Wi-Fi → Internal Server
 
@@ -26,9 +26,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T001, T013. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T002/` (plantilla únicamente); crear ejecución inmutable `T002-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T002/` (plantilla únicamente); crear ejecución inmutable `T002-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T003 — Guest Wi-Fi → Management autorizado
 
@@ -40,9 +40,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T001. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T003/` (plantilla únicamente); crear ejecución inmutable `T003-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T003/` (plantilla únicamente); crear ejecución inmutable `T003-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T004 — Guest Wi-Fi → RADIUS
 
@@ -54,9 +54,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T001. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T004/` (plantilla únicamente); crear ejecución inmutable `T004-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T004/` (plantilla únicamente); crear ejecución inmutable `T004-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T005 — Guest Wi-Fi → Corp Wi-Fi movilidad
 
@@ -68,9 +68,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T001, T006. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T005/` (plantilla únicamente); crear ejecución inmutable `T005-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T005/` (plantilla únicamente); crear ejecución inmutable `T005-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T006 — Corp Wi-Fi movilidad → External fuera del ASA
 
@@ -84,7 +84,7 @@ Controles: T006. Registrar entrega/respuesta real por servicio; timeout solo no 
 
 C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. Seleccionar host externo real de la topología; no usar DMZ ni IP pública hairpin como sustituto de Internet. 203.0.113.254 solo se usa internamente como representante matemático; no es un objetivo a ejecutar.
 
-Evidencia: `evidence/raw/T006/` (plantilla únicamente); crear ejecución inmutable `T006-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T006/` (plantilla únicamente); crear ejecución inmutable `T006-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T007 — Corp Wi-Fi movilidad → Internal Server
 
@@ -96,9 +96,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T006, T013. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T007/` (plantilla únicamente); crear ejecución inmutable `T007-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T007/` (plantilla únicamente); crear ejecución inmutable `T007-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T008 — Corp Wi-Fi movilidad → Management autorizado
 
@@ -110,9 +110,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T006. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T008/` (plantilla únicamente); crear ejecución inmutable `T008-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T008/` (plantilla únicamente); crear ejecución inmutable `T008-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T009 — Management autorizado → WLC
 
@@ -124,9 +124,9 @@ Acción: `Packet Tracer GUI: Desktop Web Browser: https://192.168.70.5`.
 
 Controles: T009. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa.
 
-Evidencia: `evidence/raw/T009/` (plantilla únicamente); crear ejecución inmutable `T009-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T009/` (plantilla únicamente); crear ejecución inmutable `T009-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T010 — Management autorizado → RADIUS
 
@@ -140,7 +140,7 @@ Controles: T009. Registrar entrega/respuesta real por servicio; timeout solo no 
 
 C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. No consta que el servidor RADIUS simule SSH; no habilitarlo para que la prueba funcione. Si no existe, resultado indeterminate.
 
-Evidencia: `evidence/raw/T010/` (plantilla únicamente); crear ejecución inmutable `T010-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T010/` (plantilla únicamente); crear ejecución inmutable `T010-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T011 — Hospitalstaff cableado → RADIUS
 
@@ -152,9 +152,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T013. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T011/` (plantilla únicamente); crear ejecución inmutable `T011-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T011/` (plantilla únicamente); crear ejecución inmutable `T011-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T012 — Hospitalstaff cableado → Management autorizado
 
@@ -168,7 +168,7 @@ Controles: T013. Registrar entrega/respuesta real por servicio; timeout solo no 
 
 C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. La solicitud ICMP no tiene deny de entrada a Management identificado; la respuesta sería bloqueada por management in. No equivale a demostrar aislamiento de solicitudes.
 
-Evidencia: `evidence/raw/T012/` (plantilla únicamente); crear ejecución inmutable `T012-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T012/` (plantilla únicamente); crear ejecución inmutable `T012-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T013 — Hospitalstaff cableado → Internal Server
 
@@ -180,9 +180,9 @@ Acción: `Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination
 
 Controles: T013. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa.
 
-Evidencia: `evidence/raw/T013/` (plantilla únicamente); crear ejecución inmutable `T013-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T013/` (plantilla únicamente); crear ejecución inmutable `T013-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.
 
 ## T014 — Guest Wi-Fi → WLC
 
@@ -194,6 +194,6 @@ Acción: `Packet Tracer GUI: Desktop Web Browser: https://192.168.70.5`.
 
 Controles: T001, T009. Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.
 
-C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. 
+C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT.
 
-Evidencia: `evidence/raw/T014/` (plantilla únicamente); crear ejecución inmutable `T014-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa. 
+Evidencia: `evidence/raw/T014/` (plantilla únicamente); crear ejecución inmutable `T014-R1` con collect_evidence.py. Registrar IP, comando, salida, hora, controles y causa.

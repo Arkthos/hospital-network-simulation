@@ -102,7 +102,7 @@
         "T013"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T003",
@@ -158,7 +158,7 @@
         "T001"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T004",
@@ -213,7 +213,7 @@
         "T001"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T005",
@@ -270,7 +270,7 @@
         "T006"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T006",
@@ -373,7 +373,7 @@
         "T013"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T008",
@@ -429,7 +429,7 @@
         "T006"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T009",
@@ -485,7 +485,7 @@
         "T009"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa."
     },
     {
       "id": "T010",
@@ -587,7 +587,7 @@
         "T013"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     },
     {
       "id": "T012",
@@ -681,7 +681,7 @@
         "T013"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa."
     },
     {
       "id": "T014",
@@ -738,7 +738,7 @@
         "T009"
       ],
       "status": "pending_endpoint_verification",
-      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. "
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
     }
   ]
 }

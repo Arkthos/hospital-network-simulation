@@ -79,7 +79,7 @@ def collect(metadata_path):
     stage.rename(dest)
     import csv
     with (BASE/'results/observations.csv').open('a',encoding='utf-8',newline='') as f:
-        csv.DictWriter(f,fieldnames=OBS_FIELDS).writerow(obs)
+        csv.DictWriter(f,fieldnames=OBS_FIELDS,lineterminator='\n').writerow(obs)
     print('Recorded immutable run '+run+'; regenerate comparison and summary')
 
 if __name__=='__main__':

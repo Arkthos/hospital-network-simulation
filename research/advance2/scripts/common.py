@@ -21,7 +21,7 @@ def write_json(path, data):
 def write_text(path, text):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding='utf-8')
+    path.write_text(text, encoding='utf-8', newline='\n')
 
 def rows(path):
     with Path(path).open(encoding='utf-8-sig', newline='') as f:
@@ -30,7 +30,7 @@ def rows(path):
 def write_csv(path, data, fields):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with Path(path).open('w', encoding='utf-8', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=fields, extrasaction='ignore')
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction='ignore', lineterminator='\n')
         w.writeheader()
         w.writerows(data)
 

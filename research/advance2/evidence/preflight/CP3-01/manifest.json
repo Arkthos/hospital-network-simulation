@@ -1,0 +1,25 @@
+{
+  "kind": "preflight_not_test_result",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "packet_sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe",
+  "observations_registered": 0,
+  "notes": "Read-only MLS0 show run and show ip route; subsequent Packet Tracer unexpected failure. No traffic test executed. Failed session not used for experiment. Original PKT not saved.",
+  "artifacts": [
+    {
+      "path": "incident-01-0.jpg",
+      "sha256": "168ac80eccdb42bc01d5b25f34dd44002a9ab9ba62d9efccac7e82c295cc23ac"
+    },
+    {
+      "path": "incident-01-accessibility.txt",
+      "sha256": "b655b7e2be86ac7630710ca0d83c66bfbf18725792a4aa2aec6f6eeceb5eeba1"
+    },
+    {
+      "path": "MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    },
+    {
+      "path": "MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    }
+  ]
+}

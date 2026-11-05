@@ -6,7 +6,7 @@ Caso hipotético: Centro Médico Horizonte CR. Se comparan riesgos y controles d
 
 - CP1: inventario, VLAN, redes, reglas/aplicaciones ACL y hashes completados.
 - CP2: política propuesta y 14 casos generados; mecanismo de evidencia, comparación y validación preparado.
-- CP3: pendiente. No se han registrado observaciones en Packet Tracer.
+- CP3: en curso. T001-R1, T002-R1 y T013-R1 registrados con evidencia real; 11 casos pendientes. Ver docs/advance2/CP3_EXECUTION_LOG.md.
 - CP4: herramientas verificadas; cierre experimental pendiente de CP3. CSV vacíos y métricas null no significan controles conformes.
 - CP5: esquemas de análisis y trazabilidad; sin hallazgos experimentales ni recomendaciones finales.
 

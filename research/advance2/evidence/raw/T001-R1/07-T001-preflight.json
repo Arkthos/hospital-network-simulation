@@ -1,0 +1,32 @@
+{
+  "test_id": "T001",
+  "source": {
+    "device": "Smartphone0",
+    "ip": "192.168.50.25",
+    "mask": "255.255.255.0",
+    "gateway": "192.168.50.1",
+    "interface": "Wireless0",
+    "ssid": "guestwifi",
+    "authentication": "WPA2-PSK",
+    "encryption": "AES",
+    "basis": [
+      "guest-wireless-associated.jpg",
+      "guest-ipconfig.txt",
+      "guest-ipconfig.jpg"
+    ]
+  },
+  "destination": {
+    "device": "PC2",
+    "ip": "172.16.10.30",
+    "mask": "255.255.255.0",
+    "gateway": "172.16.10.1",
+    "basis": [
+      "external-PC2-ipconfig.jpg"
+    ]
+  },
+  "policy_expected": "allow",
+  "config_expected": "unknown",
+  "baseline_sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe",
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "notes": "Endpoint inspection completed before command execution. No configuration modified. Actual host outside ASA, not DMZ/hairpin. C retained from CP2; no post-observation redefinition."
+}

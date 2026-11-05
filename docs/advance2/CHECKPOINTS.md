@@ -4,7 +4,7 @@
 |---|---|---|---|
 | CP1 | Completo, análisis estático | inventario, VLAN, redes, 80 reglas ACL, 10 bindings, hashes, BASELINE | commit `research: capture advance 2 baseline` |
 | CP2 | Completo, preparación | política propuesta, 14 casos, procedimientos, validadores, captura inmutable | commit `research: add policy test plan and reproducible PCO workflow` |
-| CP3 | Pendiente | ejecución real, endpoints, artefactos, manifiestos, observations | ninguno |
+| CP3 | En curso: 3/14 casos registrados | T001-R1, T002-R1 y T013-R1, evidencia y manifiestos; 11 pendientes | commit parcial de evidencia; no equivale a cierre CP3 |
 | CP4 | Pendiente experimental; herramientas listas | validación completa y clasificación de observaciones reales | ninguno |
 | CP5 | Pendiente | análisis basado en evidencia y paquete del Capítulo IV | ninguno |
 

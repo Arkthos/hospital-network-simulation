@@ -1,0 +1,50 @@
+{
+  "test_id": "T013-R1",
+  "timestamp": "2026-11-05T15:50:04.562Z",
+  "source": "192.168.30.22",
+  "destination": "192.168.10.5",
+  "method": "Packet Tracer PC1(1) > Desktop > Command Prompt: ping 192.168.10.5, two unchanged series of four probes",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "allow",
+  "valid": "true",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "Wired Hospitalstaff PC1(1), DHCP 192.168.30.22/24 gateway 192.168.30.1. Internal server 192.168.10.5 responded 4/4 in each series (0% loss). Positive control establishes source and destination ICMP operation. C unknown retained from CP2; no configuration changed.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T013-R1/01-T013-series1-0.jpg",
+      "sha256": "d81af5af424ba432be4d07cfcf34747cd2258103af67629b00d8db6cb1ebd59c"
+    },
+    {
+      "path": "evidence/raw/T013-R1/02-T013-series1.capture.json",
+      "sha256": "1b51c9e793d05aa0dcf997d7b8968cf45a2327cff5f8584c5cbe2880c5ce6f9f"
+    },
+    {
+      "path": "evidence/raw/T013-R1/03-T013-series1.txt",
+      "sha256": "20b7018e0e7c05487d0006c13e94096ad627bcb629acc03295246cd27a218cde"
+    },
+    {
+      "path": "evidence/raw/T013-R1/04-T013-series2-0.jpg",
+      "sha256": "4818c2d27c61d06c09d22a0080204654b36465b5b9acb71065a98bfd17dda1f7"
+    },
+    {
+      "path": "evidence/raw/T013-R1/05-T013-series2.capture.json",
+      "sha256": "36e9f03b50134bbb39024ef2c8014b8b00b169b6dcdd7da3a959aa65e5e7c028"
+    },
+    {
+      "path": "evidence/raw/T013-R1/06-staff-ipconfig-0.jpg",
+      "sha256": "95da461cc7126547a0c559c5a91259c8c41ff2be27dec46c1379740e047b571f"
+    },
+    {
+      "path": "evidence/raw/T013-R1/07-staff-ipconfig.capture.json",
+      "sha256": "88b48a304adcec73ff8795de2dd07d9f9d992bf5dec84f042e4985c3735e7be7"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

@@ -1,0 +1,80 @@
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ipconfig
+
+Wireless0 Connection:(default port)
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: FE80::2D0:FFFF:FE6B:527E
+   IPv6 Address....................: ::
+   IPv4 Address....................: 192.168.50.25
+   Subnet Mask.....................: 255.255.255.0
+   Default Gateway.................: ::
+                                     192.168.50.1
+
+3G/4G Cell1 Connection:
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: FE80::2D0:58FF:FEBE:1618
+   IPv6 Address....................: ::
+   IPv4 Address....................: 0.0.0.0
+   Subnet Mask.....................: 0.0.0.0
+   Default Gateway.................: ::
+                                     0.0.0.0
+
+Bluetooth Connection:
+ --More-- 
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: ::
+   IPv6 Address....................: ::
+   IPv4 Address....................: 0.0.0.0
+   Subnet Mask.....................: 0.0.0.0
+   Default Gateway.................: ::
+                                     0.0.0.0
+
+C:\>
+C:\>ping 172.16.10.30
+
+Pinging 172.16.10.30 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Reply from 172.16.10.30: bytes=32 time=38ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=73ms TTL=123
+
+Ping statistics for 172.16.10.30:
+    Packets: Sent = 4, Received = 2, Lost = 2 (50% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 38ms, Maximum = 73ms, Average = 55ms
+
+C:\>ping 172.16.10.30
+
+Pinging 172.16.10.30 with 32 bytes of data:
+
+Reply from 172.16.10.30: bytes=32 time=60ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=58ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=112ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=39ms TTL=123
+
+Ping statistics for 172.16.10.30:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 39ms, Maximum = 112ms, Average = 67ms
+
+C:\>ping 192.168.10.5
+
+Pinging 192.168.10.5 with 32 bytes of data:
+
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+
+Ping statistics for 192.168.10.5:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 192.168.10.5
+
+Pinging 192.168.10.5 with 32 bytes of data:
+
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.

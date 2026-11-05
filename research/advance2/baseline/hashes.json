@@ -1,0 +1,292 @@
+{
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "capture_date": "2026-11-05",
+  "timezone": "America/Costa_Rica",
+  "files": [
+    {
+      "path": "Hospital network  simulation/ACL mls both/Acceslist planning.docx",
+      "bytes": 15516,
+      "sha256": "337452d07e4dd784394a8e3fc6c4b97388368aeaf675fb3ddf828e61b5e06707"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt",
+      "bytes": 710,
+      "sha256": "8d3f7a7840c2bb508ff3a1d42f15e50d5f0512463aa1d7ada6b843cf0d597df8"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/intserveracl mls.txt",
+      "bytes": 641,
+      "sha256": "f484d6421ff7ef64bd63706e66cd79676a592f945c7492af3fee8bc83ea2b237"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt",
+      "bytes": 243,
+      "sha256": "c54759ca62c9501adbaa8705467f872893e74b0342ac603779c86a7d4a0d41a8"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/radiusacl mls.txt",
+      "bytes": 632,
+      "sha256": "56a29b03880a5654aac1370b25448c89807db81a93354d7602825a63292e8883"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/wifiaclmls.txt",
+      "bytes": 832,
+      "sha256": "da146a33179a4b633457925421c4b2bf407561678ab01d0a6fe942b97518747b"
+    },
+    {
+      "path": "Hospital network  simulation/ACL mls both/wlcacl mls.txt",
+      "bytes": 433,
+      "sha256": "77050b3cd2b067118f467d4f6d204bc975de2411b92d764aecf7f84eafd35ae2"
+    },
+    {
+      "path": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "bytes": 1256,
+      "sha256": "48c52121f1484883d8c257f8c9b328468fbffea40a32a719469313baf25aceec"
+    },
+    {
+      "path": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "bytes": 243,
+      "sha256": "0c80db6a26258559688cca9ae9bf65661bc1e5077f92211e5c53599a1e398afc"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/NAT.txt",
+      "bytes": 500,
+      "sha256": "ab8c43130788f0909090ca9a8151b9a36604acf1a8156c7896d08bf98253daa3"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/SSH testing from inside host.docx",
+      "bytes": 217673,
+      "sha256": "a24c5868f76a79c2b45e8b2d92902e89cb8954a2fc24f4ca91d8b5431a1d9033"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/acl inside.txt",
+      "bytes": 722,
+      "sha256": "ff57e62fcbdf7915b27a1508969647ce7fc4dcd116c905e78511a990fc5cad8d"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/aclisp fw.txt",
+      "bytes": 588,
+      "sha256": "119d368fd8f65ec282984520b91f8cd3323a1cdaa284434360b148e66623e645"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/firewall dmzacl.txt",
+      "bytes": 534,
+      "sha256": "abdb2f3a36a3ac43854c2f47fffc2dc3dad29d113209eb766d293c457625bf94"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/firewall ssh and local aaa.txt",
+      "bytes": 311,
+      "sha256": "2a16a9d083d01b6e8fdff61fbef7503ff6ad56f96a42f2b0c4ba8f72ed8a1f07"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/firewall.txt",
+      "bytes": 387,
+      "sha256": "54ee68e9ea128e256a765168c19f1fa5d71b3200df160b23813f181c08a73645"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/firewallrouting.txt",
+      "bytes": 306,
+      "sha256": "6a3225509af18bcac1d10f198c701b49e6b337370e2322af6f705e5844406d89"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/icmp policy.txt",
+      "bytes": 109,
+      "sha256": "e3d9517a59105d5b9e2ca8c1bcfd80280a18f4884e8727c1a85d75da0786fba9"
+    },
+    {
+      "path": "Hospital network  simulation/Firewall/nat hairpinning for internal network.txt",
+      "bytes": 386,
+      "sha256": "233e2483aacbd30e29c1c9fb2c263af6cff4e8f9d77e822ab38e6ed12c56d2de"
+    },
+    {
+      "path": "Hospital network  simulation/Testing/SSH testing from inside host.docx",
+      "bytes": 217673,
+      "sha256": "a24c5868f76a79c2b45e8b2d92902e89cb8954a2fc24f4ca91d8b5431a1d9033"
+    },
+    {
+      "path": "Hospital network  simulation/Testing/VOIP test.docx",
+      "bytes": 222932,
+      "sha256": "89fbdd1ef187bca44b7b2e472c2a369c357a57d275ebd0380006a89e4005957f"
+    },
+    {
+      "path": "Hospital network  simulation/Testing/mail server test and configuration.docx",
+      "bytes": 1372641,
+      "sha256": "9651dddba227830bc397f17ea7a78f243eda0cfb81cbcd819ff69fe2475ed0b9"
+    },
+    {
+      "path": "Hospital network  simulation/Testing/ping test.docx",
+      "bytes": 336442,
+      "sha256": "46e40ec35668d21f21354072cc476323e2af0770ecc8ed23a75b0095c549b8bf"
+    },
+    {
+      "path": "Hospital network  simulation/Testing/web server test and configuration.docx",
+      "bytes": 549635,
+      "sha256": "ff8effa855bff5ff0bea19af8f1706673483522c561406f996ce06241031fe56"
+    },
+    {
+      "path": "Hospital network  simulation/VOIP router/telephonyvoip router.txt",
+      "bytes": 531,
+      "sha256": "dd3a985424404b4204efae736075ac7da685c353edeb8b26794f17e8c4aa2e51"
+    },
+    {
+      "path": "Hospital network  simulation/VOIP router/voip router.txt",
+      "bytes": 310,
+      "sha256": "6eaeb9d3929ef06e760723fd3f280e05045df43aaa66623908a8dd8964793dfc"
+    },
+    {
+      "path": "Hospital network  simulation/WLC/wlc setp.docx",
+      "bytes": 1954845,
+      "sha256": "5fe8d74a0aa26e7b93e78b1755620ac54befd85aa10195c309e1aa6ae2abd9f6"
+    },
+    {
+      "path": "Hospital network  simulation/WLC/wlc.txt",
+      "bytes": 458,
+      "sha256": "c4e12a61278d2fb68be5d9fd70ab3f740b2e03268cbc3ccf3bfb6f8479edb466"
+    },
+    {
+      "path": "Hospital network  simulation/dmz/dmz.txt",
+      "bytes": 418,
+      "sha256": "2cf199af2479cfac41cf149f8950a359732b05dee1132eb99dc59c7cb5efed4c"
+    },
+    {
+      "path": "Hospital network  simulation/dmz/mail server.docx",
+      "bytes": 1373030,
+      "sha256": "5f1383ad9a83cf885a423da965db0f8237880a2f548e1f8d7f85e00dbdcc5f74"
+    },
+    {
+      "path": "Hospital network  simulation/dmz/web server.docx",
+      "bytes": 549823,
+      "sha256": "32c9e6586989b60084f0fb6335b10a2bbf1550ea04bec848802402cae3c3f406"
+    },
+    {
+      "path": "Hospital network  simulation/edgerouter/router exit.txt",
+      "bytes": 79,
+      "sha256": "5464d1581d75bf7d5bf4cf68d59dfa32312863374705f81d81d3c516f5176365"
+    },
+    {
+      "path": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "bytes": 408,
+      "sha256": "a2073daf6b1dfc98e73947a260901050937e9423193bc4f69b7e9815a776e855"
+    },
+    {
+      "path": "Hospital network  simulation/hospital netowrk simulation.pkt",
+      "bytes": 258544,
+      "sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe"
+    },
+    {
+      "path": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "bytes": 498,
+      "sha256": "f91031e6dee5f1fe198d0edf7f1ee7a6e613f95dc6e949cb5f3792ee61cb310f"
+    },
+    {
+      "path": "Hospital network  simulation/internalserver/Internal server.txt",
+      "bytes": 407,
+      "sha256": "6c342fa0061dc4d5d503b68450d073c711ef290907a16f551efabd9bbf4f1229"
+    },
+    {
+      "path": "Hospital network  simulation/internalserver/sys,ftpand httpsint.docx",
+      "bytes": 1260784,
+      "sha256": "56ef502cff7314918205e8a9d057cb24f33b5accf409f77843ac2f0e7e6c6ce4"
+    },
+    {
+      "path": "Hospital network  simulation/management/management.txt",
+      "bytes": 495,
+      "sha256": "56752bb0c9f9fd86c2c5ab069ee24a20932c82fad898f5f35e1380743e7c2d0a"
+    },
+    {
+      "path": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "bytes": 1536,
+      "sha256": "5ffbd929573e393f894fc066d89736ba699803018d772bad98dbacc98021f326"
+    },
+    {
+      "path": "Hospital network  simulation/mls0/mls0.txt",
+      "bytes": 608,
+      "sha256": "062259ce04492102d8334742291dc6c4b6706cb1c98f45b20d7c724b3a62eb60"
+    },
+    {
+      "path": "Hospital network  simulation/mls0/mls0routing.txt",
+      "bytes": 842,
+      "sha256": "5ef6bf2d750c6048a84b0a726b4dc69101ef8594105c8eb7e7e31a3414b6de37"
+    },
+    {
+      "path": "Hospital network  simulation/mls0/mls0upstream.txt",
+      "bytes": 88,
+      "sha256": "5016c76cf77c1f57c1fe92ee1dd7c81c1c6184411389f48a9645b7640814853b"
+    },
+    {
+      "path": "Hospital network  simulation/mls0/mls0voip.txt",
+      "bytes": 304,
+      "sha256": "eb41beb99f97296ff55744d8917a1af8d11b5459b344291d1cea73c6a8b961b6"
+    },
+    {
+      "path": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "bytes": 1482,
+      "sha256": "185d96c832b9c1586bf18a3f7b1e10d7418f5188a958e1513375a9bacd9cd56c"
+    },
+    {
+      "path": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "bytes": 248,
+      "sha256": "37d42e3b1e02ccafb9da41d4ae14c457f0c33c38dff2a171beb8c172845f0589"
+    },
+    {
+      "path": "Hospital network  simulation/mls1/mls1.txt",
+      "bytes": 608,
+      "sha256": "062259ce04492102d8334742291dc6c4b6706cb1c98f45b20d7c724b3a62eb60"
+    },
+    {
+      "path": "Hospital network  simulation/mls1/mls1routing.txt",
+      "bytes": 894,
+      "sha256": "c1c700923dfd2d40a1958c9ee2cf72ef97975ed3e639a97b9819609be1c9f157"
+    },
+    {
+      "path": "Hospital network  simulation/mls1/mls1upstream.txt",
+      "bytes": 88,
+      "sha256": "da2177cdcdc5bcd753caa84b14754e9e660a87d6bfc1274476585bdfb9886840"
+    },
+    {
+      "path": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "bytes": 210,
+      "sha256": "93336e848f674a4028b81946e3600d207b41e72e70f2a4b40493dfbef8edd2b7"
+    },
+    {
+      "path": "Hospital network  simulation/mlsethcnlsyshttps/syslog and https services.txt",
+      "bytes": 88,
+      "sha256": "eeff2500451d17434ee98c9b45f7c82eb3e9d209363ac6dc986314db3acecae1"
+    },
+    {
+      "path": "Hospital network  simulation/newtry.pkt",
+      "bytes": 258544,
+      "sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe"
+    },
+    {
+      "path": "Hospital network  simulation/portfastaccesssw/stp portfast end device only acces.txt",
+      "bytes": 91,
+      "sha256": "145e12e98e133bee45d6e88ebca3ea15726b678b7e2acf4ec772e8aee5fcf208"
+    },
+    {
+      "path": "Hospital network  simulation/radius/radius.txt",
+      "bytes": 400,
+      "sha256": "4ce4c2b8d3f825b6e25ffdbbf95b5bf69b325cd05c87e21c1e73cd85c3ee0966"
+    },
+    {
+      "path": "Hospital network  simulation/reception/reception.txt",
+      "bytes": 494,
+      "sha256": "f19f11cb20bf83aba1040f668217cf2174b98fdc3a13c331aa98625e152c3eed"
+    },
+    {
+      "path": "Hospital network  simulation/wifi/wifi.txt",
+      "bytes": 403,
+      "sha256": "46285b7a2d8ccab5965780b0c07ff26c259555ab654add91523c7524114dc28e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1066,
+      "sha256": "bc4b05825890ccfa0face2bafc9e81b74283c6ee2f68c5e3f737b01582bdae04"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1689,
+      "sha256": "61025ca934075331da3682f1fadbf1ee3b281cefceb1b1978033ccc0f0028a19"
+    }
+  ]
+}

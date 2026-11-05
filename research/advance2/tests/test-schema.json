@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tests"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "policy_id",
+          "objective",
+          "category",
+          "secondary_categories",
+          "source",
+          "source_vlan",
+          "source_ip",
+          "destination",
+          "destination_vlan",
+          "destination_ip",
+          "protocol",
+          "port",
+          "policy_expected",
+          "config_expected",
+          "acl_exchange_expected",
+          "config_basis",
+          "forward_acl_decisions",
+          "reverse_acl_decisions",
+          "execution_method",
+          "acceptance_criteria",
+          "evidence_required",
+          "positive_control_ids",
+          "status",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T[0-9]{3}$"
+          },
+          "policy_expected": {
+            "enum": [
+              "allow",
+              "deny",
+              "conditional",
+              "not_testable"
+            ]
+          },
+          "config_expected": {
+            "enum": [
+              "allow",
+              "deny",
+              "unknown"
+            ]
+          },
+          "protocol": {
+            "enum": [
+              "icmp",
+              "tcp",
+              "udp"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

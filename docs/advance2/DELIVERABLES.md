@@ -301,3 +301,19 @@ Baseline original sin cambios. runtime y __pycache__ se ignoran. Incluye CP1/CP2
 - `research/advance2/tests/test-plan.yaml`
 - `research/advance2/tests/test-procedures.md`
 - `research/advance2/tests/test-schema.json`
+
+
+## CP4/CP5
+
+- `docs/advance2/CP4_AUDIT.md`
+- `docs/advance2/CP5_ANALYSIS.md`
+- `docs/advance2/CHAPTER_IV_DRAFT.md`
+- `docs/advance2/ANNEX_INDEX.md`
+- `docs/advance2/VISUAL_PLAN.md`
+- `research/advance2/results/cp4-audit.json`
+- `research/advance2/analysis/case-analysis.csv`
+- `research/advance2/analysis/figures/fig4_pco_status.svg`
+- `research/advance2/analysis/figures/fig5_zone_evidence.svg`
+- `research/advance2/analysis/figures/fig6_access_matrix.svg`
+- `research/advance2/analysis/figures/fig7_causal_confidence.svg`
+- `research/advance2/analysis/figures/fig8_traceability.svg`

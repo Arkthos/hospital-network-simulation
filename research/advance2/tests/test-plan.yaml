@@ -1,0 +1,744 @@
+{
+  "schema_version": 1,
+  "tests": [
+    {
+      "id": "T001",
+      "policy_id": "P001",
+      "objective": "OE2",
+      "category": "external-connectivity",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "External fuera del ASA",
+      "destination_vlan": "external",
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "allow",
+      "config_expected": "unknown",
+      "acl_exchange_expected": "allow",
+      "config_basis": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:15 (guestwifi #12)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:15 (guestwifi #12)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. Seleccionar host externo real de la topología; no usar DMZ ni IP pública hairpin como sustituto de Internet. 203.0.113.254 solo se usa internamente como representante matemático; no es un objetivo a ejecutar."
+    },
+    {
+      "id": "T002",
+      "policy_id": "P002",
+      "objective": "OE2",
+      "category": "guest-isolation",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "Internal Server",
+      "destination_vlan": 10,
+      "destination_ip": "192.168.10.5",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:7 (guestwifi #4)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:8 (intserver #5)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:7 (guestwifi #4)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:8 (intserver #5)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001",
+        "T013"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T003",
+      "policy_id": "P003",
+      "objective": "OE2",
+      "category": "management",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "Management autorizado",
+      "destination_vlan": 60,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:11 (guestwifi #8)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:11 (guestwifi #8)"
+        }
+      ],
+      "reverse_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T004",
+      "policy_id": "P004",
+      "objective": "OE2",
+      "category": "radius",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "RADIUS",
+      "destination_vlan": 80,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:13 (guestwifi #10)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:8 (radius #5)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:13 (guestwifi #10)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:8 (radius #5)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T005",
+      "policy_id": "P005",
+      "objective": "OE2",
+      "category": "guest-isolation",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "Corp Wi-Fi movilidad",
+      "destination_vlan": 40,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:10 (guestwifi #7)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:10 (wifi #7)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:10 (guestwifi #7)"
+        }
+      ],
+      "reverse_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:10 (wifi #7)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001",
+        "T006"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T006",
+      "policy_id": "P006",
+      "objective": "OE2",
+      "category": "external-connectivity",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Corp Wi-Fi movilidad",
+      "source_vlan": 40,
+      "source_ip": "unknown",
+      "destination": "External fuera del ASA",
+      "destination_vlan": "external",
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "allow",
+      "config_expected": "unknown",
+      "acl_exchange_expected": "allow",
+      "config_basis": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:17 (wifi #14)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:17 (wifi #14)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T006"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. Seleccionar host externo real de la topología; no usar DMZ ni IP pública hairpin como sustituto de Internet. 203.0.113.254 solo se usa internamente como representante matemático; no es un objetivo a ejecutar."
+    },
+    {
+      "id": "T007",
+      "policy_id": "P007",
+      "objective": "OE2",
+      "category": "internal-access",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Corp Wi-Fi movilidad",
+      "source_vlan": 40,
+      "source_ip": "unknown",
+      "destination": "Internal Server",
+      "destination_vlan": 10,
+      "destination_ip": "192.168.10.5",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:7 (wifi #4)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:7 (intserver #4)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:7 (wifi #4)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:7 (intserver #4)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T006",
+        "T013"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T008",
+      "policy_id": "P008",
+      "objective": "OE2",
+      "category": "management",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Corp Wi-Fi movilidad",
+      "source_vlan": 40,
+      "source_ip": "unknown",
+      "destination": "Management autorizado",
+      "destination_vlan": 60,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:11 (wifi #8)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wifiaclmls.txt:11 (wifi #8)"
+        }
+      ],
+      "reverse_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T006"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T009",
+      "policy_id": "P009",
+      "objective": "OE2",
+      "category": "wlc",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Management autorizado",
+      "source_vlan": 60,
+      "source_ip": "192.168.60.8",
+      "destination": "WLC",
+      "destination_vlan": 70,
+      "destination_ip": "192.168.70.5",
+      "protocol": "tcp",
+      "port": "443",
+      "policy_expected": "allow",
+      "config_expected": "unknown",
+      "acl_exchange_expected": "allow",
+      "config_basis": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:6 (management #3)"
+        },
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/wlcacl mls.txt:4 (wlc #1)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:6 (management #3)"
+        }
+      ],
+      "reverse_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/wlcacl mls.txt:4 (wlc #1)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Web Browser: https://192.168.70.5",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T009"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa."
+    },
+    {
+      "id": "T010",
+      "policy_id": "P010",
+      "objective": "OE2",
+      "category": "radius",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Management autorizado",
+      "source_vlan": 60,
+      "source_ip": "192.168.60.8",
+      "destination": "RADIUS",
+      "destination_vlan": 80,
+      "destination_ip": "unknown",
+      "protocol": "tcp",
+      "port": "22",
+      "policy_expected": "allow",
+      "config_expected": "unknown",
+      "acl_exchange_expected": "allow",
+      "config_basis": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:5 (management #2)"
+        },
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:9 (radius #6)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:5 (management #2)"
+        },
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:9 (radius #6)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ssh -l <existing_user> <confirmed_radius_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T009"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa. No consta que el servidor RADIUS simule SSH; no habilitarlo para que la prueba funcione. Si no existe, resultado indeterminate."
+    },
+    {
+      "id": "T011",
+      "policy_id": "P011",
+      "objective": "OE2",
+      "category": "radius",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Hospitalstaff cableado",
+      "source_vlan": 30,
+      "source_ip": "unknown",
+      "destination": "RADIUS",
+      "destination_vlan": 80,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:6 (radius #3)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/radiusacl mls.txt:6 (radius #3)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T013"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    },
+    {
+      "id": "T012",
+      "policy_id": "P012",
+      "objective": "OE2",
+      "category": "management",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Hospitalstaff cableado",
+      "source_vlan": 30,
+      "source_ip": "unknown",
+      "destination": "Management autorizado",
+      "destination_vlan": 60,
+      "destination_ip": "unknown",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "forward_acl_decisions": [],
+      "reverse_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt:7 (management #4)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T013"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. La solicitud ICMP no tiene deny de entrada a Management identificado; la respuesta sería bloqueada por management in. No equivale a demostrar aislamiento de solicitudes."
+    },
+    {
+      "id": "T013",
+      "policy_id": "P013",
+      "objective": "OE2",
+      "category": "negative-control",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Hospitalstaff cableado",
+      "source_vlan": 30,
+      "source_ip": "unknown",
+      "destination": "Internal Server",
+      "destination_vlan": 10,
+      "destination_ip": "192.168.10.5",
+      "protocol": "icmp",
+      "port": "none",
+      "policy_expected": "allow",
+      "config_expected": "unknown",
+      "acl_exchange_expected": "allow",
+      "config_basis": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:5 (intserver #2)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "allow",
+          "reference": "Hospital network  simulation/ACL mls both/intserveracl mls.txt:5 (intserver #2)"
+        }
+      ],
+      "reverse_acl_decisions": [],
+      "execution_method": "Packet Tracer GUI: Desktop Command Prompt: ping <confirmed_destination_ip>",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T013"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT. Las ACL MLS conocidas no bloquean este intercambio; routing/ASA/NAT o servicio del destino no verificados impiden predecir conectividad completa."
+    },
+    {
+      "id": "T014",
+      "policy_id": "P014",
+      "objective": "OE2",
+      "category": "wlc",
+      "secondary_categories": [
+        "segmentation"
+      ],
+      "source": "Guest Wi-Fi",
+      "source_vlan": 50,
+      "source_ip": "unknown",
+      "destination": "WLC",
+      "destination_vlan": 70,
+      "destination_ip": "192.168.70.5",
+      "protocol": "tcp",
+      "port": "443",
+      "policy_expected": "deny",
+      "config_expected": "deny",
+      "acl_exchange_expected": "deny",
+      "config_basis": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:12 (guestwifi #9)"
+        },
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wlcacl mls.txt:9 (wlc #6)"
+        }
+      ],
+      "forward_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt:12 (guestwifi #9)"
+        }
+      ],
+      "reverse_acl_decisions": [
+        {
+          "decision": "deny",
+          "reference": "Hospital network  simulation/ACL mls both/wlcacl mls.txt:9 (wlc #6)"
+        }
+      ],
+      "execution_method": "Packet Tracer GUI: Desktop Web Browser: https://192.168.70.5",
+      "acceptance_criteria": "Registrar entrega/respuesta real por servicio; timeout solo no demuestra ACL. Para deny válido verificar control positivo y destino activo; indeterminate ante prerrequisito ausente.",
+      "evidence_required": [
+        "endpoint IP/SSID/gateway",
+        "comando o acción y salida real",
+        "captura real o transcripción verificable",
+        "configuración y trazado PDU para atribuir causa",
+        "manifest con SHA-256"
+      ],
+      "positive_control_ids": [
+        "T001",
+        "T009"
+      ],
+      "status": "pending_endpoint_verification",
+      "notes": "C derivada exclusivamente de fragmentos textuales; validar su aplicación en ambos MLS y su correspondencia con PKT."
+    }
+  ]
+}

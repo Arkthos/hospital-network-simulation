@@ -1,0 +1,15 @@
+{
+  "kind": "preflight_not_test_result",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "notes": "Late integrity review and user clarification; not a traffic result. Captures saved runtime copy after tests without modifying originals. See provenance.json.",
+  "artifacts": [
+    {
+      "path": "provenance.json",
+      "sha256": "555e4cae73aa7552b9d56cf6c064ae55b9eb15b4650ca8e6a04f53daefb9e4de"
+    },
+    {
+      "path": "saved-runtime-copy.pkt",
+      "sha256": "990d282545cc37295af7236228a8acf30981dd4ad835ffc71307b740f9db2812"
+    }
+  ]
+}

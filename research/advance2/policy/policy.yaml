@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "policy_status": "Propuesta explícita para caso hipotético; no política aprobada por hospital real",
+  "decisions": [
+    "VLAN40: movilidad no clínica; acceso interno denegado por diseño del caso, no por deducción del nombre staff",
+    "No se evalúa autenticación RADIUS de clientes hasta confirmar AAA efectivo",
+    "Management administrativo por TCP443 WLC y TCP22 RADIUS solo si servicio existe; ICMP no sustituye administración"
+  ],
+  "additional_rules": [
+    {
+      "policy_id": "P-GUEST-OTHER",
+      "source_zone": "Guest",
+      "destination_zone": "otras redes internas",
+      "service": "ip",
+      "expected": "deny",
+      "rationale": "Aislamiento; DMZ publicada se trata separadamente",
+      "objective": "OE2"
+    },
+    {
+      "policy_id": "P-GUEST-CAPWAP",
+      "source_zone": "AP autorizado exclusivamente",
+      "destination_zone": "WLC",
+      "service": "udp/5246,5247",
+      "expected": "conditional",
+      "rationale": "Tráfico de infraestructura; no concede a clientes Guest acceso administrativo",
+      "objective": "OE2"
+    },
+    {
+      "policy_id": "P-AUTH",
+      "source_zone": "clientes WLAN",
+      "destination_zone": "WLAN",
+      "service": "autenticación representada",
+      "expected": "conditional",
+      "rationale": "Inventariar SSID y WPA2-PSK efectivo antes de diseñar prueba; no asumir AAA",
+      "objective": "OE1"
+    },
+    {
+      "policy_id": "P-CRYPTO",
+      "source_zone": "WLAN",
+      "destination_zone": "WLAN",
+      "service": "seguridad criptográfica real",
+      "expected": "not_testable",
+      "rationale": "Fuera del alcance experimental de Packet Tracer",
+      "objective": "OE1"
+    }
+  ],
+  "policies": [
+    {
+      "policy_id": "P001",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "External fuera del ASA",
+      "service": "icmp echo",
+      "expected": "allow",
+      "rationale": "Política propuesta del caso: conectividad funcional de control y servicios autorizados.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P002",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "Internal Server",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P003",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "Management autorizado",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P004",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "RADIUS",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P005",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "Corp Wi-Fi movilidad",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P006",
+      "source_zone": "Corp Wi-Fi movilidad",
+      "destination_zone": "External fuera del ASA",
+      "service": "icmp echo",
+      "expected": "allow",
+      "rationale": "Política propuesta del caso: acceso externo para movilidad sin acceso clínico interno.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P007",
+      "source_zone": "Corp Wi-Fi movilidad",
+      "destination_zone": "Internal Server",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: acceso externo para movilidad sin acceso clínico interno.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P008",
+      "source_zone": "Corp Wi-Fi movilidad",
+      "destination_zone": "Management autorizado",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: acceso externo para movilidad sin acceso clínico interno.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P009",
+      "source_zone": "Management autorizado",
+      "destination_zone": "WLC",
+      "service": "tcp/443",
+      "expected": "allow",
+      "rationale": "Política propuesta del caso: acceso administrativo mínimo desde bastión autorizado.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P010",
+      "source_zone": "Management autorizado",
+      "destination_zone": "RADIUS",
+      "service": "tcp/22",
+      "expected": "allow",
+      "rationale": "Política propuesta del caso: acceso administrativo mínimo desde bastión autorizado.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P011",
+      "source_zone": "Hospitalstaff cableado",
+      "destination_zone": "RADIUS",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P012",
+      "source_zone": "Hospitalstaff cableado",
+      "destination_zone": "Management autorizado",
+      "service": "icmp echo",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P013",
+      "source_zone": "Hospitalstaff cableado",
+      "destination_zone": "Internal Server",
+      "service": "icmp echo",
+      "expected": "allow",
+      "rationale": "Política propuesta del caso: conectividad funcional de control y servicios autorizados.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    },
+    {
+      "policy_id": "P014",
+      "source_zone": "Guest Wi-Fi",
+      "destination_zone": "WLC",
+      "service": "tcp/443",
+      "expected": "deny",
+      "rationale": "Política propuesta del caso: aislamiento de invitados y protección de zonas administrativas.",
+      "objective": "OE2",
+      "status": "proposed_case_policy",
+      "scope": "Servicio concreto de este caso, no todos los protocolos"
+    }
+  ]
+}

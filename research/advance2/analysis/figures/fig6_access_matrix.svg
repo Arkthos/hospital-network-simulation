@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="390" viewBox="0 0 820 390">
+<style>text{font-family:Arial,sans-serif;fill:#222}.t{font-size:20px;font-weight:bold}.h{font-size:13px;font-weight:bold}.c{font-size:15px;font-weight:bold}.g{stroke:#9ca3af;stroke-width:1;fill:none}.allow{fill:#e5e7eb}.deny{fill:#9ca3af}.ind{fill:#d1d5db}.na{fill:#f9fafb}</style>
+<text x="410" y="28" text-anchor="middle" class="t">Matriz de acceso observado para los flujos seleccionados</text>
+<!-- headers -->
+<text x="190" y="70" text-anchor="middle" class="h">External</text><text x="290" y="70" text-anchor="middle" class="h">Internal</text><text x="390" y="70" text-anchor="middle" class="h">Corp Wi-Fi</text><text x="490" y="70" text-anchor="middle" class="h">Management</text><text x="590" y="70" text-anchor="middle" class="h">WLC</text><text x="690" y="70" text-anchor="middle" class="h">RADIUS</text>
+<text x="105" y="120" text-anchor="end" class="h">Guest Wi-Fi</text><text x="105" y="180" text-anchor="end" class="h">Corp Wi-Fi</text><text x="105" y="240" text-anchor="end" class="h">Management</text><text x="105" y="300" text-anchor="end" class="h">Hospitalstaff</text>
+<!-- row 1 A D D D D D -->
+<rect x="140" y="90" width="100" height="55" class="allow"/><text x="190" y="124" text-anchor="middle" class="c">A</text><rect x="240" y="90" width="100" height="55" class="deny"/><text x="290" y="124" text-anchor="middle" class="c">D</text><rect x="340" y="90" width="100" height="55" class="deny"/><text x="390" y="124" text-anchor="middle" class="c">D</text><rect x="440" y="90" width="100" height="55" class="deny"/><text x="490" y="124" text-anchor="middle" class="c">D</text><rect x="540" y="90" width="100" height="55" class="deny"/><text x="590" y="124" text-anchor="middle" class="c">D</text><rect x="640" y="90" width="100" height="55" class="deny"/><text x="690" y="124" text-anchor="middle" class="c">D</text>
+<!-- row2 A D - D - - -->
+<rect x="140" y="150" width="100" height="55" class="allow"/><text x="190" y="184" text-anchor="middle" class="c">A</text>
+<rect x="240" y="150" width="100" height="55" class="deny"/><text x="290" y="184" text-anchor="middle" class="c">D</text>
+<rect x="340" y="150" width="100" height="55" class="na"/><text x="390" y="184" text-anchor="middle" class="c">—</text>
+<rect x="440" y="150" width="100" height="55" class="deny"/><text x="490" y="184" text-anchor="middle" class="c">D</text>
+<rect x="540" y="150" width="100" height="55" class="na"/><text x="590" y="184" text-anchor="middle" class="c">—</text>
+<rect x="640" y="150" width="100" height="55" class="na"/><text x="690" y="184" text-anchor="middle" class="c">—</text>
+<!-- row3 -->
+<rect x="140" y="210" width="100" height="55" class="na"/><text x="190" y="244" text-anchor="middle" class="c">—</text>
+<rect x="240" y="210" width="100" height="55" class="na"/><text x="290" y="244" text-anchor="middle" class="c">—</text>
+<rect x="340" y="210" width="100" height="55" class="na"/><text x="390" y="244" text-anchor="middle" class="c">—</text>
+<rect x="440" y="210" width="100" height="55" class="na"/><text x="490" y="244" text-anchor="middle" class="c">—</text>
+<rect x="540" y="210" width="100" height="55" class="allow"/><text x="590" y="244" text-anchor="middle" class="c">A</text>
+<rect x="640" y="210" width="100" height="55" class="ind"/><text x="690" y="244" text-anchor="middle" class="c">I</text>
+<!-- row4 -->
+<rect x="140" y="270" width="100" height="55" class="na"/><text x="190" y="304" text-anchor="middle" class="c">—</text>
+<rect x="240" y="270" width="100" height="55" class="allow"/><text x="290" y="304" text-anchor="middle" class="c">A</text>
+<rect x="340" y="270" width="100" height="55" class="na"/><text x="390" y="304" text-anchor="middle" class="c">—</text>
+<rect x="440" y="270" width="100" height="55" class="deny"/><text x="490" y="304" text-anchor="middle" class="c">D</text>
+<rect x="540" y="270" width="100" height="55" class="na"/><text x="590" y="304" text-anchor="middle" class="c">—</text>
+<rect x="640" y="270" width="100" height="55" class="deny"/><text x="690" y="304" text-anchor="middle" class="c">D</text>
+<text x="410" y="360" text-anchor="middle" class="h">A = intercambio exitoso · D = intercambio no exitoso · I = indeterminado · — = no probado</text>
+</svg>

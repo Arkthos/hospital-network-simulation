@@ -1,0 +1,62 @@
+{
+  "test_id": "T013-R2",
+  "timestamp": "2026-11-06T00:08:32.544Z",
+  "source": "192.168.30.22",
+  "destination": "192.168.10.5",
+  "method": "Packet Tracer PC1(1) Command Prompt: ping 192.168.10.5; refreshed positive control after simulator restart, two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "allow",
+  "valid": "true",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "Fresh baseline session; reverified DHCP source 192.168.30.22/24 gateway .30.1. Internal destination responded 4/4 in both series. This repeat supplies a current-session control for remaining isolation tests; first-run record preserved unchanged.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T013-R2/01-T013-R2-series1-0.jpg",
+      "sha256": "c498d166ab5a4b5fa0d72ce18655eb2fac3baa8a48e26ea217934f3675d37608"
+    },
+    {
+      "path": "evidence/raw/T013-R2/02-T013-R2-series1-complete-0.jpg",
+      "sha256": "1a5c0a248da190a0ec581098909484bc9e598856f3a3c88cad123c4faa974be7"
+    },
+    {
+      "path": "evidence/raw/T013-R2/03-T013-R2-series1-complete.capture.json",
+      "sha256": "14a3d27c069ebde302b4401211f9cc2831c49150aff398120ab70775e5b1264e"
+    },
+    {
+      "path": "evidence/raw/T013-R2/04-T013-R2-series1-complete.txt",
+      "sha256": "dfbcfdb8cf85a886a279d80eeb18814f583c6b3fb57d49fcaae0ee2cf722ed06"
+    },
+    {
+      "path": "evidence/raw/T013-R2/05-T013-R2-series1.capture.json",
+      "sha256": "1c404fd6cbcbd8b11fc5a6a63a8789463cc2069468fe0c461de44021088aa201"
+    },
+    {
+      "path": "evidence/raw/T013-R2/06-T013-R2-series1.txt",
+      "sha256": "6d2ee85847bd9d56f0dd8990efa00844baec59eb1c25d3319f61e3e221b651c7"
+    },
+    {
+      "path": "evidence/raw/T013-R2/07-T013-R2-series2-complete-0.jpg",
+      "sha256": "aa73343d498cac87a9b359fa056499b5621cf59fab1ee624f6caf133ee56b5ac"
+    },
+    {
+      "path": "evidence/raw/T013-R2/08-T013-R2-series2-complete.capture.json",
+      "sha256": "4bab6c3fb6c6b5e678bdd471410db035640dbddab4e7bbcd841360065617a804"
+    },
+    {
+      "path": "evidence/raw/T013-R2/09-session3-staff-ipconfig-0.jpg",
+      "sha256": "823082bd9301b3dcd900642e770b88b7732acb3953f4ca7a4cd04f3efe223ffd"
+    },
+    {
+      "path": "evidence/raw/T013-R2/10-session3-staff-ipconfig.capture.json",
+      "sha256": "ec598d709ef3fd1722ae227c441c8f5062497cb747279162b609ceedc49ff7b9"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

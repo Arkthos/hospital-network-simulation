@@ -1,0 +1,85 @@
+{
+  "test_id": "T014-R1",
+  "timestamp": "2026-11-06T00:35:41.068Z",
+  "source": "192.168.50.24",
+  "destination": "192.168.70.5",
+  "method": "Packet Tracer Smartphone0 Desktop Web Browser: https://192.168.70.5, Return then Go; observed final Request Timeout",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "possible",
+  "positive_control_runs": [
+    "T001-R2",
+    "T009-R1"
+  ],
+  "destination_verified": true,
+  "notes": "Smartphone0 guestwifi .50.24: HTTPS URL .70.5 submitted with Return then Go while page was still blank; final screenshot explicitly displays Request Timeout. Earlier blank screenshots are intermediate, not denial evidence. T001-R2 confirms Guest external connectivity, T009-R1 confirms WLC service response from authorized Management .60.8. Both MLS guestwifi in VLAN50 deny TCP to subnet70 except CAPWAP UDP; WLC service is available. O=deny means no successful service exchange in this attempt; exact ACL drop is not confirmed by PDU/counter delta, causal confidence possible. No credentials entered and no TLS/authentication security conclusion. No baseline changes.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "tcp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T014-R1/01-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    },
+    {
+      "path": "evidence/raw/T014-R1/02-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T014-R1/03-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T014-R1/04-session3-guest-wireless-0.jpg",
+      "sha256": "a2a09ce8c912985508bc85709f6b39976ba271386374742e2a30fc68f18cdde2"
+    },
+    {
+      "path": "evidence/raw/T014-R1/05-session3-guest-wireless.capture.json",
+      "sha256": "3f0aae4f511075a69ce2d906932d6418ef0694874760a9356460e1bc7d489dcd"
+    },
+    {
+      "path": "evidence/raw/T014-R1/06-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T014-R1/07-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    },
+    {
+      "path": "evidence/raw/T014-R1/08-T009-request1-0.jpg",
+      "sha256": "fdda066920e269d5ad375d2c3769db530b7388f1d8c171e8e18133468bd2dff4"
+    },
+    {
+      "path": "evidence/raw/T014-R1/09-T009-request1.capture.json",
+      "sha256": "179350c174fa2634353d0763b73c6c3b6543066b7c1e907d88fead806d099aca"
+    },
+    {
+      "path": "evidence/raw/T014-R1/10-T014-request1-final-check-0.jpg",
+      "sha256": "3e5ead4457114dcf9e364a702adbd78b4f8877f2ed7641fba4151bf92152aa8f"
+    },
+    {
+      "path": "evidence/raw/T014-R1/11-T014-request1-final-check.capture.json",
+      "sha256": "866dac911a50157a96eae8b8750a4ff55cff9c0902789faced3bca7da88f703c"
+    },
+    {
+      "path": "evidence/raw/T014-R1/12-T014-request1-final-check.txt",
+      "sha256": "1a3d6a5d81c47df4ec9286c03623a487f226ca6a27a2511a744d253639f19731"
+    },
+    {
+      "path": "evidence/raw/T014-R1/13-T014-request1-observed-0.jpg",
+      "sha256": "5c3c402bff7847939a425392f1a18631324c3a16d0e5ec483c1011381f067576"
+    },
+    {
+      "path": "evidence/raw/T014-R1/14-T014-request1-observed.capture.json",
+      "sha256": "364bda81ae599a29fe86e33ccc2cc36b527ea666463b20b3f8f8595ce5190e4b"
+    },
+    {
+      "path": "evidence/raw/T014-R1/15-T014-request1-observed.txt",
+      "sha256": "1a3d6a5d81c47df4ec9286c03623a487f226ca6a27a2511a744d253639f19731"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

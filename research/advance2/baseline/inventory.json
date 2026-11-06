@@ -1,0 +1,2346 @@
+{
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "file_count": 57,
+  "packet_tracer": {
+    "product_version": "9.0.1.0858",
+    "executable": "C:/Program Files/Cisco Packet Tracer 9.0.1/bin/PacketTracer.exe",
+    "source": "Windows executable VersionInfo; not packet creation version"
+  },
+  "packets": [
+    {
+      "path": "Hospital network  simulation/hospital netowrk simulation.pkt",
+      "bytes": 258544,
+      "sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe"
+    },
+    {
+      "path": "Hospital network  simulation/newtry.pkt",
+      "bytes": 258544,
+      "sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe"
+    }
+  ],
+  "packets_identical": true,
+  "interfaces": [
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt",
+      "line": 16,
+      "raw": "int vlan50"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/ACL mls both/intserveracl mls.txt",
+      "line": 14,
+      "raw": "int vlan10"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt",
+      "line": 8,
+      "raw": "int vlan60"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/ACL mls both/radiusacl mls.txt",
+      "line": 14,
+      "raw": "int vlan80"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/ACL mls both/wifiaclmls.txt",
+      "line": 18,
+      "raw": "int vlan40"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/ACL mls both/wlcacl mls.txt",
+      "line": 10,
+      "raw": "int vlan70"
+    },
+    {
+      "interface": "gig 1/1",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 1,
+      "raw": "int gig 1/1"
+    },
+    {
+      "interface": "gig 1/2",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 7,
+      "raw": "int gig 1/2"
+    },
+    {
+      "interface": "gig 1/3",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 13,
+      "raw": "int gig 1/3"
+    },
+    {
+      "interface": "gig 1/4",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 19,
+      "raw": "int gig 1/4"
+    },
+    {
+      "interface": "fa0/0",
+      "file": "Hospital network  simulation/VOIP router/voip router.txt",
+      "line": 3,
+      "raw": "int fa0/0"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/VOIP router/voip router.txt",
+      "line": 7,
+      "raw": "int fa0/1"
+    },
+    {
+      "interface": "loopback0",
+      "file": "Hospital network  simulation/VOIP router/voip router.txt",
+      "line": 11,
+      "raw": "int loopback0"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 20,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 27,
+      "raw": "int fa0/3"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 32,
+      "raw": "int ra fa0/4-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 37,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 15,
+      "raw": "int fa0/1"
+    },
+    {
+      "interface": "ra fa0/2-3",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 19,
+      "raw": "int ra fa0/2-3"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 24,
+      "raw": "int ra fa0/4-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 29,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "gig0/0/0",
+      "file": "Hospital network  simulation/edgerouter/router exit.txt",
+      "line": 3,
+      "raw": "int gig0/0/0"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 14,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 21,
+      "raw": "int ra fa0/3-5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 26,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 31,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 17,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 24,
+      "raw": "int ra fa0/3-4"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 29,
+      "raw": "int fa0/5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 34,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 39,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 14,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 21,
+      "raw": "int ra fa0/3-5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 26,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 31,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 17,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 24,
+      "raw": "int ra fa0/3-4"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 29,
+      "raw": "int fa0/5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 34,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 39,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 3,
+      "raw": "int vlan10"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 12,
+      "raw": "int vlan20"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 20,
+      "raw": "int vlan30"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 29,
+      "raw": "int vlan40"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 37,
+      "raw": "int vlan50"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 46,
+      "raw": "int vlan60"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 54,
+      "raw": "int vlan70"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 63,
+      "raw": "int vlan80"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 71,
+      "raw": "int vlan90"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 39,
+      "raw": "int ra fa0/1- 13"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 45,
+      "raw": "int ra fa0/14-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 50,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 16,
+      "raw": "interface Vlan10"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 19,
+      "raw": "interface Vlan30"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 22,
+      "raw": "interface Vlan50"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 25,
+      "raw": "interface Vlan70"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 28,
+      "raw": "interface Vlan90"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 32,
+      "raw": "interface Vlan20"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 35,
+      "raw": "interface Vlan40"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 38,
+      "raw": "interface Vlan60"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 41,
+      "raw": "interface Vlan80"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/mls0/mls0upstream.txt",
+      "line": 3,
+      "raw": "int fa0/1"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 3,
+      "raw": "int fa0/13"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 3,
+      "raw": "int vlan10"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 11,
+      "raw": "int vlan20"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 20,
+      "raw": "int vlan30"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 28,
+      "raw": "int vlan40"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 37,
+      "raw": "int vlan50"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 45,
+      "raw": "int vlan60"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 54,
+      "raw": "int vlan70"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 62,
+      "raw": "int vlan80"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 71,
+      "raw": "int vlan90"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "line": 3,
+      "raw": "int fa0/13"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 39,
+      "raw": "int ra fa0/1- 13"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 45,
+      "raw": "int ra fa0/14-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 50,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 18,
+      "raw": "interface Vlan20"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 21,
+      "raw": "interface Vlan40"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 24,
+      "raw": "interface Vlan60"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 27,
+      "raw": "interface Vlan80"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 31,
+      "raw": "interface Vlan10"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 34,
+      "raw": "interface Vlan30"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 37,
+      "raw": "interface Vlan50"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 40,
+      "raw": "interface Vlan70"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 43,
+      "raw": "interface Vlan90"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/mls1/mls1upstream.txt",
+      "line": 3,
+      "raw": "int fa0/1"
+    },
+    {
+      "interface": "ra fa0/2-4",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 1,
+      "raw": "int ra fa0/2-4"
+    },
+    {
+      "interface": "port-channel 9",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 5,
+      "raw": "int port-channel 9"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 14,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 21,
+      "raw": "int fa0/3"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 26,
+      "raw": "int ra fa0/4-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 31,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 17,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 24,
+      "raw": "int ra fa0/3-4"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 29,
+      "raw": "int fa0/5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 34,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 39,
+      "raw": "int ra gig0/1-2"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 14,
+      "raw": "int ra fa0/1-2"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 21,
+      "raw": "int ra fa0/3-5"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 26,
+      "raw": "int ra fa0/6-24"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 31,
+      "raw": "int ra gig0/1-2"
+    }
+  ],
+  "features": [
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/ACL mls both/guestwifiacl mls.txt",
+      "line": 17,
+      "raw": "ip access-group guestwifi in"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/ACL mls both/intserveracl mls.txt",
+      "line": 15,
+      "raw": "ip access-group intserver out"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/ACL mls both/mgmtacl mls.txt",
+      "line": 9,
+      "raw": "ip access-group management in"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/ACL mls both/radiusacl mls.txt",
+      "line": 15,
+      "raw": "ip access-group radius out"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/ACL mls both/wifiaclmls.txt",
+      "line": 19,
+      "raw": "ip access-group wifi in"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/ACL mls both/wlcacl mls.txt",
+      "line": 11,
+      "raw": "ip access-group wlc in"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 3,
+      "raw": "ip dhcp excluded-addres 192.168.10.1  192.168.10.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 4,
+      "raw": "ip dhcp excluded-addres 192.168.20.1  192.168.20.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 5,
+      "raw": "ip dhcp excluded-addres 192.168.30.1  192.168.30.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 6,
+      "raw": "ip dhcp excluded-addres 192.168.40.1  192.168.40.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 7,
+      "raw": "ip dhcp excluded-addres 192.168.50.1  192.168.50.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 8,
+      "raw": "ip dhcp excluded-addres 192.168.60.1  192.168.60.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 9,
+      "raw": "ip dhcp excluded-addres 192.168.70.1  192.168.70.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 10,
+      "raw": "ip dhcp excluded-addres 192.168.80.1  192.168.80.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 11,
+      "raw": "ip dhcp excluded-addres 192.168.90.1  192.168.90.20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 13,
+      "raw": "ip dhcp pool vlan10"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 15,
+      "raw": "default-rout 192.168.10.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 17,
+      "raw": "ip dhcp pool vlan20"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 19,
+      "raw": "default-rout 192.168.20.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 21,
+      "raw": "ip dhcp pool vlan30"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 23,
+      "raw": "default-rout 192.168.30.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 25,
+      "raw": "ip dhcp pool vlan40"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 27,
+      "raw": "default-rout 192.168.40.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 29,
+      "raw": "ip dhcp pool vlan50"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 31,
+      "raw": "default-rout 192.168.50.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 33,
+      "raw": "ip dhcp pool vlan60"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 35,
+      "raw": "default-rout 192.168.60.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 37,
+      "raw": "ip dhcp pool vlan70"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 39,
+      "raw": "default-rout 192.168.70.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 41,
+      "raw": "ip dhcp pool vlan80"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 43,
+      "raw": "default-rout 192.168.80.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 45,
+      "raw": "ip dhcp pool vlan90"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/DHCP mls0&1.txt",
+      "line": 47,
+      "raw": "default-rout 192.168.90.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 3,
+      "raw": "ip dhcp pool vlan40"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 5,
+      "raw": "default-router 192.168.40.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 6,
+      "raw": "option 43 ip 192.168.70.5"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 8,
+      "raw": "ip dhcp pool vlan50"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 10,
+      "raw": "default-router 192.168.50.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/DHCP INSIDE/dhcp option43 mls0&1.txt",
+      "line": 11,
+      "raw": "option 43 ip 192.168.70.5"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/NAT.txt",
+      "line": 6,
+      "raw": "nat (mls0,edgerouter) dynamic interface"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/NAT.txt",
+      "line": 10,
+      "raw": "nat (mls1,edgerouter) dynamic interface"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/NAT.txt",
+      "line": 14,
+      "raw": "nat (dmz,edgerouter) dynamic interface"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/NAT.txt",
+      "line": 17,
+      "raw": "nat (dmz,edgerouter) static 60.60.60.3"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/NAT.txt",
+      "line": 20,
+      "raw": "nat (dmz,edgerouter) static 60.60.60.4"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/acl inside.txt",
+      "line": 12,
+      "raw": "access-group INSIDE-ACCESS in interface mls0"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/acl inside.txt",
+      "line": 13,
+      "raw": "access-group INSIDE-ACCESS in interface mls1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/aclisp fw.txt",
+      "line": 12,
+      "raw": "access-group INTERNET-ACCESS in interface edgerouter"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewall dmzacl.txt",
+      "line": 12,
+      "raw": "access-group DMZ-ACCESS in interface dmz"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewall ssh and local aaa.txt",
+      "line": 8,
+      "raw": "aaa authentication ssh console LOCAL"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewall ssh and local aaa.txt",
+      "line": 9,
+      "raw": "ssh 192.168.60.8 255.255.255.255 mls0"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewall ssh and local aaa.txt",
+      "line": 10,
+      "raw": "ssh 192.168.60.8 255.255.255.255 mls1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewall ssh and local aaa.txt",
+      "line": 11,
+      "raw": "ssh timeout 10"
+    },
+    {
+      "interface": "gig 1/1",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 3,
+      "raw": "nameif edgerouter"
+    },
+    {
+      "interface": "gig 1/1",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 4,
+      "raw": "security-level 0"
+    },
+    {
+      "interface": "gig 1/2",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 9,
+      "raw": "nameif mls0"
+    },
+    {
+      "interface": "gig 1/2",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 10,
+      "raw": "security-level 100"
+    },
+    {
+      "interface": "gig 1/3",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 15,
+      "raw": "nameif mls1"
+    },
+    {
+      "interface": "gig 1/3",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 16,
+      "raw": "security-level 100"
+    },
+    {
+      "interface": "gig 1/4",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 21,
+      "raw": "nameif dmz"
+    },
+    {
+      "interface": "gig 1/4",
+      "file": "Hospital network  simulation/Firewall/firewall.txt",
+      "line": 22,
+      "raw": "security-level 50"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewallrouting.txt",
+      "line": 4,
+      "raw": "router ospf 50"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/firewallrouting.txt",
+      "line": 12,
+      "raw": "route edgerouter 0.0.0.0 0.0.0.0 60.60.60.1"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/icmp policy.txt",
+      "line": 5,
+      "raw": "inspect icmp"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/nat hairpinning for internal network.txt",
+      "line": 3,
+      "raw": "nat (dmz,mls0) static 60.60.60.3"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/nat hairpinning for internal network.txt",
+      "line": 7,
+      "raw": "nat (dmz,mls1) static 60.60.60.3"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/nat hairpinning for internal network.txt",
+      "line": 11,
+      "raw": "nat (dmz,mls0) static 60.60.60.4"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/Firewall/nat hairpinning for internal network.txt",
+      "line": 15,
+      "raw": "nat (dmz,mls1) static 60.60.60.4"
+    },
+    {
+      "interface": "loopback0",
+      "file": "Hospital network  simulation/VOIP router/voip router.txt",
+      "line": 15,
+      "raw": "ip route 192.168.90.0 255.255.255.0 192.168.200.2 10"
+    },
+    {
+      "interface": "loopback0",
+      "file": "Hospital network  simulation/VOIP router/voip router.txt",
+      "line": 16,
+      "raw": "ip route 192.168.90.0 255.255.255.0 192.168.201.2 20"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 21,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 22,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 23,
+      "raw": "sw tru all vlan 40,50,70,99"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 28,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 29,
+      "raw": "sw acc vlan 70"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 33,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 34,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 38,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/WLC/wlc.txt",
+      "line": 39,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 16,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "fa0/1",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 17,
+      "raw": "sw acc vlan 100"
+    },
+    {
+      "interface": "ra fa0/2-3",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 20,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/2-3",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 21,
+      "raw": "sw acc vlan 100"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 25,
+      "raw": "switchport mode access"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 26,
+      "raw": "switchport access vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 30,
+      "raw": "switchport mode access"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/dmz/dmz.txt",
+      "line": 31,
+      "raw": "switchport access vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 15,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 16,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 17,
+      "raw": "sw tru all vlan 50,99"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 22,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 23,
+      "raw": "sw acc vlan 50"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 27,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 28,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 32,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/gueswifi/guestwifi.txt",
+      "line": 33,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 18,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 19,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 20,
+      "raw": "sw tru all vlan 30,99"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 25,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 26,
+      "raw": "sw acc vlan 30"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 30,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 31,
+      "raw": "sw acc vlan 30"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 32,
+      "raw": "sw voice vlan 90"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 35,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 36,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 40,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/hospitalstaff/hospitalstaff.txt",
+      "line": 41,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 15,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 16,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 17,
+      "raw": "sw tru all vlan 10,99"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 22,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 23,
+      "raw": "sw acc vlan 10"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 27,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 28,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 32,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/internalserver/Internal server.txt",
+      "line": 33,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 18,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 19,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 20,
+      "raw": "sw tru all vlan 60,99"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 25,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 26,
+      "raw": "sw acc vlan 60"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 30,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 31,
+      "raw": "sw acc vlan 60"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 32,
+      "raw": "sw voice vlan 90"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 35,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 36,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 40,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/management/management.txt",
+      "line": 41,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 5,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 6,
+      "raw": "standby 10 ip 192.168.10.1"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 7,
+      "raw": "standby 10 priority 110"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 8,
+      "raw": "standby 10 preempt"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 9,
+      "raw": "standby 10 track fa0/1"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 14,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 15,
+      "raw": "standby 20 ip 192.168.20.1"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 16,
+      "raw": "standby 20 priority 100"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 17,
+      "raw": "standby 20 preempt"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 22,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 23,
+      "raw": "standby 30 ip 192.168.30.1"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 24,
+      "raw": "standby 30 priority 110"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 25,
+      "raw": "standby 30 preempt"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 26,
+      "raw": "standby 30 track fa0/1"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 31,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 32,
+      "raw": "standby 40 ip 192.168.40.1"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 33,
+      "raw": "standby 40 priority 100"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 34,
+      "raw": "standby 40 preempt"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 39,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 40,
+      "raw": "standby 50 ip 192.168.50.1"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 41,
+      "raw": "standby 50 priority 110"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 42,
+      "raw": "standby 50 preempt"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 43,
+      "raw": "standby 50 track fa0/1"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 48,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 49,
+      "raw": "standby 60 ip 192.168.60.1"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 50,
+      "raw": "standby 60 priority 100"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 51,
+      "raw": "standby 60 preempt"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 56,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 57,
+      "raw": "standby 70 ip 192.168.70.1"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 58,
+      "raw": "standby 70 priority 110"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 59,
+      "raw": "standby 70 preempt"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 60,
+      "raw": "standby 70 track fa0/1"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 65,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 66,
+      "raw": "standby 80 ip 192.168.80.1"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 67,
+      "raw": "standby 80 priority 100"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 68,
+      "raw": "standby 80 preempt"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 73,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 74,
+      "raw": "standby 90 ip 192.168.90.1"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 75,
+      "raw": "standby 90 priority 110"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 76,
+      "raw": "standby 90 preempt"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 77,
+      "raw": "standby 90 track fa0/1"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls0/hsrp intvlan mls0.txt",
+      "line": 78,
+      "raw": "standby 90 track fa0/13"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 40,
+      "raw": "sw tru encap dot1q"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 41,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 42,
+      "raw": "sw tru nat vlan 99"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 43,
+      "raw": "sw trun all vlan 10,20,30,40,50,60,70,80,90,99"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 46,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 47,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 51,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls0/mls0.txt",
+      "line": 52,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/mls0/mls0routing.txt",
+      "line": 3,
+      "raw": "router ospf 10"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 8,
+      "raw": "ip route 10.10.10.1 255.255.255.255 192.168.200.1"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 9,
+      "raw": "ip route 10.10.10.1 255.255.255.255 192.168.90.3 200"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 11,
+      "raw": "ip dhcp pool vlan90"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 13,
+      "raw": "default-router 192.168.90.1"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls0/mls0voip.txt",
+      "line": 14,
+      "raw": "option 150 ip 10.10.10.1"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 5,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 6,
+      "raw": "standby 10 ip 192.168.10.1"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 7,
+      "raw": "standby 10 priority 100"
+    },
+    {
+      "interface": "vlan10",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 8,
+      "raw": "standby 10 preempt"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 13,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 14,
+      "raw": "standby 20 ip 192.168.20.1"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 15,
+      "raw": "standby 20 priority 110"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 16,
+      "raw": "standby 20 preempt"
+    },
+    {
+      "interface": "vlan20",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 17,
+      "raw": "standby 20 track fa0/1"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 22,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 23,
+      "raw": "standby 30 ip 192.168.30.1"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 24,
+      "raw": "standby 30 priority 100"
+    },
+    {
+      "interface": "vlan30",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 25,
+      "raw": "standby 30 preempt"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 30,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 31,
+      "raw": "standby 40 ip 192.168.40.1"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 32,
+      "raw": "standby 40 priority 110"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 33,
+      "raw": "standby 40 preempt"
+    },
+    {
+      "interface": "vlan40",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 34,
+      "raw": "standby 40 track fa0/1"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 39,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 40,
+      "raw": "standby 50 ip 192.168.50.1"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 41,
+      "raw": "standby 50 priority 100"
+    },
+    {
+      "interface": "vlan50",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 42,
+      "raw": "standby 50 preempt"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 47,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 48,
+      "raw": "standby 60 ip 192.168.60.1"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 49,
+      "raw": "standby 60 priority 110"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 50,
+      "raw": "standby 60 preempt"
+    },
+    {
+      "interface": "vlan60",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 51,
+      "raw": "standby 60 track fa0/1"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 56,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 57,
+      "raw": "standby 70 ip 192.168.70.1"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 58,
+      "raw": "standby 70 priority 100"
+    },
+    {
+      "interface": "vlan70",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 59,
+      "raw": "standby 70 preempt"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 64,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 65,
+      "raw": "standby 80 ip 192.168.80.1"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 66,
+      "raw": "standby 80 priority 110"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 67,
+      "raw": "standby 80 preempt"
+    },
+    {
+      "interface": "vlan80",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 68,
+      "raw": "standby 80 track fa0/1"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 73,
+      "raw": "standby version 2"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 74,
+      "raw": "standby 90 ip 192.168.90.1"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 75,
+      "raw": "standby 90 priority 100"
+    },
+    {
+      "interface": "vlan90",
+      "file": "Hospital network  simulation/mls1/hsrp intvlan mls1.txt",
+      "line": 76,
+      "raw": "standby 90 preempt"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "line": 8,
+      "raw": "ip route 10.10.10.1 255.255.255.255 192.168.201.1"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "line": 9,
+      "raw": "ip dhcp pool vlan90"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "line": 11,
+      "raw": "default-router 192.168.90.1"
+    },
+    {
+      "interface": "fa0/13",
+      "file": "Hospital network  simulation/mls1/mls1 voip.txt",
+      "line": 12,
+      "raw": "option 150 ip 10.10.10.1"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 40,
+      "raw": "sw tru encap dot1q"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 41,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 42,
+      "raw": "sw tru nat vlan 99"
+    },
+    {
+      "interface": "ra fa0/1- 13",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 43,
+      "raw": "sw trun all vlan 10,20,30,40,50,60,70,80,90,99"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 46,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/14-24",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 47,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 51,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/mls1/mls1.txt",
+      "line": 52,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/mls1/mls1routing.txt",
+      "line": 4,
+      "raw": "router ospf 10"
+    },
+    {
+      "interface": "port-channel 9",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 6,
+      "raw": "sw trunk encap dot1q"
+    },
+    {
+      "interface": "port-channel 9",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 7,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "port-channel 9",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 8,
+      "raw": "sw tru nat vlan 99"
+    },
+    {
+      "interface": "port-channel 9",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/ethcnlmls0&1.txt",
+      "line": 9,
+      "raw": "sw tru all vlan 10,20,30,40,50,60,70,80,90,99"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/syslog and https services.txt",
+      "line": 4,
+      "raw": "logging host 192.168.10.5"
+    },
+    {
+      "interface": "unknown",
+      "file": "Hospital network  simulation/mlsethcnlsyshttps/syslog and https services.txt",
+      "line": 5,
+      "raw": "logging trap debugging"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 15,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 16,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 17,
+      "raw": "sw tru all vlan 80,99"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 22,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "fa0/3",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 23,
+      "raw": "sw acc vlan 80"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 27,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/4-24",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 28,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 32,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/radius/radius.txt",
+      "line": 33,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 18,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 19,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 20,
+      "raw": "sw tru all vlan 20,99"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 25,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-4",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 26,
+      "raw": "sw acc vlan 20"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 30,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 31,
+      "raw": "sw acc vlan 20"
+    },
+    {
+      "interface": "fa0/5",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 32,
+      "raw": "sw voice vlan 90"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 35,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 36,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 40,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/reception/reception.txt",
+      "line": 41,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 15,
+      "raw": "sw mode tru"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 16,
+      "raw": "sw tru nati vlan 99"
+    },
+    {
+      "interface": "ra fa0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 17,
+      "raw": "sw tru all vlan 40,99"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 22,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/3-5",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 23,
+      "raw": "sw acc vlan 40"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 27,
+      "raw": "sw mode acc"
+    },
+    {
+      "interface": "ra fa0/6-24",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 28,
+      "raw": "sw acc vlan 999"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 32,
+      "raw": "sw mod acc"
+    },
+    {
+      "interface": "ra gig0/1-2",
+      "file": "Hospital network  simulation/wifi/wifi.txt",
+      "line": 33,
+      "raw": "sw acc vlan 999"
+    }
+  ],
+  "documents": [
+    {
+      "file": "Hospital network  simulation/ACL mls both/Acceslist planning.docx",
+      "text": "\nSource\nDestination\nAllowed\nWhy\nManagement (60)\nAlmost everywhere\nFull\nAdmin zone\nStaff/Reception (20/30)\nInternal Servers (10)\nYes\nFor Packet Tracer, permit all access (restrict to specific ports in real life).\nStaff/Reception (20/30)\nDMZ (100)(in firewall)\nSpecific ports (443/587/993)\nEmail, web services\nStaff/Reception (20/30)\nVoIP (90)\nYes\nDesk phones\nStaff/Reception (20/30)\nMgmt/WLC/RADIUS (60/70/80)\nNo\nNot admin\nCorp Wifi (40)\nInternal Servers (10)\nNo\nLeast privilege — wired covers this\nCorp Wifi (40)\nStaff/Reception (20/30)\nNo\nPrevent lateral movement from wireless\nCorp Wifi (40)\nMgmt/WLC/RADIUS (60/70/80)\nNo (except AP→WLC)\nNot admin; AP itself needs CAPWAP 5246 to WLC\nCorp Wifi (40)\nInternet/DMZ\nYes\nMobility use case\nGuest Wifi (50)\nAnything internal\nNo (except AP→WLC)\nFully isolated; AP itself needs CAPWAP 5246 to WLC\nGuest Wifi (50)\nInternet/DMZ\nYes\nGuest browsing only\nVoIP (90)\nInternal Servers (10)\nNo\nCME is self-contained on router\nInternal Servers (10)\nEverywhere\nNo (by default)\nServers respond, don't initiate\nDMZ (100)\nInternal (any)\nNo\nEnforced at ASA, not MLS\nAnywhere\nDMZ (100)\nYes (443/587/993 only)\nPublic-facing services, restricted ports\n\n",
+      "embedded_images": 0,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Firewall/SSH testing from inside host.docx",
+      "text": "Testing ssh of firewall,Note: I use bastion host only192.168.60.8 is permitted for ssh port only I have acl in mls as well for vlan 60so it blocks icmp request for vlan 60port ssh is open for remote hostonly necessary port is open as I want to make secure for management which has access to all vlan in internal network along with firewall remote access.Now go to desktop of management vlan and in command line typessh -l prasanta 192.168.120.1120.1 is interface of firewall connecting mls0while I have done for both mls0 and mls1ssh -l prasanta 192.168.120.1you can use ssh -l prasanta 192.168.130.1as I have done for mls0 and mls1I wanted to show case radius authentication for failed to do it here especially firewall doesn’t support aaa server command so I have to do localAnd for WIFI also I wanted to have radius authentication but have to do flexconnect and local authentication as wlc is buggy for dynamic interface I have multiple vlan setup with hsrp and ethernet channel .",
+      "embedded_images": 2,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Testing/SSH testing from inside host.docx",
+      "text": "Testing ssh of firewall,Note: I use bastion host only192.168.60.8 is permitted for ssh port only I have acl in mls as well for vlan 60so it blocks icmp request for vlan 60port ssh is open for remote hostonly necessary port is open as I want to make secure for management which has access to all vlan in internal network along with firewall remote access.Now go to desktop of management vlan and in command line typessh -l prasanta 192.168.120.1120.1 is interface of firewall connecting mls0while I have done for both mls0 and mls1ssh -l prasanta 192.168.120.1you can use ssh -l prasanta 192.168.130.1as I have done for mls0 and mls1I wanted to show case radius authentication for failed to do it here especially firewall doesn’t support aaa server command so I have to do localAnd for WIFI also I wanted to have radius authentication but have to do flexconnect and local authentication as wlc is buggy for dynamic interface I have multiple vlan setup with hsrp and ethernet channel .",
+      "embedded_images": 2,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Testing/VOIP test.docx",
+      "text": "For vlan 90,20 and 30 no acl is created in mls,Testing voip call from reception voip to hospitalstaff voipNote: both are in vlan 90I made sure both in vlan 90for voip phonealso one is in management.",
+      "embedded_images": 1,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Testing/mail server test and configuration.docx",
+      "text": "Before configuring mail server,You need to make acl and open port for SMTP(25) and POP3(110) and apply in interface dmz in same make acl for inside network mls0 and mls1 open permit any any or you can make specific rules you want to configure to block anything you want enterning gateway of interface . Necessary acl is already provided in firewall folder check that out.Now lets first configure static ip for mail server navigate destop and ip configuration and set static.\nNow navigate to services and turn on mail service\nCreate domain name  and user here,I used gmail.com because it doesn’t require dns setup for resolving in this packet tracer,Now login from dmz user1 and send msg to user2than login from vlan 20 pc and check that msg,\n\n\nSend,\nSuccess msg lets check from both internal side and from outside network internet side,\nNow lets check from internet side,\nDone mail service works.\n",
+      "embedded_images": 11,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Testing/ping test.docx",
+      "text": "From vlan 20 pc to web server,As expected public ip only able to ping not private of web server from inside also because we have done NAT hairpinning.\n\nSame for mail server from inside network ,\nLets try to ping from vlan 20 pc to vlan 30 pcpc of vlan 30 ip check first,\n\nFirst packet might fail to ping ,after you manually ping from vlan 20 pc to mls0 vlan 30 pc to mls0 than vlan 20 pc to vlan 30  pc it will be fixed, its just packet tracer working .Vlan 40 and 50 are blocked for pinging 20 and 30 deny and also vlan 40, 50 can reach internet except internal network. Also have given permit to access dmzweb service.",
+      "embedded_images": 4,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/Testing/web server test and configuration.docx",
+      "text": "Before configuring web server you have to make acl which is in firewall folder this is a follow up after that,First static ip for dmz web server,\nturn on https service ,simple now you can access from inside and outside network using https://60.60.60.3 I have already configured nat and nathairpinning for this. Lets check from outside network.\n\nI have used ai to make website you will get default website from packet tracer.lets test from inside network,Note: for inside network only vlan 20,30,40 and 50 are permitted.These are done through acl interface vlan so you wont find that acl in firewall its done in mls.\n",
+      "embedded_images": 4,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/WLC/wlc setp.docx",
+      "text": "This is a follow up after working intervlan routing,hsrp and ethernet channel.Setting up ip for management of wlcip add 192.168.70.5/24 net192.168.70.1 gateway\n\n\nAccesing web interface from any pc in internal network as upto now no access list is configured and so I will take management pcNavigate to web browser and type http://192.168.70.5 ,\nCreate admin username and password,\nMy admin name prasantapassword Project@1234Fill up these management and system setup,Employee networkand leave default for this,\nVerify and doublecheck details,\nPress apply and click ok,wait for a while ,just change http to https same address,\nNow login with admin username and password created,\n\nNow go to controller<interfaces and create new interface for me is wifi interface and guest wifi,\nI keep 0.0.0.0 for dhcp as dhcp is resolved from multilayerswitch  so keep default here,Fill exactly like this as my vlan 40, port is one connected from wlc to access switch,Same for guestwifi, vlan 50  , port 1,192.168. 50.5 ip interface, /24 network 50.1 hsrp virtual gateway.  Click apply,\n\n\n\n\n\n\n\n\nNow go to wlan and create new click go\n\n\nFill up these, mine will be wifi for internal staff,status enbled, put in creted wifi interface,Security tab click wpa +wpa2 and wpa2 policy  pskand create passphrase for it mine is Wifi@1234 for wifi ssid and for guestwifi it will be Guestwifi@1234\n\nNow we need to enbled flexconnect for our network topology as it wont work through normal default mode,Go to advanced,Now just create ap group name wifi and guest wifi and put wlan and ap there put right wlan and ap order.Its in WLAN  check left side and click ap group,Now add group,\nAfter adding put wifi ssid wlan inside wifi ap group created also wifiap in ap and apply,Same goes with guestwifi,\nClick from add new to add wlanNow for ap check wifi ap and press add now apply,After applying for both done now lets connect end devices,For laptop you need to trun off first so you can remove one adapter from it in physical tab and add wpc300n network adapter for wifi,and power back on same goes with pc,Navigate to config fill up  in wireless 0SSID wifi wpa2psk security layer you created and passphrase you choosed while creating WLAN, for me its wifi(wlan) passphrase is Wifi@1234.\neven after this it wont connect than go to pc wireless in desktop tab,here you can see ssid to connect and connect with passphrase you created done .As mine is already connected so,Similar process for guestwifi or any wifi ap you want to add in your network .",
+      "embedded_images": 25,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/dmz/mail server.docx",
+      "text": "Before configuring mail server,You need to make acl and open port for SMTP(25) and POP3(110) and apply in interface dmz in same make acl for inside network mls0 and mls1 open permit any any or you can make specific rules you want to configure to block anything you want enterning gateway of interface . Necessary acl is already provided in firewall folder check that out.Now lets first configure static ip for mail server navigate destop and ip configuration and set static.\nNow navigate to services and turn on mail service\nCreate domain name  and user here,I used gmail.com because it doesn’t require dns setup for resolving in this packet tracer,Now login from dmz user1 and send msg to user2than login from vlan 20 pc and check that msg,\n\n\nSend,\nSuccess msg lets check from both internal side and from outside network internet side,\nNow lets check from internet side,\nDone mail service works.",
+      "embedded_images": 11,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/dmz/web server.docx",
+      "text": "Before configuring web server you have to make acl which is in firewall folder this is a follow up after that,First static ip for dmz web server,\nturn on https service ,simple now you can access from inside and outside network using https://60.60.60.3 I have already configured nat and nathairpinning for this. Lets check from outside network.\n\nI have used ai to make website you will get default website from packet tracer.lets test from inside network,Note: for inside network only vlan 20,30,40 and 50 are permitted.These are done through acl interface vlan so you wont find that acl in firewall its done in mls.",
+      "embedded_images": 4,
+      "status": "text extracted; historical images not new observations"
+    },
+    {
+      "file": "Hospital network  simulation/internalserver/sys,ftpand httpsint.docx",
+      "text": "Syslog configurationset an static ip as it’s a server,follow that image ip scheme 192.168.10.5/24 where .1 is gateway,Now navigate to services,turn off http as it is insecure,Now turn on syslog services,Now got to mls and type syslog config command in both mls as we have redundancy setup,and see now after closing and reopening pkt tracer to see if it works or not,it worked.Now https service turned on,here I used ai to create simple sample for website so I deleted default and add on, import,Now lets check this website from staff pc,open browser type https://192.168.10.5 ,Now lets turn on ftp service and create username and password,Here I am using ftp which is only possible but in real life we will be using more secure transfer protocol like SMB version 2 or similar,Now lets open ftp from staff pcftp 192.168.10.5Navigate command prompt desktop in staff pc,I logged in using username and passwordlets see ftp directory of server,lets transfer file to ftp server from this desktop as we have sample file in tftp in staff pc,\nNow lets check in ftp server side,look file is trnsfered.FTP service is running properly.",
+      "embedded_images": 17,
+      "status": "text extracted; historical images not new observations"
+    }
+  ],
+  "unknowns": [
+    "Saved .pkt state vs text configurations not yet compared",
+    "Live endpoint names/IPs and external target unknown",
+    "RADIUS IP and enabled services unknown",
+    "SSID/authentication documented, not yet observed",
+    "Embedded historical screenshots not re-executed",
+    "Two misnamed .docx files not readable as OOXML"
+  ]
+}

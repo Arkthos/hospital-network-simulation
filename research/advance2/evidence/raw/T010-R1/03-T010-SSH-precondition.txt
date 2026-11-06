@@ -1,0 +1,19 @@
+IP Configuration
+192.168.80.1
+DNS Server
+IP Address
+0.0.0.0
+Default Gateway
+255.255.255.0
+Subnet Mask
+192.168.80.5
+IPv6 Address
+Link Local Address
+IPv6 Gateway
+IPv6 DNS Server
+FE80::2E0:A3FF:FED1:7B6A
+IPv6 Configuration
+/
+Authentication
+Username
+Password

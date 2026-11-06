@@ -1,0 +1,68 @@
+[
+  {
+    "file": "Hospital network  simulation/ACL mls both/Acceslist planning.docx",
+    "text": "\nSource\nDestination\nAllowed\nWhy\nManagement (60)\nAlmost everywhere\nFull\nAdmin zone\nStaff/Reception (20/30)\nInternal Servers (10)\nYes\nFor Packet Tracer, permit all access (restrict to specific ports in real life).\nStaff/Reception (20/30)\nDMZ (100)(in firewall)\nSpecific ports (443/587/993)\nEmail, web services\nStaff/Reception (20/30)\nVoIP (90)\nYes\nDesk phones\nStaff/Reception (20/30)\nMgmt/WLC/RADIUS (60/70/80)\nNo\nNot admin\nCorp Wifi (40)\nInternal Servers (10)\nNo\nLeast privilege — wired covers this\nCorp Wifi (40)\nStaff/Reception (20/30)\nNo\nPrevent lateral movement from wireless\nCorp Wifi (40)\nMgmt/WLC/RADIUS (60/70/80)\nNo (except AP→WLC)\nNot admin; AP itself needs CAPWAP 5246 to WLC\nCorp Wifi (40)\nInternet/DMZ\nYes\nMobility use case\nGuest Wifi (50)\nAnything internal\nNo (except AP→WLC)\nFully isolated; AP itself needs CAPWAP 5246 to WLC\nGuest Wifi (50)\nInternet/DMZ\nYes\nGuest browsing only\nVoIP (90)\nInternal Servers (10)\nNo\nCME is self-contained on router\nInternal Servers (10)\nEverywhere\nNo (by default)\nServers respond, don't initiate\nDMZ (100)\nInternal (any)\nNo\nEnforced at ASA, not MLS\nAnywhere\nDMZ (100)\nYes (443/587/993 only)\nPublic-facing services, restricted ports\n\n",
+    "embedded_images": 0,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Firewall/SSH testing from inside host.docx",
+    "text": "Testing ssh of firewall,Note: I use bastion host only192.168.60.8 is permitted for ssh port only I have acl in mls as well for vlan 60so it blocks icmp request for vlan 60port ssh is open for remote hostonly necessary port is open as I want to make secure for management which has access to all vlan in internal network along with firewall remote access.Now go to desktop of management vlan and in command line typessh -l prasanta 192.168.120.1120.1 is interface of firewall connecting mls0while I have done for both mls0 and mls1ssh -l prasanta 192.168.120.1you can use ssh -l prasanta 192.168.130.1as I have done for mls0 and mls1I wanted to show case radius authentication for failed to do it here especially firewall doesn’t support aaa server command so I have to do localAnd for WIFI also I wanted to have radius authentication but have to do flexconnect and local authentication as wlc is buggy for dynamic interface I have multiple vlan setup with hsrp and ethernet channel .",
+    "embedded_images": 2,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Testing/SSH testing from inside host.docx",
+    "text": "Testing ssh of firewall,Note: I use bastion host only192.168.60.8 is permitted for ssh port only I have acl in mls as well for vlan 60so it blocks icmp request for vlan 60port ssh is open for remote hostonly necessary port is open as I want to make secure for management which has access to all vlan in internal network along with firewall remote access.Now go to desktop of management vlan and in command line typessh -l prasanta 192.168.120.1120.1 is interface of firewall connecting mls0while I have done for both mls0 and mls1ssh -l prasanta 192.168.120.1you can use ssh -l prasanta 192.168.130.1as I have done for mls0 and mls1I wanted to show case radius authentication for failed to do it here especially firewall doesn’t support aaa server command so I have to do localAnd for WIFI also I wanted to have radius authentication but have to do flexconnect and local authentication as wlc is buggy for dynamic interface I have multiple vlan setup with hsrp and ethernet channel .",
+    "embedded_images": 2,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Testing/VOIP test.docx",
+    "text": "For vlan 90,20 and 30 no acl is created in mls,Testing voip call from reception voip to hospitalstaff voipNote: both are in vlan 90I made sure both in vlan 90for voip phonealso one is in management.",
+    "embedded_images": 1,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Testing/mail server test and configuration.docx",
+    "text": "Before configuring mail server,You need to make acl and open port for SMTP(25) and POP3(110) and apply in interface dmz in same make acl for inside network mls0 and mls1 open permit any any or you can make specific rules you want to configure to block anything you want enterning gateway of interface . Necessary acl is already provided in firewall folder check that out.Now lets first configure static ip for mail server navigate destop and ip configuration and set static.\nNow navigate to services and turn on mail service\nCreate domain name  and user here,I used gmail.com because it doesn’t require dns setup for resolving in this packet tracer,Now login from dmz user1 and send msg to user2than login from vlan 20 pc and check that msg,\n\n\nSend,\nSuccess msg lets check from both internal side and from outside network internet side,\nNow lets check from internet side,\nDone mail service works.\n",
+    "embedded_images": 11,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Testing/ping test.docx",
+    "text": "From vlan 20 pc to web server,As expected public ip only able to ping not private of web server from inside also because we have done NAT hairpinning.\n\nSame for mail server from inside network ,\nLets try to ping from vlan 20 pc to vlan 30 pcpc of vlan 30 ip check first,\n\nFirst packet might fail to ping ,after you manually ping from vlan 20 pc to mls0 vlan 30 pc to mls0 than vlan 20 pc to vlan 30  pc it will be fixed, its just packet tracer working .Vlan 40 and 50 are blocked for pinging 20 and 30 deny and also vlan 40, 50 can reach internet except internal network. Also have given permit to access dmzweb service.",
+    "embedded_images": 4,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/Testing/web server test and configuration.docx",
+    "text": "Before configuring web server you have to make acl which is in firewall folder this is a follow up after that,First static ip for dmz web server,\nturn on https service ,simple now you can access from inside and outside network using https://60.60.60.3 I have already configured nat and nathairpinning for this. Lets check from outside network.\n\nI have used ai to make website you will get default website from packet tracer.lets test from inside network,Note: for inside network only vlan 20,30,40 and 50 are permitted.These are done through acl interface vlan so you wont find that acl in firewall its done in mls.\n",
+    "embedded_images": 4,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/WLC/wlc setp.docx",
+    "text": "This is a follow up after working intervlan routing,hsrp and ethernet channel.Setting up ip for management of wlcip add 192.168.70.5/24 net192.168.70.1 gateway\n\n\nAccesing web interface from any pc in internal network as upto now no access list is configured and so I will take management pcNavigate to web browser and type http://192.168.70.5 ,\nCreate admin username and password,\nMy admin name prasantapassword Project@1234Fill up these management and system setup,Employee networkand leave default for this,\nVerify and doublecheck details,\nPress apply and click ok,wait for a while ,just change http to https same address,\nNow login with admin username and password created,\n\nNow go to controller<interfaces and create new interface for me is wifi interface and guest wifi,\nI keep 0.0.0.0 for dhcp as dhcp is resolved from multilayerswitch  so keep default here,Fill exactly like this as my vlan 40, port is one connected from wlc to access switch,Same for guestwifi, vlan 50  , port 1,192.168. 50.5 ip interface, /24 network 50.1 hsrp virtual gateway.  Click apply,\n\n\n\n\n\n\n\n\nNow go to wlan and create new click go\n\n\nFill up these, mine will be wifi for internal staff,status enbled, put in creted wifi interface,Security tab click wpa +wpa2 and wpa2 policy  pskand create passphrase for it mine is Wifi@1234 for wifi ssid and for guestwifi it will be Guestwifi@1234\n\nNow we need to enbled flexconnect for our network topology as it wont work through normal default mode,Go to advanced,Now just create ap group name wifi and guest wifi and put wlan and ap there put right wlan and ap order.Its in WLAN  check left side and click ap group,Now add group,\nAfter adding put wifi ssid wlan inside wifi ap group created also wifiap in ap and apply,Same goes with guestwifi,\nClick from add new to add wlanNow for ap check wifi ap and press add now apply,After applying for both done now lets connect end devices,For laptop you need to trun off first so you can remove one adapter from it in physical tab and add wpc300n network adapter for wifi,and power back on same goes with pc,Navigate to config fill up  in wireless 0SSID wifi wpa2psk security layer you created and passphrase you choosed while creating WLAN, for me its wifi(wlan) passphrase is Wifi@1234.\neven after this it wont connect than go to pc wireless in desktop tab,here you can see ssid to connect and connect with passphrase you created done .As mine is already connected so,Similar process for guestwifi or any wifi ap you want to add in your network .",
+    "embedded_images": 25,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/dmz/mail server.docx",
+    "text": "Before configuring mail server,You need to make acl and open port for SMTP(25) and POP3(110) and apply in interface dmz in same make acl for inside network mls0 and mls1 open permit any any or you can make specific rules you want to configure to block anything you want enterning gateway of interface . Necessary acl is already provided in firewall folder check that out.Now lets first configure static ip for mail server navigate destop and ip configuration and set static.\nNow navigate to services and turn on mail service\nCreate domain name  and user here,I used gmail.com because it doesn’t require dns setup for resolving in this packet tracer,Now login from dmz user1 and send msg to user2than login from vlan 20 pc and check that msg,\n\n\nSend,\nSuccess msg lets check from both internal side and from outside network internet side,\nNow lets check from internet side,\nDone mail service works.",
+    "embedded_images": 11,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/dmz/web server.docx",
+    "text": "Before configuring web server you have to make acl which is in firewall folder this is a follow up after that,First static ip for dmz web server,\nturn on https service ,simple now you can access from inside and outside network using https://60.60.60.3 I have already configured nat and nathairpinning for this. Lets check from outside network.\n\nI have used ai to make website you will get default website from packet tracer.lets test from inside network,Note: for inside network only vlan 20,30,40 and 50 are permitted.These are done through acl interface vlan so you wont find that acl in firewall its done in mls.",
+    "embedded_images": 4,
+    "status": "text extracted; historical images not new observations"
+  },
+  {
+    "file": "Hospital network  simulation/internalserver/sys,ftpand httpsint.docx",
+    "text": "Syslog configurationset an static ip as it’s a server,follow that image ip scheme 192.168.10.5/24 where .1 is gateway,Now navigate to services,turn off http as it is insecure,Now turn on syslog services,Now got to mls and type syslog config command in both mls as we have redundancy setup,and see now after closing and reopening pkt tracer to see if it works or not,it worked.Now https service turned on,here I used ai to create simple sample for website so I deleted default and add on, import,Now lets check this website from staff pc,open browser type https://192.168.10.5 ,Now lets turn on ftp service and create username and password,Here I am using ftp which is only possible but in real life we will be using more secure transfer protocol like SMB version 2 or similar,Now lets open ftp from staff pcftp 192.168.10.5Navigate command prompt desktop in staff pc,I logged in using username and passwordlets see ftp directory of server,lets transfer file to ftp server from this desktop as we have sample file in tftp in staff pc,\nNow lets check in ftp server side,look file is trnsfered.FTP service is running properly.",
+    "embedded_images": 17,
+    "status": "text extracted; historical images not new observations"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "test_id": "T002-R1",
+  "timestamp": "2026-11-05T15:50:20.690Z",
+  "source": "192.168.50.25",
+  "destination": "192.168.10.5",
+  "method": "Packet Tracer Smartphone0 > Desktop > Command Prompt: ping 192.168.10.5",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "strongly_supported",
+  "positive_control_runs": [
+    "T001-R1",
+    "T013-R1"
+  ],
+  "destination_verified": true,
+  "notes": "Guest WLAN guestwifi 192.168.50.25/24 gateway .50.1. Completed series: 4/4 Destination host unreachable from 192.168.50.2; no destination echoes. Positive controls: same Guest reached external PC2, staff PC1(1) reached this server. Both MLS running-config show guestwifi in VLAN50 and intserver out VLAN10 with corresponding denies; directly connected route exists. ACL cause strongly supported, not confirmed by PDU or counter delta. Repetition began and partial capture contains two identical unreachable messages; session later closed, so no complete second-series count is asserted. No configuration changed.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T002-R1/01-T002-series1-0.jpg",
+      "sha256": "d56216c1119c6bf9f1f7a7592f70fd68f9f224ae2978c4b0b7b948aa8c248f0f"
+    },
+    {
+      "path": "evidence/raw/T002-R1/02-T002-series1.capture.json",
+      "sha256": "ee3cf78ef9684e1efa0b8a5f4acc43d196a4191f0814d627833182e45055dd44"
+    },
+    {
+      "path": "evidence/raw/T002-R1/03-T002-series1.txt",
+      "sha256": "8a84fff9686276fd1aac201ba61f714f04f951be1f3a69ffeaad8cc1d7deb8e0"
+    },
+    {
+      "path": "evidence/raw/T002-R1/04-T002-series2-0.jpg",
+      "sha256": "45cbf25d856e021603e9de02849bb248584db5c6814cc0a7607dad7befebc12f"
+    },
+    {
+      "path": "evidence/raw/T002-R1/05-T002-series2.capture.json",
+      "sha256": "26616cb27cb4f6abb89be845349bdbc103629ddf3e6c1f5dd1d1c377f95715b4"
+    },
+    {
+      "path": "evidence/raw/T002-R1/06-T002-series2.txt",
+      "sha256": "3fde56afd83d5b2a1cc0fc10540098a68368852d9d5a811ae589daacaa296f8b"
+    },
+    {
+      "path": "evidence/raw/T002-R1/07-guest-ipconfig.txt",
+      "sha256": "a49f3bf7096e39f642964fec08e036937a810477a268a06cf6cc6f33304f5fc9"
+    },
+    {
+      "path": "evidence/raw/T002-R1/08-guest-ipconfig.jpg",
+      "sha256": "6d42527714072b953653c7ee56feb52978cb8c576d733993c14d2d7fdf6dfeda"
+    },
+    {
+      "path": "evidence/raw/T002-R1/09-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T002-R1/10-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T002-R1/11-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

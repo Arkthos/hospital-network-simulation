@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-11-06T00:03:31.378Z",
+  "window": {
+    "app": "process:C:\\Program Files\\Cisco Packet Tracer 9.0.1\\bin\\PacketTracer.exe",
+    "id": 5967708,
+    "title": "Server4"
+  },
+  "artifacts": [
+    "T010-SSH-precondition.txt",
+    "T010-SSH-precondition-0.jpg"
+  ]
+}

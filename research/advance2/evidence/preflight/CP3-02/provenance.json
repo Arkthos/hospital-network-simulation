@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-11-06T00:47:36.472256+00:00",
+  "original_sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe",
+  "saved_runtime_sha256": "990d282545cc37295af7236228a8acf30981dd4ad835ffc71307b740f9db2812",
+  "saved_runtime_bytes": 254166,
+  "runtime_last_write_utc": "2026-11-05T23:38:40.683573+00:00",
+  "runtime_last_write_costa_rica": "2026-11-05T17:38:40-06:00",
+  "user_statement": "Sí, lo guardé sin cambiar configuración",
+  "assessment": "User attests saving the runtime copy without configuration changes. Binary equality with original is false. Original baseline files remain hash-verified. This is a provenance limitation; no claim that serialization changes explain all binary differences. Existing observations and manifests are retained unchanged.",
+  "affected_runs": [
+    "T006-R1",
+    "T009-R1",
+    "T010-R1",
+    "T013-R2",
+    "T007-R1",
+    "T011-R1",
+    "T008-R1",
+    "T001-R2",
+    "T012-R1",
+    "T003-R1",
+    "T004-R1",
+    "T005-R1",
+    "T014-R1"
+  ]
+}

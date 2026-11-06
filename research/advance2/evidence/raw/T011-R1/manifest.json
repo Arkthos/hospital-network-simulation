@@ -1,0 +1,88 @@
+{
+  "test_id": "T011-R1",
+  "timestamp": "2026-11-06T00:12:07.010Z",
+  "source": "192.168.30.22",
+  "destination": "192.168.80.5",
+  "method": "Packet Tracer simulated Command Prompt: ping 192.168.80.5; two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "strongly_supported",
+  "positive_control_runs": [
+    "T013-R2"
+  ],
+  "destination_verified": true,
+  "notes": "PC1(1) VLAN30 .30.22/24 gateway .30.1. Both series returned four Destination host unreachable from 192.168.30.2, zero destination echoes. Source positive control T013-R2 succeeded. RADIUS endpoint .80.5/24 gateway .80.1 inspected in current session, with HTTP/HTTPS services On. Both MLS apply radius out VLAN80 and explicit subnet30 deny; direct route exists. Destination IP/service readiness is inspection evidence, not a successful remote ICMP control to RADIUS. Gateway rejection plus configuration strongly supports ACL cause without PDU/counter confirmation. No changes.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T011-R1/01-T011-series1-complete-0.jpg",
+      "sha256": "94c18f5f2570bcbf8a452897f21241422936c802058eb97df5468f4f6bf924bb"
+    },
+    {
+      "path": "evidence/raw/T011-R1/02-T011-series1-complete.capture.json",
+      "sha256": "fea643e4de1fcd3c04ab68947d1a93a3d3315e71db3b6341699b1535423162ba"
+    },
+    {
+      "path": "evidence/raw/T011-R1/03-T011-series1-complete.txt",
+      "sha256": "48a562a4504ca9139fefd42c25df91dfa4072ad5b2d959ffd570e3bc8e284bb7"
+    },
+    {
+      "path": "evidence/raw/T011-R1/04-T011-series2-complete-0.jpg",
+      "sha256": "9d8d25104ba3bb91e22bbc7c5f336d438277a5efebecb72a1844899397ee9084"
+    },
+    {
+      "path": "evidence/raw/T011-R1/05-T011-series2-complete.capture.json",
+      "sha256": "c2704002831f18c25c4f830faee0c0238353390b34151ee0e9c9d171971da767"
+    },
+    {
+      "path": "evidence/raw/T011-R1/06-T011-series2-complete.txt",
+      "sha256": "ea1b9639c16c5bb64554779a80e9e1f3c0ec75960f09cbefde4e6fa8df5664e7"
+    },
+    {
+      "path": "evidence/raw/T011-R1/07-session3-staff-ipconfig-0.jpg",
+      "sha256": "823082bd9301b3dcd900642e770b88b7732acb3953f4ca7a4cd04f3efe223ffd"
+    },
+    {
+      "path": "evidence/raw/T011-R1/08-session3-staff-ipconfig.capture.json",
+      "sha256": "ec598d709ef3fd1722ae227c441c8f5062497cb747279162b609ceedc49ff7b9"
+    },
+    {
+      "path": "evidence/raw/T011-R1/09-session3-radius-ipconfig-0.jpg",
+      "sha256": "fe774c61a79c30e9842e101ae99988e925e83ddfc73d3d085c37291c6b36c0f1"
+    },
+    {
+      "path": "evidence/raw/T011-R1/10-session3-radius-ipconfig.capture.json",
+      "sha256": "f3b410cff704c3d266b1114d189f4e5f980d58b4fefe1b469abd61f68f204f89"
+    },
+    {
+      "path": "evidence/raw/T011-R1/11-T010-SSH-precondition-0.jpg",
+      "sha256": "0f6d708b135138c7bb87ce9198d74371e169b983561c3d821d69628219d2673a"
+    },
+    {
+      "path": "evidence/raw/T011-R1/12-T010-SSH-precondition.capture.json",
+      "sha256": "b86c3654955a2538ff5c251bd40e60643a15f91cdc9481de2fbecb926a14ad9c"
+    },
+    {
+      "path": "evidence/raw/T011-R1/13-T010-SSH-precondition.txt",
+      "sha256": "70e504d524d87618491fdea825db67571c0c66d997aa5a9a4567a3e3e74ab27f"
+    },
+    {
+      "path": "evidence/raw/T011-R1/14-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T011-R1/15-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T011-R1/16-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

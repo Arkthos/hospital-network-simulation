@@ -1,0 +1,81 @@
+acl,sequence,action,protocol,source,source_wildcard,source_port,destination,destination_wildcard,destination_port,file,line,raw
+guestwifi,1,permit,udp,0.0.0.0,255.255.255.255,68,0.0.0.0,255.255.255.255,67,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,4,permit udp any eq 68 any eq 67
+guestwifi,2,permit,udp,192.168.50.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5246,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,5,permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+guestwifi,3,permit,udp,192.168.50.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5247,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,6,permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+guestwifi,4,deny,ip,192.168.50.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,7,deny ip 192.168.50.0 0.0.0.255 192.168.10.0 0.0.0.255
+guestwifi,5,deny,ip,192.168.50.0,0.0.0.255,any,192.168.20.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,8,deny ip 192.168.50.0 0.0.0.255 192.168.20.0 0.0.0.255
+guestwifi,6,deny,ip,192.168.50.0,0.0.0.255,any,192.168.30.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,9,deny ip 192.168.50.0 0.0.0.255 192.168.30.0 0.0.0.255
+guestwifi,7,deny,ip,192.168.50.0,0.0.0.255,any,192.168.40.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,10,deny ip 192.168.50.0 0.0.0.255 192.168.40.0 0.0.0.255
+guestwifi,8,deny,ip,192.168.50.0,0.0.0.255,any,192.168.60.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,11,deny ip 192.168.50.0 0.0.0.255 192.168.60.0 0.0.0.255
+guestwifi,9,deny,ip,192.168.50.0,0.0.0.255,any,192.168.70.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,12,deny ip 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255
+guestwifi,10,deny,ip,192.168.50.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,13,deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+guestwifi,11,deny,ip,192.168.50.0,0.0.0.255,any,192.168.90.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,14,deny ip 192.168.50.0 0.0.0.255 192.168.90.0 0.0.0.255
+guestwifi,12,permit,ip,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,15,permit ip any any
+intserver,1,permit,ip,192.168.20.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,4,permit ip 192.168.20.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,2,permit,ip,192.168.30.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,5,permit ip 192.168.30.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,3,permit,ip,192.168.60.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,6,permit ip 192.168.60.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,4,deny,ip,192.168.40.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,7,deny ip 192.168.40.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,5,deny,ip,192.168.50.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,8,deny ip 192.168.50.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,6,deny,ip,192.168.70.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,9,deny ip 192.168.70.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,7,deny,ip,192.168.80.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,10,deny ip 192.168.80.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,8,deny,ip,192.168.90.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,11,deny ip 192.168.90.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,9,deny,ip,192.168.100.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,12,deny ip 192.168.100.0  0.0.0.255 192.168.10.0 0.0.0.255
+intserver,10,deny,ip,0.0.0.0,255.255.255.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/intserveracl mls.txt,13,deny ip any 192.168.10.0 0.0.0.255
+management,1,permit,udp,0.0.0.0,255.255.255.255,68,0.0.0.0,255.255.255.255,67,Hospital network  simulation/ACL mls both/mgmtacl mls.txt,4,permit udp any eq 68 any eq 67
+management,2,permit,tcp,192.168.60.8,0.0.0.0,any,0.0.0.0,255.255.255.255,22,Hospital network  simulation/ACL mls both/mgmtacl mls.txt,5,permit tcp host 192.168.60.8 any eq 22
+management,3,permit,tcp,192.168.60.8,0.0.0.0,any,192.168.70.5,0.0.0.0,443,Hospital network  simulation/ACL mls both/mgmtacl mls.txt,6,permit tcp host 192.168.60.8 host 192.168.70.5 eq 443
+management,4,deny,ip,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/ACL mls both/mgmtacl mls.txt,7,deny ip any any
+radius,1,deny,ip,192.168.10.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,4,deny ip 192.168.10.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,2,deny,ip,192.168.20.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,5,deny ip 192.168.20.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,3,deny,ip,192.168.30.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,6,deny ip 192.168.30.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,4,deny,ip,192.168.40.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,7,deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,5,deny,ip,192.168.50.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,8,deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,6,permit,ip,192.168.60.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,9,permit ip 192.168.60.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,7,deny,ip,192.168.70.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,10,deny ip 192.168.70.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,8,deny,ip,192.168.90.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,11,deny ip 192.168.90.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,9,deny,ip,192.168.100.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,12,deny ip 192.168.100.0 0.0.0.255 192.168.80.0 0.0.0.255
+radius,10,deny,ip,0.0.0.0,255.255.255.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/radiusacl mls.txt,13,deny ip any 192.168.80.0 0.0.0.255
+wifi,1,permit,udp,0.0.0.0,255.255.255.255,68,0.0.0.0,255.255.255.255,67,Hospital network  simulation/ACL mls both/wifiaclmls.txt,4,permit udp any eq 68 any eq 67
+wifi,2,permit,udp,192.168.40.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5246,Hospital network  simulation/ACL mls both/wifiaclmls.txt,5,permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+wifi,3,permit,udp,192.168.40.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5247,Hospital network  simulation/ACL mls both/wifiaclmls.txt,6,permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+wifi,4,deny,ip,192.168.40.0,0.0.0.255,any,192.168.10.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,7,deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255
+wifi,5,deny,ip,192.168.40.0,0.0.0.255,any,192.168.20.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,8,deny ip 192.168.40.0 0.0.0.255 192.168.20.0 0.0.0.255
+wifi,6,deny,ip,192.168.40.0,0.0.0.255,any,192.168.30.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,9,deny ip 192.168.40.0 0.0.0.255 192.168.30.0 0.0.0.255
+wifi,7,deny,ip,192.168.40.0,0.0.0.255,any,192.168.50.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,10,deny ip 192.168.40.0 0.0.0.255 192.168.50.0 0.0.0.255
+wifi,8,deny,ip,192.168.40.0,0.0.0.255,any,192.168.60.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,11,deny ip 192.168.40.0 0.0.0.255 192.168.60.0 0.0.0.255
+wifi,9,permit,udp,192.168.40.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5246,Hospital network  simulation/ACL mls both/wifiaclmls.txt,12,permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+wifi,10,permit,udp,192.168.40.0,0.0.0.255,any,192.168.70.0,0.0.0.255,5247,Hospital network  simulation/ACL mls both/wifiaclmls.txt,13,permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+wifi,11,deny,ip,192.168.40.0,0.0.0.255,any,192.168.70.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,14,deny ip 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255
+wifi,12,deny,ip,192.168.40.0,0.0.0.255,any,192.168.80.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,15,deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+wifi,13,deny,ip,192.168.40.0,0.0.0.255,any,192.168.90.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,16,deny ip 192.168.40.0 0.0.0.255 192.168.90.0 0.0.0.255
+wifi,14,permit,ip,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/ACL mls both/wifiaclmls.txt,17,permit ip any any
+wlc,1,permit,ip,192.168.70.0,0.0.0.255,any,192.168.60.0,0.0.0.255,any,Hospital network  simulation/ACL mls both/wlcacl mls.txt,4,permit ip 192.168.70.0 0.0.0.255 192.168.60.0 0.0.0.255
+wlc,2,permit,udp,192.168.70.0,0.0.0.255,any,192.168.40.0,0.0.0.255,5246,Hospital network  simulation/ACL mls both/wlcacl mls.txt,5,permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5246
+wlc,3,permit,udp,192.168.70.0,0.0.0.255,any,192.168.40.0,0.0.0.255,5247,Hospital network  simulation/ACL mls both/wlcacl mls.txt,6,permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5247
+wlc,4,permit,udp,192.168.70.0,0.0.0.255,any,192.168.50.0,0.0.0.255,5246,Hospital network  simulation/ACL mls both/wlcacl mls.txt,7,permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5246
+wlc,5,permit,udp,192.168.70.0,0.0.0.255,any,192.168.50.0,0.0.0.255,5247,Hospital network  simulation/ACL mls both/wlcacl mls.txt,8,permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5247
+wlc,6,deny,ip,192.168.70.0,0.0.0.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/ACL mls both/wlcacl mls.txt,9,deny ip 192.168.70.0 0.0.0.255 any
+INSIDE-ACCESS,1,permit,icmp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/Firewall/acl inside.txt,2,access-list INSIDE-ACCESS extended permit icmp any any
+INSIDE-ACCESS,2,permit,tcp,0.0.0.0,255.255.255.255,any,192.168.100.5,0.0.0.0,443,Hospital network  simulation/Firewall/acl inside.txt,3,access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.5 eq 443
+INSIDE-ACCESS,3,permit,tcp,0.0.0.0,255.255.255.255,any,192.168.100.8,0.0.0.0,25,Hospital network  simulation/Firewall/acl inside.txt,4,access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 25
+INSIDE-ACCESS,4,permit,tcp,0.0.0.0,255.255.255.255,any,192.168.100.8,0.0.0.0,110,Hospital network  simulation/Firewall/acl inside.txt,5,access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 110
+INSIDE-ACCESS,5,permit,tcp,0.0.0.0,255.255.255.255,any,192.168.100.8,0.0.0.0,995,Hospital network  simulation/Firewall/acl inside.txt,6,access-list INSIDE-ACCESS extended permit tcp any host 192.168.100.8 eq 995
+INSIDE-ACCESS,6,permit,udp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,domain,Hospital network  simulation/Firewall/acl inside.txt,7,access-list INSIDE-ACCESS extended permit udp any any eq domain
+INSIDE-ACCESS,7,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,domain,Hospital network  simulation/Firewall/acl inside.txt,8,access-list INSIDE-ACCESS extended permit tcp any any eq domain
+INSIDE-ACCESS,8,permit,ip,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/Firewall/acl inside.txt,9,access-list INSIDE-ACCESS extended permit ip any any
+INTERNET-ACCESS,1,permit,icmp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/Firewall/aclisp fw.txt,3,access-list INTERNET-ACCESS extended permit icmp any any
+INTERNET-ACCESS,2,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,53,Hospital network  simulation/Firewall/aclisp fw.txt,4,access-list INTERNET-ACCESS extended permit tcp any any eq 53
+INTERNET-ACCESS,3,permit,udp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,53,Hospital network  simulation/Firewall/aclisp fw.txt,5,access-list INTERNET-ACCESS extended permit udp any any eq 53
+INTERNET-ACCESS,4,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,80,Hospital network  simulation/Firewall/aclisp fw.txt,6,access-list INTERNET-ACCESS extended permit tcp any any eq 80
+INTERNET-ACCESS,5,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,8080,Hospital network  simulation/Firewall/aclisp fw.txt,7,access-list INTERNET-ACCESS extended permit tcp any any eq 8080
+INTERNET-ACCESS,6,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,443,Hospital network  simulation/Firewall/aclisp fw.txt,8,access-list INTERNET-ACCESS extended permit tcp any any eq 443
+INTERNET-ACCESS,7,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,25,Hospital network  simulation/Firewall/aclisp fw.txt,9,access-list INTERNET-ACCESS extended permit tcp any any eq 25
+INTERNET-ACCESS,8,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,110,Hospital network  simulation/Firewall/aclisp fw.txt,10,access-list INTERNET-ACCESS extended permit tcp any any eq 110
+DMZ-ACCESS,1,permit,icmp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,any,Hospital network  simulation/Firewall/firewall dmzacl.txt,3,access-list DMZ-ACCESS extended permit icmp any any
+DMZ-ACCESS,2,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,443,Hospital network  simulation/Firewall/firewall dmzacl.txt,4,access-list DMZ-ACCESS extended permit tcp any any eq 443
+DMZ-ACCESS,3,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,25,Hospital network  simulation/Firewall/firewall dmzacl.txt,5,access-list DMZ-ACCESS extended permit tcp any any eq 25
+DMZ-ACCESS,4,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,110,Hospital network  simulation/Firewall/firewall dmzacl.txt,6,access-list DMZ-ACCESS extended permit tcp any any eq 110
+DMZ-ACCESS,5,permit,udp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,67,Hospital network  simulation/Firewall/firewall dmzacl.txt,7,access-list DMZ-ACCESS extended permit udp any any eq 67
+DMZ-ACCESS,6,permit,udp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,68,Hospital network  simulation/Firewall/firewall dmzacl.txt,8,access-list DMZ-ACCESS extended permit udp any any eq 68
+DMZ-ACCESS,7,permit,tcp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,53,Hospital network  simulation/Firewall/firewall dmzacl.txt,9,access-list DMZ-ACCESS extended permit tcp any any eq 53
+DMZ-ACCESS,8,permit,udp,0.0.0.0,255.255.255.255,any,0.0.0.0,255.255.255.255,53,Hospital network  simulation/Firewall/firewall dmzacl.txt,10,access-list DMZ-ACCESS extended permit udp any any eq 53

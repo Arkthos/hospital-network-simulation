@@ -1,0 +1,14 @@
+{
+  "test_id": "T003",
+  "timestamp": "",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "packet_tracer_version": "",
+  "source": "",
+  "destination": "",
+  "method": "",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "observed": "",
+  "artifacts": [],
+  "notes": "PLANTILLA SIN EJECUTAR; no es evidencia"
+}

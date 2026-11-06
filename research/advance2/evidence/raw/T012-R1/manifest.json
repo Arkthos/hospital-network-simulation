@@ -1,0 +1,108 @@
+{
+  "test_id": "T012-R1",
+  "timestamp": "2026-11-06T00:20:50.787Z",
+  "source": "192.168.30.22",
+  "destination": "192.168.60.8",
+  "method": "Packet Tracer PC1(1) Command Prompt: ping 192.168.60.8; two completed four-probe series; subsequent Simulation Mode diagnostic could not be completed",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "possible",
+  "positive_control_runs": [
+    "T013-R2"
+  ],
+  "destination_verified": true,
+  "notes": "Both series: four Request timed out, zero echoes. Source validated by T013-R2. Management .60.8 IP inspected; its T009 request to WLC succeeded, demonstrating active network interface. O describes absence of successful ICMP exchange, not non-delivery of the request. No VLAN60 outbound ACL identified; management in denies ICMP leaving the endpoint, so return-path filtering is a configuration-based hypothesis. No PDU trace obtained: simulator became unresponsive opening Simulation Mode filters; incident captured, no test traffic fabricated. Cause remains possible, not confirmed. No configuration changed.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T012-R1/01-T012-series1-complete-0.jpg",
+      "sha256": "65f711fd75834aca1e49b0605240b436eb683416a38d1a0b6dc99f7826c24617"
+    },
+    {
+      "path": "evidence/raw/T012-R1/02-T012-series1-complete.capture.json",
+      "sha256": "8c6a091bf1cf987999502b35186f6b1699e654c2daecf63492a57c211e4b5405"
+    },
+    {
+      "path": "evidence/raw/T012-R1/03-T012-series1-complete.txt",
+      "sha256": "1e4d0418522c59fac0794edee33a505dbe68ad0ddf096adacf50e939cbce14cc"
+    },
+    {
+      "path": "evidence/raw/T012-R1/04-T012-series1-completed-0.jpg",
+      "sha256": "81efa90240803ccd214dc5ba7f9e5b5e582ec01ec4ede4af211373aff36c11b0"
+    },
+    {
+      "path": "evidence/raw/T012-R1/05-T012-series1-completed.capture.json",
+      "sha256": "db62d7ddf5654b3083d7f4bb8cbf289e85ce313c3b60a85ea5691dbbb1435dfe"
+    },
+    {
+      "path": "evidence/raw/T012-R1/06-T012-series1-final-0.jpg",
+      "sha256": "68e7b668c050b2469a5f164fca1f446c8f8cf61e61aa672213a0e818db2ffebe"
+    },
+    {
+      "path": "evidence/raw/T012-R1/07-T012-series1-final.capture.json",
+      "sha256": "f9c4873725f7f0ce02c94c052835407dd13b7da246aa9e6c80e68c15465ce5d3"
+    },
+    {
+      "path": "evidence/raw/T012-R1/08-T012-series1-final.txt",
+      "sha256": "32e2ad392a50abab0ad73f480a4848d55ce3188f946ffa6c1364eaae7ab266f7"
+    },
+    {
+      "path": "evidence/raw/T012-R1/09-T012-series2-final-0.jpg",
+      "sha256": "483652b9ea78dcf124d5eaa13793289df2d98d7cc884cb6736be0b1dc2286965"
+    },
+    {
+      "path": "evidence/raw/T012-R1/10-T012-series2-final.capture.json",
+      "sha256": "ac468327ee33682ec8890ab64200272ba01c9aa358790d762669c9776d586626"
+    },
+    {
+      "path": "evidence/raw/T012-R1/11-session3-staff-ipconfig-0.jpg",
+      "sha256": "823082bd9301b3dcd900642e770b88b7732acb3953f4ca7a4cd04f3efe223ffd"
+    },
+    {
+      "path": "evidence/raw/T012-R1/12-session3-staff-ipconfig.capture.json",
+      "sha256": "ec598d709ef3fd1722ae227c441c8f5062497cb747279162b609ceedc49ff7b9"
+    },
+    {
+      "path": "evidence/raw/T012-R1/13-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T012-R1/14-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    },
+    {
+      "path": "evidence/raw/T012-R1/15-T009-request1-0.jpg",
+      "sha256": "fdda066920e269d5ad375d2c3769db530b7388f1d8c171e8e18133468bd2dff4"
+    },
+    {
+      "path": "evidence/raw/T012-R1/16-T009-request1.capture.json",
+      "sha256": "179350c174fa2634353d0763b73c6c3b6543066b7c1e907d88fead806d099aca"
+    },
+    {
+      "path": "evidence/raw/T012-R1/17-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T012-R1/18-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T012-R1/19-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    },
+    {
+      "path": "evidence/raw/T012-R1/20-incident-02-simulation-unresponsive-0.jpg",
+      "sha256": "66c0640a4ab62e4cb4d71d8eae90ee46752c02b8faf97bc69eb6dcebb98f2402"
+    },
+    {
+      "path": "evidence/raw/T012-R1/21-incident-02-simulation-unresponsive.capture.json",
+      "sha256": "e8aa78065a99a42c365636de6e4ac9c1e5fdf401e2c821f1c7b9e25db3a9652e"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

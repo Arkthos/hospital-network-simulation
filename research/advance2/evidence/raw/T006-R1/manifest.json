@@ -1,0 +1,90 @@
+{
+  "test_id": "T006-R1",
+  "timestamp": "2026-11-06T00:01:38.375Z",
+  "source": "192.168.40.25",
+  "destination": "172.16.10.30",
+  "method": "Packet Tracer Laptop0 Wireless0 > Desktop > Command Prompt: ping 172.16.10.30, two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "allow",
+  "valid": "true",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "New clean baseline session. Laptop0 SSID wifi, WPA2-PSK/AES, DHCP 192.168.40.25/24 gateway .40.1. External PC2 static 172.16.10.30/24 from baseline inspection. Series1 3/4 replies (25% loss); series2 4/4 (0% loss). Early partial capture retained separately. No changes; initial loss cause unknown. C unknown retained from CP2.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T006-R1/01-T006-series1-complete-0.jpg",
+      "sha256": "d99de136063836ea004112d9b2599d8ae68a74cfc88161966b4ae97d030a1a2c"
+    },
+    {
+      "path": "evidence/raw/T006-R1/02-T006-series1-complete-1.jpg",
+      "sha256": "bb9acf551c37c5c1ed8df440a486a3f94515ab3952ea9c941082f277c5be2e35"
+    },
+    {
+      "path": "evidence/raw/T006-R1/03-T006-series1-complete.capture.json",
+      "sha256": "03a80d4abf3d8292abe8ed00f7701349603588ccab385c3da3900276b5737aec"
+    },
+    {
+      "path": "evidence/raw/T006-R1/04-T006-series2-complete-0.jpg",
+      "sha256": "c08cf3740ff7a9bbc1c2ce52ba5f88f1c157c4ea5f37ececcf098cfb1c30bb1d"
+    },
+    {
+      "path": "evidence/raw/T006-R1/05-T006-series2-complete.capture.json",
+      "sha256": "d6b652621872383e41f5f590e08f20437d45fa5a87ae8c051a5792fc6a2d54e1"
+    },
+    {
+      "path": "evidence/raw/T006-R1/06-T006-series1.capture.json",
+      "sha256": "35af972c2c30468a26256355d59fd90665062bd554632a22263eb51deff6f2ef"
+    },
+    {
+      "path": "evidence/raw/T006-R1/07-T006-series1.txt",
+      "sha256": "a1d62cb416fd80b6cfc7ad0bf81b9f68e68da43fda4cf5dd886cae2e93f4cb43"
+    },
+    {
+      "path": "evidence/raw/T006-R1/08-T006-series1-0.jpg",
+      "sha256": "8d742546df31ff25cc2618bca0c316e3fe54c05afd1b9c4278bdba317a915e2a"
+    },
+    {
+      "path": "evidence/raw/T006-R1/09-session3-wifi-gateway-0.jpg",
+      "sha256": "0ea58697df44cca67becbbbdd122a80aa9bf14b7c78baf9609ad6ac7983f04a1"
+    },
+    {
+      "path": "evidence/raw/T006-R1/10-session3-wifi-gateway.capture.json",
+      "sha256": "f5188195d27dd25ab24a66add7bcd469acefc3267ff5bdb8a2f2660e2e7fbc54"
+    },
+    {
+      "path": "evidence/raw/T006-R1/11-session3-wifi-preflight-initial-0.jpg",
+      "sha256": "fc550ce4fac030ea1086d08f3cda112ce28550e66474c5677f84d9483caed842"
+    },
+    {
+      "path": "evidence/raw/T006-R1/12-session3-wifi-preflight-initial.capture.json",
+      "sha256": "e3a83caf115d5011058b829aadf0866801f6964c241168ace40470d8cea882b2"
+    },
+    {
+      "path": "evidence/raw/T006-R1/13-session3-wifi-preflight-initial.txt",
+      "sha256": "1c282e9fb6d182887753461b9a4a52627c20385c05c53655b7bf1cf6262a9640"
+    },
+    {
+      "path": "evidence/raw/T006-R1/14-session3-wifi-wireless-ready-0.jpg",
+      "sha256": "fc550ce4fac030ea1086d08f3cda112ce28550e66474c5677f84d9483caed842"
+    },
+    {
+      "path": "evidence/raw/T006-R1/15-session3-wifi-wireless-ready.capture.json",
+      "sha256": "344d7c2519d635873cfe7e21bfe4f8858fe7ba9e71790b1ff6df173380dea59d"
+    },
+    {
+      "path": "evidence/raw/T006-R1/16-session3-wifi-wireless-ready.txt",
+      "sha256": "1c282e9fb6d182887753461b9a4a52627c20385c05c53655b7bf1cf6262a9640"
+    },
+    {
+      "path": "evidence/raw/T006-R1/17-external-PC2-ipconfig.jpg",
+      "sha256": "220b461ca4e99c4b07df892a1a0b55944b01813a30344850fd305413091be5b2"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

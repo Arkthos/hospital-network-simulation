@@ -1,0 +1,50 @@
+{
+  "test_id": "T010-R1",
+  "timestamp": "2026-11-06T00:03:31.378Z",
+  "source": "192.168.60.8",
+  "destination": "192.168.80.5",
+  "method": "Read-only precondition inspection for planned TCP22/SSH administration: Server4 Desktop IP Configuration and Services menu; no SSH transaction executed",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "indeterminate",
+  "valid": "false",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "Server4 static 192.168.80.5/24 gateway .80.1 confirmed. Visible Server-PT Services menu lists HTTP, DHCP, DHCPv6, TFTP, DNS, SYSLOG, AAA, NTP, EMAIL, FTP, IoT, VM Management, Radius EAP and PRP; no SSH server configuration is exposed. No verified existing SSH service/account for this endpoint. Planned administrative SSH transaction was not executed; record precondition limitation, not network deny and not proof that port22 is filtered. No services enabled and no credentials invented. HTTP/HTTPS service toggles observed On, but these do not substitute for planned SSH.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "tcp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T010-R1/01-T010-SSH-precondition-0.jpg",
+      "sha256": "0f6d708b135138c7bb87ce9198d74371e169b983561c3d821d69628219d2673a"
+    },
+    {
+      "path": "evidence/raw/T010-R1/02-T010-SSH-precondition.capture.json",
+      "sha256": "b86c3654955a2538ff5c251bd40e60643a15f91cdc9481de2fbecb926a14ad9c"
+    },
+    {
+      "path": "evidence/raw/T010-R1/03-T010-SSH-precondition.txt",
+      "sha256": "70e504d524d87618491fdea825db67571c0c66d997aa5a9a4567a3e3e74ab27f"
+    },
+    {
+      "path": "evidence/raw/T010-R1/04-session3-radius-ipconfig-0.jpg",
+      "sha256": "fe774c61a79c30e9842e101ae99988e925e83ddfc73d3d085c37291c6b36c0f1"
+    },
+    {
+      "path": "evidence/raw/T010-R1/05-session3-radius-ipconfig.capture.json",
+      "sha256": "f3b410cff704c3d266b1114d189f4e5f980d58b4fefe1b469abd61f68f204f89"
+    },
+    {
+      "path": "evidence/raw/T010-R1/06-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T010-R1/07-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

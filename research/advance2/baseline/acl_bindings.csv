@@ -1,0 +1,11 @@
+acl,interface,direction,scope,file,line
+guestwifi,vlan50,in,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/guestwifiacl mls.txt,17
+intserver,vlan10,out,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/intserveracl mls.txt,15
+management,vlan60,in,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/mgmtacl mls.txt,9
+radius,vlan80,out,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/radiusacl mls.txt,15
+wifi,vlan40,in,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/wifiaclmls.txt,19
+wlc,vlan70,in,both MLS (folder claim; runtime unverified),Hospital network  simulation/ACL mls both/wlcacl mls.txt,11
+INSIDE-ACCESS,mls0,in,ASA,Hospital network  simulation/Firewall/acl inside.txt,12
+INSIDE-ACCESS,mls1,in,ASA,Hospital network  simulation/Firewall/acl inside.txt,13
+INTERNET-ACCESS,edgerouter,in,ASA,Hospital network  simulation/Firewall/aclisp fw.txt,12
+DMZ-ACCESS,dmz,in,ASA,Hospital network  simulation/Firewall/firewall dmzacl.txt,12

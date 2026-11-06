@@ -1,0 +1,201 @@
+PREPARATION ONLY; no connectivity tests executed.
+Observed 2026-11-05T15:19:07.776Z
+Partial accessible Workspace List: virtualized rows, not all devices read.
+Window: "Workspace List", App: PacketTracer.exe.
+	0 window (settable, string) Workspace List Secondary Actions: Raise ID: PtApp.WorkspaceList
+		1 title bar (settable, string) Value: Workspace List
+			2 menu bar System ID: MenuBar
+				3 menu item System
+			4 button Minimize
+			5 button Maximize
+			6 button Close
+		7 custom (settable, string) ID: PtApp.WorkspaceList.frame_2
+			8 custom (settable, string) ID: PtApp.WorkspaceList.frame_2.deviceFrame
+				9 text Devices ID: PtApp.WorkspaceList.frame_2.deviceFrame.label
+				10 table (settable, string) Devices Description: Devices Value: Devices ID: Devices
+					11 pane (selectable, settable, string) ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					12 header (selectable, settable, string) Name ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					13 header (selectable, settable, string) Model ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					14 header (selectable, settable, string) Power ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					15 header (selectable, settable, string) X ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					16 header (selectable, settable, string) Y ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					17 header (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					18 header (selectable, settable, string) Cursor Spatiality ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					19 header (selectable, settable, string) 1 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					20 item (selectable, settable, string) MLS1 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					21 item (selectable, settable, string) 3560-24PS ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					22 item (selectable, settable, string) On ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					23 item (selectable, settable, string) 1140 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					24 item (selectable, settable, string) 603 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					25 item (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					26 header (selectable, settable, string) 2 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					27 item (selectable, settable, string) MLS0 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					28 item (selectable, settable, string) 3560-24PS ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					29 item (selectable, settable, string) On ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					30 item (selectable, settable, string) 338 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					31 item (selectable, settable, string) 606 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					32 item (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					33 header (selectable, settable, string) 3 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					34 item (selectable, settable, string) int-server ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					35 item (selectable, settable, string) 2960-24TT ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					36 item (selectable, settable, string) On ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					37 item (selectable, settable, string) 32 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					38 item (selectable, settable, string) 815 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					39 item (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					40 header (selectable, settable, string) 4 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					41 item (selectable, settable, string) Switch4 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					42 item (selectable, settable, string) 2960-24TT ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					43 item (selectable, settable, string) On ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					44 item (selectable, settable, string) 309 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					45 item (selectable, settable, string) 404 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					46 item (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					47 header (selectable, settable, string) 5 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					48 item (selectable, settable, string) reception ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					49 item (selectable, settable, string) 2960-24TT ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					50 item (selectable, settable, string) On ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					51 item (selectable, settable, string) 244 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					52 item (selectable, settable, string) 811 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					53 item (selectable, settable, string) Quick Info ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					54 header (selectable, settable, string) 6 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					55 item (selectable, settable, string) INTERNET ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					56 item (selectable, settable, string) Cluster ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					57 item (selectable, settable, string) N/A ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					58 item (selectable, settable, string) 708 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					59 item (selectable, settable, string) 85 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					60 item (selectable, settable, string) Quick Info Not Available ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					61 header (selectable, settable, string) 7 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					62 header (selectable, settable, string) 8 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					63 header (selectable, settable, string) 9 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					64 header (selectable, settable, string) 10 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					65 header (selectable, settable, string) 11 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					66 header (selectable, settable, string) 12 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					67 header (selectable, settable, string) 13 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					68 header (selectable, settable, string) 14 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					69 header (selectable, settable, string) 15 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					70 header (selectable, settable, string) 16 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					71 header (selectable, settable, string) 17 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					72 header (selectable, settable, string) 18 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					73 header (selectable, settable, string) 19 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					74 header (selectable, settable, string) 20 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					75 header (selectable, settable, string) 21 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					76 header (selectable, settable, string) 22 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					77 header (selectable, settable, string) 23 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					78 header (selectable, settable, string) 24 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					79 header (selectable, settable, string) 25 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					80 header (selectable, settable, string) 26 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					81 header (selectable, settable, string) 27 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					82 header (selectable, settable, string) 28 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					83 header (selectable, settable, string) 29 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					84 header (selectable, settable, string) 30 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					85 header (selectable, settable, string) 31 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					86 header (selectable, settable, string) 32 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					87 header (selectable, settable, string) 33 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					88 header (selectable, settable, string) 34 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					89 header (selectable, settable, string) 35 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					90 header (selectable, settable, string) 36 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					91 header (selectable, settable, string) 37 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					92 header (selectable, settable, string) 38 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					93 header (selectable, settable, string) 39 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					94 header (selectable, settable, string) 40 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					95 header (selectable, settable, string) 41 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+					96 header (selectable, settable, string) 42 ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceList
+				97 text ID: PtApp.WorkspaceList.frame_2.deviceFrame.selectedDeviceName
+				98 button (settable, string) Add Device ID: PtApp.WorkspaceList.frame_2.deviceFrame.addDevButton
+				99 button (settable, string) Remove Device ID: PtApp.WorkspaceList.frame_2.deviceFrame.removeDevButton
+				100 button (settable, string) Show Parent Cluster ID: PtApp.WorkspaceList.frame_2.deviceFrame.moveToParentButton
+				101 table (settable, string) Device slots. Use left or right arrow keys to navigate between device slots. Hit spacebar to open device slot combobox. Description: Device slots. Use left or right arrow keys to navigate between device slots. Hit spacebar to open device slot combobox. Value: Device slots. Use left or right arrow keys to navigate between device slots. Hit spacebar to open device slot combobox. ID: Device slots. Use left or right arrow keys to navigate between device slots. Hit spacebar to open device slot combobox.
+					102 pane (selectable, settable, string) ID: PtApp.WorkspaceList.frame_2.deviceFrame.deviceInfo
+				103 text * Use left or right arrow keys to navigate between device slots. Hit spacebar to open device slot combobox. ID: PtApp.WorkspaceList.frame_2.deviceFrame.label_3
+			104 custom (settable, string) ID: PtApp.WorkspaceList.frame_2.linkFrame
+				105 text Links ID: PtApp.WorkspaceList.frame_2.linkFrame.label_2
+				106 table (settable, string) Links Description: Links Value: Links ID: Links
+					107 pane (selectable, settable, string) ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					108 header (selectable, settable, string) Type ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					109 header (selectable, settable, string) Origination Port ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					110 header (selectable, settable, string) Origination Port Status ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					111 header (selectable, settable, string) Destination Port ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					112 header (selectable, settable, string) Destination Port Status ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					113 header (selectable, settable, string) 1 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					114 item (selectable, settable, string) Copper Cross-Over ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					115 item (selectable, settable, string) ASA0:GigabitEthernet1/1 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					116 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					117 item (selectable, settable, string) ISP edgerouter:GigabitEthernet0/0/0 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					118 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					119 header (selectable, settable, string) 2 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					120 item (selectable, settable, string) Copper Straight-Through ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					121 item (selectable, settable, string) ASA0:GigabitEthernet1/3 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					122 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					123 item (selectable, settable, string) MLS1:FastEthernet0/1 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					124 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					125 header (selectable, settable, string) 3 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					126 item (selectable, settable, string) Copper Straight-Through ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					127 item (selectable, settable, string) Switch0:FastEthernet0/2 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					128 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					129 item (selectable, settable, string) PC2:FastEthernet0 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					130 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					131 header (selectable, settable, string) 4 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					132 item (selectable, settable, string) Copper Cross-Over ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					133 item (selectable, settable, string) ISP4:GigabitEthernet0/0/2 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					134 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					135 item (selectable, settable, string) Switch0:FastEthernet0/1 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					136 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					137 header (selectable, settable, string) 5 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					138 item (selectable, settable, string) Copper Straight-Through ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					139 item (selectable, settable, string) Switch4:FastEthernet0/4 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					140 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					141 item (selectable, settable, string) PC0:FastEthernet0 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					142 item (selectable, settable, string) Green ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					143 header (selectable, settable, string) 6 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					144 header (selectable, settable, string) 7 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					145 header (selectable, settable, string) 8 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					146 header (selectable, settable, string) 9 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					147 header (selectable, settable, string) 10 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					148 header (selectable, settable, string) 11 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					149 header (selectable, settable, string) 12 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					150 header (selectable, settable, string) 13 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					151 header (selectable, settable, string) 14 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					152 header (selectable, settable, string) 15 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					153 header (selectable, settable, string) 16 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					154 header (selectable, settable, string) 17 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					155 header (selectable, settable, string) 18 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					156 header (selectable, settable, string) 19 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					157 header (selectable, settable, string) 20 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					158 header (selectable, settable, string) 21 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					159 header (selectable, settable, string) 22 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					160 header (selectable, settable, string) 23 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					161 header (selectable, settable, string) 24 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					162 header (selectable, settable, string) 25 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					163 header (selectable, settable, string) 26 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					164 header (selectable, settable, string) 27 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					165 header (selectable, settable, string) 28 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					166 header (selectable, settable, string) 29 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					167 header (selectable, settable, string) 30 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					168 header (selectable, settable, string) 31 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					169 header (selectable, settable, string) 32 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					170 header (selectable, settable, string) 33 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					171 header (selectable, settable, string) 34 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					172 header (selectable, settable, string) 35 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					173 header (selectable, settable, string) 36 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					174 header (selectable, settable, string) 37 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					175 header (selectable, settable, string) 38 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					176 header (selectable, settable, string) 39 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					177 header (selectable, settable, string) 40 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					178 header (selectable, settable, string) 41 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					179 header (selectable, settable, string) 42 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					180 header (selectable, settable, string) 43 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					181 header (selectable, settable, string) 44 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					182 header (selectable, settable, string) 45 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					183 header (selectable, settable, string) 46 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					184 header (selectable, settable, string) 47 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					185 header (selectable, settable, string) 48 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					186 header (selectable, settable, string) 49 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					187 header (selectable, settable, string) 50 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+					188 header (selectable, settable, string) 51 ID: PtApp.WorkspaceList.frame_2.linkFrame.linkList
+				189 button (settable, string) Add Link ID: PtApp.WorkspaceList.frame_2.linkFrame.addLinkButton
+				190 button (settable, string) Remove Link ID: PtApp.WorkspaceList.frame_2.linkFrame.removeLinkButton
+
+Document text: ```
+Devices
+* Use left or right arrow keys to navigate between device slots.  Hit spacebar to open device slot combobox.
+Links
+```

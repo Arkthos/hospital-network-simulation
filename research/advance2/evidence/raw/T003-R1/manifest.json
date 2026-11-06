@@ -1,0 +1,96 @@
+{
+  "test_id": "T003-R1",
+  "timestamp": "2026-11-06T00:29:00.876Z",
+  "source": "192.168.50.24",
+  "destination": "192.168.60.8",
+  "method": "Packet Tracer Smartphone0 Command Prompt: ping 192.168.60.8; two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "strongly_supported",
+  "positive_control_runs": [
+    "T001-R2"
+  ],
+  "destination_verified": true,
+  "notes": "Smartphone0 guestwifi .50.24/24 gateway .50.1. Both series: four Destination host unreachable from 192.168.50.2; zero destination echoes. Current T001-R2 verifies source external connectivity. Management .60.8 static configuration and successful current T009 transaction support destination availability. Both MLS apply guestwifi in VLAN50 with subnet60 deny and connected routes. ACL cause strongly supported, not confirmed by PDU or counter delta. Simulation filter dialog temporarily hung then recovered without restart; Realtime verified before test. No baseline changes.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T003-R1/01-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    },
+    {
+      "path": "evidence/raw/T003-R1/02-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T003-R1/03-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T003-R1/04-session3-guest-wireless-0.jpg",
+      "sha256": "a2a09ce8c912985508bc85709f6b39976ba271386374742e2a30fc68f18cdde2"
+    },
+    {
+      "path": "evidence/raw/T003-R1/05-session3-guest-wireless.capture.json",
+      "sha256": "3f0aae4f511075a69ce2d906932d6418ef0694874760a9356460e1bc7d489dcd"
+    },
+    {
+      "path": "evidence/raw/T003-R1/06-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T003-R1/07-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    },
+    {
+      "path": "evidence/raw/T003-R1/08-T003-series1-complete-0.jpg",
+      "sha256": "4e3dd430e3e009e8668e95c204981a038cd90dfe4f48111faa87969308df13bb"
+    },
+    {
+      "path": "evidence/raw/T003-R1/09-T003-series1-complete.capture.json",
+      "sha256": "b4453fce4fe360cd236ac83c2b9cb1ee377448c2118cfe70dbad4eb3522b1371"
+    },
+    {
+      "path": "evidence/raw/T003-R1/10-T003-series1-complete.txt",
+      "sha256": "7799783dc356c6f707fbb90c6e9a1c00a77a41aaa8c86786694434fa28dd78df"
+    },
+    {
+      "path": "evidence/raw/T003-R1/11-T003-series1-final-0.jpg",
+      "sha256": "0041150f8986c24b89c826e17658596760fb62392f58e24a8ea83aa7c9541cb8"
+    },
+    {
+      "path": "evidence/raw/T003-R1/12-T003-series1-final.capture.json",
+      "sha256": "9ff48d0bb2e425b93abc9c0eba2b1db817db8ce83c05a73a278ef83504a63932"
+    },
+    {
+      "path": "evidence/raw/T003-R1/13-T003-series1-final.txt",
+      "sha256": "370064dbe83aae22f6b5f8c10f356df1aed51d8de789b55d47bb6b114eb01ed2"
+    },
+    {
+      "path": "evidence/raw/T003-R1/14-T003-series2-complete-0.jpg",
+      "sha256": "c48c93af5f1aada84772b8b2e9f1afd9293e14c6fb96c7801ba441f7e56fa1a8"
+    },
+    {
+      "path": "evidence/raw/T003-R1/15-T003-series2-complete.capture.json",
+      "sha256": "fa797becc5c83bf723dbddda72922c5a89242bd9c7250ffe80491850ff0bcae1"
+    },
+    {
+      "path": "evidence/raw/T003-R1/16-T003-series2-complete.txt",
+      "sha256": "3b3b1dc66a2a122cf45fefc9e2a610eeacadee485545efeb014d2456dce706bf"
+    },
+    {
+      "path": "evidence/raw/T003-R1/17-T009-request1-0.jpg",
+      "sha256": "fdda066920e269d5ad375d2c3769db530b7388f1d8c171e8e18133468bd2dff4"
+    },
+    {
+      "path": "evidence/raw/T003-R1/18-T009-request1.capture.json",
+      "sha256": "179350c174fa2634353d0763b73c6c3b6543066b7c1e907d88fead806d099aca"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

@@ -1,0 +1,104 @@
+{
+  "test_id": "T008-R1",
+  "timestamp": "2026-11-06T00:14:40.884Z",
+  "source": "192.168.40.25",
+  "destination": "192.168.60.8",
+  "method": "Packet Tracer Laptop0 Command Prompt: ping 192.168.60.8; two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "strongly_supported",
+  "positive_control_runs": [
+    "T006-R1"
+  ],
+  "destination_verified": true,
+  "notes": "Laptop0 WLAN wifi .40.25/24 gateway .40.1. Both series: four Destination host unreachable from 192.168.40.3; no destination echoes. T006 verifies source external connectivity. Management .60.8 static config inspected and current T009 service transaction proves its interface functional. Both MLS apply wifi in VLAN40 with subnet60 deny, and directly connected routes exist. Strongly supported ACL cause, not confirmed by PDU/counter delta. No baseline changes.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T008-R1/01-T008-series1-complete-0.jpg",
+      "sha256": "120002196868183c34ee39af65f7073f7bea9821866f828ff93329953780f990"
+    },
+    {
+      "path": "evidence/raw/T008-R1/02-T008-series1-complete.capture.json",
+      "sha256": "145e1d3be37a18e167a82964b0921bf34cc89deb8462ddb0a3a5976ba342887b"
+    },
+    {
+      "path": "evidence/raw/T008-R1/03-T008-series2-complete-0.jpg",
+      "sha256": "96b2e102851418b745fed855c0a569b0e4785f86930cf4e82346a12f7cf76eb8"
+    },
+    {
+      "path": "evidence/raw/T008-R1/04-T008-series2-complete.capture.json",
+      "sha256": "a231a0f820485edd1b5df76454390e1433435f64fd7b7714623927dc1c504b55"
+    },
+    {
+      "path": "evidence/raw/T008-R1/05-T008-series2-complete.txt",
+      "sha256": "72f06efed738971714b68bd763fb016391bc70051d04f8365f3bc93748c2ea0c"
+    },
+    {
+      "path": "evidence/raw/T008-R1/06-session3-wifi-gateway-0.jpg",
+      "sha256": "0ea58697df44cca67becbbbdd122a80aa9bf14b7c78baf9609ad6ac7983f04a1"
+    },
+    {
+      "path": "evidence/raw/T008-R1/07-session3-wifi-gateway.capture.json",
+      "sha256": "f5188195d27dd25ab24a66add7bcd469acefc3267ff5bdb8a2f2660e2e7fbc54"
+    },
+    {
+      "path": "evidence/raw/T008-R1/08-session3-wifi-preflight-initial-0.jpg",
+      "sha256": "fc550ce4fac030ea1086d08f3cda112ce28550e66474c5677f84d9483caed842"
+    },
+    {
+      "path": "evidence/raw/T008-R1/09-session3-wifi-preflight-initial.capture.json",
+      "sha256": "e3a83caf115d5011058b829aadf0866801f6964c241168ace40470d8cea882b2"
+    },
+    {
+      "path": "evidence/raw/T008-R1/10-session3-wifi-preflight-initial.txt",
+      "sha256": "1c282e9fb6d182887753461b9a4a52627c20385c05c53655b7bf1cf6262a9640"
+    },
+    {
+      "path": "evidence/raw/T008-R1/11-session3-wifi-wireless-ready-0.jpg",
+      "sha256": "fc550ce4fac030ea1086d08f3cda112ce28550e66474c5677f84d9483caed842"
+    },
+    {
+      "path": "evidence/raw/T008-R1/12-session3-wifi-wireless-ready.capture.json",
+      "sha256": "344d7c2519d635873cfe7e21bfe4f8858fe7ba9e71790b1ff6df173380dea59d"
+    },
+    {
+      "path": "evidence/raw/T008-R1/13-session3-wifi-wireless-ready.txt",
+      "sha256": "1c282e9fb6d182887753461b9a4a52627c20385c05c53655b7bf1cf6262a9640"
+    },
+    {
+      "path": "evidence/raw/T008-R1/14-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T008-R1/15-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    },
+    {
+      "path": "evidence/raw/T008-R1/16-T009-request1-0.jpg",
+      "sha256": "fdda066920e269d5ad375d2c3769db530b7388f1d8c171e8e18133468bd2dff4"
+    },
+    {
+      "path": "evidence/raw/T008-R1/17-T009-request1.capture.json",
+      "sha256": "179350c174fa2634353d0763b73c6c3b6543066b7c1e907d88fead806d099aca"
+    },
+    {
+      "path": "evidence/raw/T008-R1/18-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T008-R1/19-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T008-R1/20-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

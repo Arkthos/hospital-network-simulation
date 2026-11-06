@@ -6,7 +6,7 @@
 | CP2 | Completo, preparación | política propuesta, 14 casos, procedimientos, validadores, captura inmutable | commit `research: add policy test plan and reproducible PCO workflow` |
 | CP3 | Completo con limitaciones T010 y procedencia de copia guardada | 14 casos, 16 ejecuciones, 13 casos válidos; observaciones, evidencia hashada, manifiestos y bitácora | commit `test: complete CP3 baseline evidence campaign` |
 | CP4 | Completo con limitaciones documentadas | auditoría formal P–C–O, causalidad, procedencia, discrepancias documentales, alcance permitido y registro machine-readable | commit `analysis: close CP4 formal evidence audit` |
-| CP5 | Pendiente | análisis académico basado en evidencia, relación riesgo–control, propuesta de solución y paquete del Capítulo IV | ninguno |
+| CP5 | Completo, paquete analítico | hallazgos F01–F06, controles C01–C07, Capítulo IV, visuales, anexos y trazabilidad | commit `docs: add CP5 Chapter IV analytical draft` |
 
 CP4 concluye que la campaña puede avanzar a análisis académico: 14/14 casos representados, 16 ejecuciones, 13 casos válidos, 9 casos con P=C=O y 13/13 casos válidos con P=O. T010 permanece indeterminado por falta de prerrequisito SSH verificable. T012 y T014 conservan causalidad `possible`; ningún caso se eleva a causalidad `confirmed`.
 
@@ -15,3 +15,6 @@ El `conformity_rate` de 69.23 % no es un porcentaje de seguridad. Cuatro allows 
 Ver `docs/advance2/CP4_AUDIT.md` y `research/advance2/results/cp4-audit.json`.
 
 Los SHA exactos se obtienen con `git log --oneline research/advance2 docs/advance2`; los nombres de commit evitan una referencia circular al hash del propio archivo. Baseline original: 2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46.
+
+
+CP5 organiza los resultados por significado técnico y no por secuencia de ejecución. El cuerpo académico usa síntesis, figuras y screenshots representativos; la data completa permanece trazable mediante ANNEX_INDEX.md, manifests, CSV/JSON y hashes. No se inició remediación ni se modificó el baseline.

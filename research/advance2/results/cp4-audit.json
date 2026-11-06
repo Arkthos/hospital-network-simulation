@@ -1,0 +1,59 @@
+{
+  "checkpoint": "CP4",
+  "status": "closed_with_documented_limitations",
+  "reviewed_ref": "736433cddc1411d19752d86969bd81c5a34eefe3",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "cases_planned": 14,
+  "cases_executed": 14,
+  "recorded_runs": 16,
+  "valid_cases": 13,
+  "invalid_cases": [
+    "T010"
+  ],
+  "strict_pco_conforming": 9,
+  "conformity_rate": 69.23076923076923,
+  "policy_observation_agreement_valid_cases": 13,
+  "policy_agreement_rate": 100,
+  "pco_discrepancies": 0,
+  "valid_allow_with_config_unknown": [
+    "T001",
+    "T006",
+    "T009",
+    "T013"
+  ],
+  "causality": {
+    "strongly_supported": [
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T007",
+      "T008",
+      "T011"
+    ],
+    "possible": [
+      "T012",
+      "T014"
+    ],
+    "unknown_valid_allow": [
+      "T001",
+      "T006",
+      "T009",
+      "T013"
+    ],
+    "unknown_invalid": [
+      "T010"
+    ],
+    "confirmed": []
+  },
+  "documented_limitations": [
+    "T010 SSH prerequisite unavailable; result indeterminate and invalid for network allow/deny.",
+    "T012 and T014 do not have reliable PDU/counter evidence identifying the exact drop point.",
+    "Four valid allow cases retain frozen C=unknown and cannot be retroactively reclassified.",
+    "Observed running-config differs in details from historical TXT fragments.",
+    "Saved runtime PKT differs byte-for-byte from original; user attests no configuration changes, but binary equivalence is not verified."
+  ],
+  "runtime_original_sha256": "1be4c1d7c247c542ceaae24e58f43a782dfe4fcbdd524e7139f6f535b88a50fe",
+  "runtime_saved_sha256": "990d282545cc37295af7236228a8acf30981dd4ad835ffc71307b740f9db2812",
+  "decision": "Proceed to CP5. Preserve limitations; no remediation or retrospective changes to P/C/O."
+}

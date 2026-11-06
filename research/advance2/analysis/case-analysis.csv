@@ -1,0 +1,15 @@
+case_id,source_zone,destination,protocol,policy,config,observed,valid,pco_classification,causality,analytical_role,primary_evidence
+T001,Guest Wi-Fi,External,ICMP,allow,unknown,allow,true,INDETERMINATE,unknown,positive control and proof of useful guest connectivity,research/advance2/evidence/raw/T001-R1/manifest.json
+T002,Guest Wi-Fi,Internal Server,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,guest-to-internal isolation,research/advance2/evidence/raw/T002-R1/manifest.json
+T003,Guest Wi-Fi,Management,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,guest-to-management isolation,research/advance2/evidence/raw/T003-R1/manifest.json
+T004,Guest Wi-Fi,RADIUS,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,guest-to-authentication-infrastructure isolation,research/advance2/evidence/raw/T004-R1/manifest.json
+T005,Guest Wi-Fi,Corp Wi-Fi,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,guest-to-corporate-wireless isolation,research/advance2/evidence/raw/T005-R1/manifest.json
+T006,Corp Wi-Fi,External,ICMP,allow,unknown,allow,true,INDETERMINATE,unknown,positive control and proof of mobility connectivity,research/advance2/evidence/raw/T006-R1/manifest.json
+T007,Corp Wi-Fi,Internal Server,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,restricted mobility zone not implicit internal trust,research/advance2/evidence/raw/T007-R1/manifest.json
+T008,Corp Wi-Fi,Management,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,corporate wireless separated from management,research/advance2/evidence/raw/T008-R1/manifest.json
+T009,Management,WLC,TCP/443,allow,unknown,allow,true,INDETERMINATE,unknown,authorized management service reachability,research/advance2/evidence/raw/T009-R1/manifest.json
+T010,Management,RADIUS,TCP/22,allow,unknown,indeterminate,false,INDETERMINATE,unknown,methodological limitation: SSH prerequisite absent,research/advance2/evidence/raw/T010-R1/manifest.json
+T011,Hospitalstaff,RADIUS,ICMP,deny,deny,deny,true,CONFORMING,strongly_supported,staff separated from authentication infrastructure,research/advance2/evidence/raw/T011-R1/manifest.json
+T012,Hospitalstaff,Management,ICMP,deny,deny,deny,true,CONFORMING,possible,no successful ICMP exchange; request-path isolation not proven,research/advance2/evidence/raw/T012-R1/manifest.json
+T013,Hospitalstaff,Internal Server,ICMP,allow,unknown,allow,true,INDETERMINATE,unknown,positive control and role-appropriate internal access,research/advance2/evidence/raw/T013-R1/manifest.json
+T014,Guest Wi-Fi,WLC,TCP/443,deny,deny,deny,true,CONFORMING,possible,guest cannot complete WLC HTTPS service exchange,research/advance2/evidence/raw/T014-R1/manifest.json

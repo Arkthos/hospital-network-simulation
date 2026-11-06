@@ -1,6 +1,6 @@
 # Hallazgos
 
-Sin hallazgos experimentales: CP3 pendiente. Las observaciones documentales siguientes son hipótesis para verificar, no resultados de conectividad:
+CP3 completo con observaciones reales en results/ y docs/advance2/CP3_REPORT.md. La promoción de hallazgos y evaluación de riesgo queda para CP4/CP5. Las observaciones documentales siguientes conservan su carácter preliminar; no sustituyen resultados de conectividad:
 
 | ID preliminar | Base documental | Implicación para el diseño | Casos |
 |---|---|---|---|

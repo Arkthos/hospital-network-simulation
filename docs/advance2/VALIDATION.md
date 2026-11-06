@@ -1,4 +1,4 @@
-# Validación de preparación
+# Validación de preparación y cierre CP3
 
 Fecha: 2026-11-05. Python 3.12 local; sin dependencias externas.
 
@@ -13,3 +13,20 @@ Fecha: 2026-11-05. Python 3.12 local; sin dependencias externas.
 - Git diff de rutas originales contra commit base: sin cambios de contenido. No se modifican PKT, configuración ni main.
 
 No se afirma validación de accesibilidad de todas las ventanas de equipos ni ejecución headless. Sí se inspeccionó la ventana principal y Workspace List de la GUI real. No se redactó Capítulo IV ni recomendaciones finales.
+
+## Cierre CP3
+
+- 14 IDs cubiertos por 16 ejecuciones; 13 casos válidos y T010 indeterminado por prerrequisito no verificado. Se retienen R1/R2 y se usa la primera ejecución por caso para el resumen.
+- validate_evidence.py: cero errores, incluyendo hashes del preflight CP3-01, cada artefacto de ejecución, correspondencia observación/manifiesto, controles y hashes de P/C congelados.
+- validate_results.py --require-complete: cero errores. Esta cobertura admite una limitación documentada; no afirma que T010 haya ejecutado SSH.
+- 7 pruebas unittest pasan; se añadió detección de alteración y escape de directorio del preflight con fixtures temporales.
+- Los 57 archivos originales conservan hashes de baseline. La copia de ejecución fue guardada por el usuario sin cambios de configuración según su declaración y tiene otro hash; véase CP3-02. No se afirma equivalencia binaria ni se atribuye una causa técnica específica al cambio.
+- Automatización GUI observada: accesibilidad a veces ausente/atrasada; capturas visuales reales conservadas como evidencia. No hubo PDU fiable ni atribución confirmada a una regla específica.
+
+Los bullets de preparación anteriores describen el estado histórico CP2; no sustituyen este cierre. La revisión formal CP4 y el análisis CP5 permanecen pendientes.
+
+## Procedencia de la copia guardada
+
+La revisión final encontró la copia runtime de 254166 bytes con última escritura 2026-11-05 23:38:40 UTC (17:38:40 Costa Rica), antes de las pruebas de la sesión actual. Los dos originales tienen 258544 bytes y conservan sus hashes. Al consultar, el usuario respondió: «Sí, lo guardé sin cambiar configuración».
+
+Se preservó la copia guardada y un registro de hashes, fechas y ejecuciones posteriores en `research/advance2/evidence/preflight/CP3-02/` (ruta desde la raíz del repositorio). Los manifiestos originales de las pruebas no se reescribieron. El commit baseline identifica la fuente original, sin certificar igualdad binaria de la copia guardada. La ausencia de cambios de configuración en ese guardado está sustentada por la declaración del usuario; no se afirma haber comparado todos los estados internos de ambos PKT. Esta limitación debe acompañar el uso académico de los resultados. Para exigir equivalencia binaria estricta, sería necesaria otra campaña desde una copia nueva y verificada; no se sustituye ni borra esta campaña.

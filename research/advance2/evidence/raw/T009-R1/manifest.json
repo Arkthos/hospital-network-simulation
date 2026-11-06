@@ -1,0 +1,38 @@
+{
+  "test_id": "T009-R1",
+  "timestamp": "2026-11-06T00:01:23.837Z",
+  "source": "192.168.60.8",
+  "destination": "192.168.70.5",
+  "method": "Packet Tracer PC3(1)(1) > Desktop > Web Browser: https://192.168.70.5",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "allow",
+  "valid": "true",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "Authorized management bastion static 192.168.60.8/24 gateway .60.1. HTTPS URL returned Cisco Wireless LAN Controller welcome/login page. This establishes represented service reachability only; no Login click, credential entry, administrative authentication or real TLS security claim. C unknown retained from CP2; baseline unmodified.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "tcp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T009-R1/01-T009-request1-0.jpg",
+      "sha256": "fdda066920e269d5ad375d2c3769db530b7388f1d8c171e8e18133468bd2dff4"
+    },
+    {
+      "path": "evidence/raw/T009-R1/02-T009-request1.capture.json",
+      "sha256": "179350c174fa2634353d0763b73c6c3b6543066b7c1e907d88fead806d099aca"
+    },
+    {
+      "path": "evidence/raw/T009-R1/03-session3-management-ipconfig-0.jpg",
+      "sha256": "4717a133175930623f8af40d0f40912e91b8bd09f82a03ac52f5eeb9d2449c22"
+    },
+    {
+      "path": "evidence/raw/T009-R1/04-session3-management-ipconfig.capture.json",
+      "sha256": "90af8f3b65c7686bab066a8b9aea29c54c161ba085b61bc3cc0a36ed96d3ca18"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

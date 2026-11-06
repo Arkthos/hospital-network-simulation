@@ -1,0 +1,600 @@
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan20, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan30, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan40, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan50, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan60, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan70, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan80, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan90, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/3, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/3, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/4, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/5, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/6, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/6, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/7, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/8, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/9, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/12, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/13, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/13, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/11, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/11, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINK-5-CHANGED: Interface Port-channel9, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Port-channel9, changed state to up
+
+%HSRP-6-STATECHANGE: Vlan10 Grp 10 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan10 Grp 10 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan80 Grp 80 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan80 Grp 80 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan90 Grp 90 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan90 Grp 90 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan40 Grp 40 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan40 Grp 40 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan70 Grp 70 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan70 Grp 70 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan50 Grp 50 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan50 Grp 50 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan30 Grp 30 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan30 Grp 30 state Standby -> Active
+
+ %HSRP-6-STATECHANGE: Vlan20 Grp 20 state Standby -> Active
+
+%HSRP-6-STATECHANGE: Vlan60 Grp 60 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan60 Grp 60 state Standby -> Active
+%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.90.21.
+
+%HSRP-6-STATECHANGE: Vlan50 Grp 50 state Speak -> Standby
+
+09:22:45: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan80 from LOADING to FULL, Loading Done
+
+09:22:45: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan40 from LOADING to FULL, Loading Done
+
+%HSRP-6-STATECHANGE: Vlan30 Grp 30 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan90 Grp 90 state Speak -> Standby
+
+%HSRP-6-STATECHANGE: Vlan10 Grp 10 state Speak -> Standby
+
+09:22:50: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.3 on FastEthernet0/1 from LOADING to FULL, Loading Done
+
+09:22:50: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan50 from LOADING to FULL, Loading Done
+
+09:22:50: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan90 from LOADING to FULL, Loading Done
+
+09:22:50: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan30 from LOADING to FULL, Loading Done
+
+09:22:55: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan10 from LOADING to FULL, Loading Done
+
+09:23:00: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on Vlan20 from LOADING to FULL, Loading Done
+
+
+Switch>en
+Switch#show run
+Building configuration...
+
+Current configuration : 11590 bytes
+!
+version 12.2(37)SE1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+!
+no profinet
+!
+!
+ip dhcp excluded-address 192.168.10.1 192.168.10.20
+ip dhcp excluded-address 192.168.20.1 192.168.20.20
+ip dhcp excluded-address 192.168.30.1 192.168.30.20
+ip dhcp excluded-address 192.168.40.1 192.168.40.20
+ip dhcp excluded-address 192.168.50.1 192.168.50.20
+ip dhcp excluded-address 192.168.60.1 192.168.60.20
+ip dhcp excluded-address 192.168.70.1 192.168.70.20
+ip dhcp excluded-address 192.168.80.1 192.168.80.20
+ip dhcp excluded-address 192.168.90.1 192.168.90.20
+!
+ip dhcp pool vlan10
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.1
+ip dhcp pool vlan20
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.20.1
+ip dhcp pool vlan30
+ network 192.168.30.0 255.255.255.0
+ default-router 192.168.30.1
+ip dhcp pool vlan40
+ network 192.168.40.0 255.255.255.0
+ default-router 192.168.40.1
+ option 43 ip 192.168.70.5
+ip dhcp pool vlan50
+ network 192.168.50.0 255.255.255.0
+ default-router 192.168.50.1
+ option 43 ip 192.168.70.5
+ip dhcp pool vlan60
+ network 192.168.60.0 255.255.255.0
+ default-router 192.168.60.1
+ip dhcp pool vlan70
+ network 192.168.70.0 255.255.255.0
+ default-router 192.168.70.1
+ip dhcp pool vlan80
+ network 192.168.80.0 255.255.255.0
+ default-router 192.168.80.1
+ip dhcp pool vlan90
+ network 192.168.90.0 255.255.255.0
+ default-router 192.168.90.1
+ option 150 ip 10.10.10.1
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+vtp mode transparent
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+vlan 10
+ name internal
+!
+vlan 20
+ name reception
+!
+vlan 30
+ name hospitalstaff
+!
+vlan 40
+ name wifi
+!
+vlan 50
+ name guestwifi
+!
+vlan 60
+ name management
+!
+vlan 70
+ name wlc
+!
+vlan 80
+ name radius
+!
+vlan 90
+ name voip
+!
+vlan 99
+ name native
+!
+vlan 999
+ name blackhole
+!
+interface Port-channel9
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/1
+ no switchport
+ ip address 192.168.130.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/2
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 9 mode active
+!
+interface FastEthernet0/3
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 9 mode active
+!
+interface FastEthernet0/4
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 9 mode active
+!
+interface FastEthernet0/5
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/6
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/7
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/8
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/9
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/10
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/11
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/12
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,80,90,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/13
+ no switchport
+ ip address 192.168.201.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/14
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/15
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/16
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/17
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/18
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/19
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/20
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/21
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/22
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/23
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/24
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface GigabitEthernet0/1
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface GigabitEthernet0/2
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ mac-address 00e0.b0b3.6b01
+ ip address 192.168.10.3 255.255.255.0
+ ip ospf priority 0
+ ip access-group intserver out
+ standby version 2
+ standby 10 ip 192.168.10.1
+ standby 10 preempt
+!
+interface Vlan20
+ mac-address 00e0.b0b3.6b02
+ ip address 192.168.20.3 255.255.255.0
+ ip ospf priority 110
+ standby version 2
+ standby 20 ip 192.168.20.1
+ standby 20 priority 110
+ standby 20 preempt
+ standby 20 track FastEthernet0/1
+!
+interface Vlan30
+ mac-address 00e0.b0b3.6b03
+ ip address 192.168.30.3 255.255.255.0
+ ip ospf priority 0
+ standby version 2
+ standby 30 ip 192.168.30.1
+ standby 30 preempt
+!
+interface Vlan40
+ mac-address 00e0.b0b3.6b04
+ ip address 192.168.40.3 255.255.255.0
+ ip ospf priority 110
+ ip access-group wifi in
+ standby version 2
+ standby 40 ip 192.168.40.1
+ standby 40 priority 110
+ standby 40 preempt
+ standby 40 track FastEthernet0/1
+!
+interface Vlan50
+ mac-address 00e0.b0b3.6b05
+ ip address 192.168.50.3 255.255.255.0
+ ip ospf priority 0
+ ip access-group guestwifi in
+ standby version 2
+ standby 50 ip 192.168.50.1
+ standby 50 preempt
+!
+interface Vlan60
+ mac-address 00e0.b0b3.6b06
+ ip address 192.168.60.3 255.255.255.0
+ ip ospf priority 110
+ ip access-group management in
+ standby version 2
+ standby 60 ip 192.168.60.1
+ standby 60 priority 110
+ standby 60 preempt
+ standby 60 track FastEthernet0/1
+!
+interface Vlan70
+ mac-address 00e0.b0b3.6b07
+ ip address 192.168.70.3 255.255.255.0
+ ip ospf priority 0
+ ip access-group wlc in
+ standby version 2
+ standby 70 ip 192.168.70.1
+ standby 70 preempt
+!
+interface Vlan80
+ mac-address 00e0.b0b3.6b08
+ ip address 192.168.80.3 255.255.255.0
+ ip ospf priority 110
+ ip access-group radius out
+ standby version 2
+ standby 80 ip 192.168.80.1
+ standby 80 priority 110
+ standby 80 preempt
+ standby 80 track FastEthernet0/1
+!
+interface Vlan90
+ mac-address 00e0.b0b3.6b09
+ ip address 192.168.90.3 255.255.255.0
+ ip ospf priority 0
+ standby version 2
+ standby 90 ip 192.168.90.1
+ standby 90 preempt
+!
+router ospf 10
+ router-id 1.1.1.2
+ log-adjacency-changes
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 0
+ network 192.168.30.0 0.0.0.255 area 0
+ network 192.168.40.0 0.0.0.255 area 0
+ network 192.168.50.0 0.0.0.255 area 0
+ network 192.168.60.0 0.0.0.255 area 0
+ network 192.168.70.0 0.0.0.255 area 0
+ network 192.168.80.0 0.0.0.255 area 0
+ network 192.168.90.0 0.0.0.255 area 0
+ network 192.168.130.0 0.0.0.3 area 0
+!
+ip classless
+ip route 10.10.10.1 255.255.255.255 192.168.201.1 
+!
+ip flow-export version 9
+!
+!
+ip access-list extended wlc
+ permit ip 192.168.70.0 0.0.0.255 192.168.60.0 0.0.0.255
+ permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5246
+ permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5247
+ permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5246
+ permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5247
+ deny ip 192.168.70.0 0.0.0.255 any
+ip access-list extended intserver
+ permit ip 192.168.20.0 0.0.0.255 192.168.10.0 0.0.0.255
+ permit ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
+ permit ip 192.168.60.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.70.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.80.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.90.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.100.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip any 192.168.10.0 0.0.0.255
+ip access-list extended management
+ permit udp any eq bootpc any eq bootps
+ permit tcp host 192.168.60.8 any eq 22
+ permit tcp host 192.168.60.8 host 192.168.70.5 eq 443
+ deny ip any any
+ip access-list extended guestwifi
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq bootps any eq bootpc
+ permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+ permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+ deny ip 192.168.50.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.20.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.30.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.40.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.60.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.90.0 0.0.0.255
+ permit ip any any
+ip access-list extended wifi
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq bootps any eq bootpc
+ permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+ permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+ deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.20.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.30.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.50.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.60.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.90.0 0.0.0.255
+ permit ip 192.168.40.0 0.0.0.255 any
+ip access-list extended radius
+ permit ip host 192.168.60.8 192.168.80.0 0.0.0.255
+ permit udp any 192.168.80.0 0.0.0.255 eq 1812
+ permit udp any 192.168.80.0 0.0.0.255 eq 1813
+ deny ip 192.168.10.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.20.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.30.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.60.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.70.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.90.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.100.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip any 192.168.80.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+logging trap debugging
+logging 192.168.10.5
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
+
+
+Switch#

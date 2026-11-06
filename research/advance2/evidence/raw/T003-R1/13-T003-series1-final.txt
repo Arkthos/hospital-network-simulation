@@ -1,0 +1,42 @@
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ping 172.16.10.30
+
+Pinging 172.16.10.30 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.16.10.30: bytes=32 time=39ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=60ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=43ms TTL=123
+
+Ping statistics for 172.16.10.30:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 39ms, Maximum = 60ms, Average = 47ms
+
+C:\>ping 172.16.10.30
+
+Pinging 172.16.10.30 with 32 bytes of data:
+
+Reply from 172.16.10.30: bytes=32 time=111ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=61ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=133ms TTL=123
+Reply from 172.16.10.30: bytes=32 time=72ms TTL=123
+
+Ping statistics for 172.16.10.30:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 61ms, Maximum = 133ms, Average = 94ms
+
+C:\>ping 192.168.60.8
+
+Pinging 192.168.60.8 with 32 bytes of data:
+
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+Reply from 192.168.50.2: Destination host unreachable.
+
+Ping statistics for 192.168.60.8:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>

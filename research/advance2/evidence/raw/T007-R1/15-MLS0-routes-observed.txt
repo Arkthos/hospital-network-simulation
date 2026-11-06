@@ -1,0 +1,249 @@
+no ip address
+ shutdown
+!
+interface Vlan10
+ mac-address 0030.a342.6401
+ ip address 192.168.10.2 255.255.255.0
+ ip ospf priority 110
+ ip access-group intserver out
+ standby version 2
+ standby 10 ip 192.168.10.1
+ standby 10 priority 110
+ standby 10 preempt
+ standby 10 track FastEthernet0/1
+!
+interface Vlan20
+ mac-address 0030.a342.6402
+ ip address 192.168.20.2 255.255.255.0
+ ip ospf priority 0
+ standby version 2
+ standby 20 ip 192.168.20.1
+ standby 20 preempt
+!
+interface Vlan30
+ mac-address 0030.a342.6403
+ ip address 192.168.30.2 255.255.255.0
+ ip ospf priority 110
+ standby version 2
+ standby 30 ip 192.168.30.1
+ standby 30 priority 110
+ standby 30 preempt
+ standby 30 track FastEthernet0/1
+!
+interface Vlan40
+ mac-address 0030.a342.6404
+ ip address 192.168.40.2 255.255.255.0
+ ip ospf priority 0
+ ip access-group wifi in
+ standby version 2
+ standby 40 ip 192.168.40.1
+ standby 40 preempt
+!
+interface Vlan50
+ mac-address 0030.a342.6405
+ ip address 192.168.50.2 255.255.255.0
+ ip ospf priority 110
+ ip access-group guestwifi in
+ standby version 2
+ standby 50 ip 192.168.50.1
+ standby 50 priority 110
+ standby 50 preempt
+ standby 50 track FastEthernet0/1
+!
+interface Vlan60
+ mac-address 0030.a342.6406
+ ip address 192.168.60.2 255.255.255.0
+ ip ospf priority 0
+ ip access-group management in
+ standby version 2
+ standby 60 ip 192.168.60.1
+ standby 60 preempt
+!
+interface Vlan70
+ mac-address 0030.a342.6407
+ ip address 192.168.70.2 255.255.255.0
+ ip ospf priority 110
+ ip access-group wlc in
+ standby version 2
+ standby 70 ip 192.168.70.1
+ standby 70 priority 110
+ standby 70 preempt
+ standby 70 track FastEthernet0/1
+!
+interface Vlan80
+ mac-address 0030.a342.6408
+ ip address 192.168.80.2 255.255.255.0
+ ip ospf priority 0
+ ip access-group radius out
+ standby version 2
+ standby 80 ip 192.168.80.1
+ standby 80 preempt
+!
+interface Vlan90
+ mac-address 0030.a342.6409
+ ip address 192.168.90.2 255.255.255.0
+ ip ospf priority 110
+ standby version 2
+ standby 90 ip 192.168.90.1
+ standby 90 priority 110
+ standby 90 preempt
+ standby 90 track FastEthernet0/1
+ standby 90 track FastEthernet0/13
+!
+router ospf 10
+ router-id 1.1.1.1
+ log-adjacency-changes
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 0
+ network 192.168.30.0 0.0.0.255 area 0
+ network 192.168.40.0 0.0.0.255 area 0
+ network 192.168.50.0 0.0.0.255 area 0
+ network 192.168.60.0 0.0.0.255 area 0
+ network 192.168.70.0 0.0.0.255 area 0
+ network 192.168.80.0 0.0.0.255 area 0
+ network 192.168.90.0 0.0.0.255 area 0
+ network 192.168.120.0 0.0.0.3 area 0
+!
+ip classless
+ip route 10.10.10.1 255.255.255.255 192.168.200.1 
+ip route 10.10.10.1 255.255.255.255 192.168.90.3 200
+!
+ip flow-export version 9
+!
+!
+ip access-list extended wlc
+ permit ip 192.168.70.0 0.0.0.255 192.168.60.0 0.0.0.255
+ permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5246
+ permit udp 192.168.70.0 0.0.0.255 192.168.40.0 0.0.0.255 eq 5247
+ permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5246
+ permit udp 192.168.70.0 0.0.0.255 192.168.50.0 0.0.0.255 eq 5247
+ deny ip 192.168.70.0 0.0.0.255 any
+ip access-list extended intserver
+ permit ip 192.168.20.0 0.0.0.255 192.168.10.0 0.0.0.255
+ permit ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
+ permit ip 192.168.60.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.70.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.80.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.90.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.100.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip any 192.168.10.0 0.0.0.255
+ip access-list extended management
+ permit udp any eq bootpc any eq bootps
+ permit tcp host 192.168.60.8 any eq 22
+ permit tcp host 192.168.60.8 host 192.168.70.5 eq 443
+ deny ip any any
+ip access-list extended guestwifi
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq bootps any eq bootpc
+ permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+ permit udp 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+ deny ip 192.168.50.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.20.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.30.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.40.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.60.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.70.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.90.0 0.0.0.255
+ permit ip any any
+ip access-list extended wifi
+ permit udp any eq bootpc any eq bootps
+ permit udp any eq bootps any eq bootpc
+ permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5246
+ permit udp 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255 eq 5247
+ deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.20.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.30.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.50.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.60.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.70.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.90.0 0.0.0.255
+ permit ip any any
+ip access-list extended radius
+ permit ip host 192.168.60.8 192.168.80.0 0.0.0.255
+ permit udp any 192.168.80.0 0.0.0.255 eq 1812
+ permit udp any 192.168.80.0 0.0.0.255 eq 1813
+ deny ip 192.168.10.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.20.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.30.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.40.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.50.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.60.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.70.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.90.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip 192.168.100.0 0.0.0.255 192.168.80.0 0.0.0.255
+ deny ip any 192.168.80.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+logging trap debugging
+logging 192.168.10.5
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
+
+
+Switch#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/32 is subnetted, 1 subnets
+S       10.10.10.1 [1/0] via 192.168.200.1
+     20.0.0.0/30 is subnetted, 1 subnets
+O       20.20.20.0 [110/3] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     30.0.0.0/30 is subnetted, 1 subnets
+O       30.30.30.0 [110/4] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     40.0.0.0/30 is subnetted, 1 subnets
+O       40.40.40.0 [110/5] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     50.0.0.0/30 is subnetted, 1 subnets
+O       50.50.50.0 [110/4] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     60.0.0.0/29 is subnetted, 1 subnets
+O       60.60.60.0 [110/2] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     172.16.0.0/24 is subnetted, 1 subnets
+O       172.16.10.0 [110/5] via 192.168.120.1, 00:01:00, FastEthernet0/1
+C    192.168.10.0/24 is directly connected, Vlan10
+C    192.168.20.0/24 is directly connected, Vlan20
+C    192.168.30.0/24 is directly connected, Vlan30
+C    192.168.40.0/24 is directly connected, Vlan40
+C    192.168.50.0/24 is directly connected, Vlan50
+C    192.168.60.0/24 is directly connected, Vlan60
+C    192.168.70.0/24 is directly connected, Vlan70
+C    192.168.80.0/24 is directly connected, Vlan80
+C    192.168.90.0/24 is directly connected, Vlan90
+O    192.168.100.0/24 [110/2] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     192.168.120.0/30 is subnetted, 1 subnets
+C       192.168.120.0 is directly connected, FastEthernet0/1
+     192.168.130.0/30 is subnetted, 1 subnets
+O       192.168.130.0 [110/2] via 192.168.10.3, 00:01:00, Vlan10
+                      [110/2] via 192.168.20.3, 00:01:00, Vlan20
+                      [110/2] via 192.168.30.3, 00:01:00, Vlan30
+                      [110/2] via 192.168.40.3, 00:01:00, Vlan40
+                      [110/2] via 192.168.50.3, 00:01:00, Vlan50
+                      [110/2] via 192.168.80.3, 00:01:00, Vlan80
+                      [110/2] via 192.168.90.3, 00:01:00, Vlan90
+                      [110/2] via 192.168.120.1, 00:01:00, FastEthernet0/1
+     192.168.200.0/30 is subnetted, 1 subnets
+C       192.168.200.0 is directly connected, FastEthernet0/13
+
+Switch#

@@ -1,0 +1,58 @@
+{
+  "test_id": "T001-R2",
+  "timestamp": "2026-11-06T00:19:17.671Z",
+  "source": "192.168.50.24",
+  "destination": "172.16.10.30",
+  "method": "Packet Tracer Smartphone0 Command Prompt: ping 172.16.10.30; refreshed positive control after restart, two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "allow",
+  "valid": "true",
+  "causality": "unknown",
+  "positive_control_runs": [],
+  "destination_verified": true,
+  "notes": "Current clean session DHCP lease is .50.24/24 gateway .50.1, SSID guestwifi WPA2-PSK/AES; earlier session .50.25 preserved in R1. Series1 3/4 replies (25% loss), series2 4/4 (0% loss). Supports remaining Guest cases in this session. Initial loss cause unknown; no configuration changed.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "allow",
+  "expected_config": "unknown",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T001-R2/01-T001-R2-series1-0.jpg",
+      "sha256": "7f864a72ed35f801acfa4a2407b0d38f9226bd16e8f86ca976afe0455e71038f"
+    },
+    {
+      "path": "evidence/raw/T001-R2/02-T001-R2-series1.capture.json",
+      "sha256": "3ad568b9ae2bcbca92beba1d4e1d7e55aa0e15bb078a68d9804a4201219b268c"
+    },
+    {
+      "path": "evidence/raw/T001-R2/03-T001-R2-series2-complete-0.jpg",
+      "sha256": "89000548acf89ef7cd73f6b9d1cd0f91284bba9630485924e772aa7c02d202ec"
+    },
+    {
+      "path": "evidence/raw/T001-R2/04-T001-R2-series2-complete.capture.json",
+      "sha256": "ffd5e998d9273f483edfadbc702af09163168d8abff9c0e37dc1b2bb19d156c9"
+    },
+    {
+      "path": "evidence/raw/T001-R2/05-session3-guest-gateway-0.jpg",
+      "sha256": "3e5fe2b5bd7c35420d2b6a9ebdac822812e6a4f1779aa518b343164da7ea467b"
+    },
+    {
+      "path": "evidence/raw/T001-R2/06-session3-guest-gateway.capture.json",
+      "sha256": "64f05fd005c17469f37d8b2f00732ee33cb0986f7a3722fb2cec7b8981b7baff"
+    },
+    {
+      "path": "evidence/raw/T001-R2/07-session3-guest-wireless-0.jpg",
+      "sha256": "a2a09ce8c912985508bc85709f6b39976ba271386374742e2a30fc68f18cdde2"
+    },
+    {
+      "path": "evidence/raw/T001-R2/08-session3-guest-wireless.capture.json",
+      "sha256": "3f0aae4f511075a69ce2d906932d6418ef0694874760a9356460e1bc7d489dcd"
+    },
+    {
+      "path": "evidence/raw/T001-R2/09-external-PC2-ipconfig.jpg",
+      "sha256": "220b461ca4e99c4b07df892a1a0b55944b01813a30344850fd305413091be5b2"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

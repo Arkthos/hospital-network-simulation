@@ -1,0 +1,88 @@
+{
+  "test_id": "T004-R1",
+  "timestamp": "2026-11-06T00:30:51.532Z",
+  "source": "192.168.50.24",
+  "destination": "192.168.80.5",
+  "method": "Packet Tracer Smartphone0 Command Prompt: ping 192.168.80.5; two four-probe series",
+  "packet_tracer_version": "9.0.1.0858",
+  "observed": "deny",
+  "valid": "true",
+  "causality": "strongly_supported",
+  "positive_control_runs": [
+    "T001-R2"
+  ],
+  "destination_verified": true,
+  "notes": "Smartphone0 guestwifi .50.24/24 gateway .50.1. Both series: four Destination host unreachable from 192.168.50.2, zero destination echoes. T001-R2 verifies source external connectivity. Server4 .80.5 static IP and enabled HTTP service inspected; no positive remote ICMP to RADIUS is claimed. Both MLS guestwifi in VLAN50 deny subnet80; radius out VLAN80 also denies Guest and connected routes exist. ACL cause strongly supported, no PDU/counter delta identifies exact rejecting rule. No changes.",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "expected_policy": "deny",
+  "expected_config": "deny",
+  "protocol": "icmp",
+  "artifacts": [
+    {
+      "path": "evidence/raw/T004-R1/01-MLS0-routes-observed.txt",
+      "sha256": "01df7c37e69a4a85d9d52fb4e5d131e1e02168d851ee8e1984468c7eea9ac008"
+    },
+    {
+      "path": "evidence/raw/T004-R1/02-MLS0-running-config-observed.txt",
+      "sha256": "87e980a3e97f6aff847ab0b70dc1d490cd4d5fb176ae28ae9626c7d8f2307ab6"
+    },
+    {
+      "path": "evidence/raw/T004-R1/03-MLS1-running-config-observed.txt",
+      "sha256": "31c3f4bfaa07253a7b8b11aa2631e0851c9b914cf00ab8e7507239a5e0a696e2"
+    },
+    {
+      "path": "evidence/raw/T004-R1/04-session3-guest-wireless-0.jpg",
+      "sha256": "a2a09ce8c912985508bc85709f6b39976ba271386374742e2a30fc68f18cdde2"
+    },
+    {
+      "path": "evidence/raw/T004-R1/05-session3-guest-wireless.capture.json",
+      "sha256": "3f0aae4f511075a69ce2d906932d6418ef0694874760a9356460e1bc7d489dcd"
+    },
+    {
+      "path": "evidence/raw/T004-R1/06-session3-radius-ipconfig-0.jpg",
+      "sha256": "fe774c61a79c30e9842e101ae99988e925e83ddfc73d3d085c37291c6b36c0f1"
+    },
+    {
+      "path": "evidence/raw/T004-R1/07-session3-radius-ipconfig.capture.json",
+      "sha256": "f3b410cff704c3d266b1114d189f4e5f980d58b4fefe1b469abd61f68f204f89"
+    },
+    {
+      "path": "evidence/raw/T004-R1/08-T004-series1-observed-0.jpg",
+      "sha256": "1e7fb14bb815e4ac5f175af7cb26a375c4e4baf27cf1fc44758701586def9619"
+    },
+    {
+      "path": "evidence/raw/T004-R1/09-T004-series1-observed.capture.json",
+      "sha256": "8bc34b130c2533f79df034c5f08cd42cbfc843edff228322b0c34583456f2dab"
+    },
+    {
+      "path": "evidence/raw/T004-R1/10-T004-series1-observed.txt",
+      "sha256": "504e0dfdf648c0d34c445e4ee8846a7321bcfe28579d0b365f6c45bd3e764f5b"
+    },
+    {
+      "path": "evidence/raw/T004-R1/11-T004-series2-observed-0.jpg",
+      "sha256": "55e455a6a1d888c9f88868b03679452b20a70f67c999092a8ef3d4b8e5ad7254"
+    },
+    {
+      "path": "evidence/raw/T004-R1/12-T004-series2-observed.capture.json",
+      "sha256": "0dc94fbfa9afec13b88c3d392824086ac080bd603eddab1ae05bef3336ec13f4"
+    },
+    {
+      "path": "evidence/raw/T004-R1/13-T004-series2-observed.txt",
+      "sha256": "965f9eb25fcfb624ee924a4183f52f99aceb98764e0ada995a7fd33776b7bed9"
+    },
+    {
+      "path": "evidence/raw/T004-R1/14-T010-SSH-precondition-0.jpg",
+      "sha256": "0f6d708b135138c7bb87ce9198d74371e169b983561c3d821d69628219d2673a"
+    },
+    {
+      "path": "evidence/raw/T004-R1/15-T010-SSH-precondition.capture.json",
+      "sha256": "b86c3654955a2538ff5c251bd40e60643a15f91cdc9481de2fbecb926a14ad9c"
+    },
+    {
+      "path": "evidence/raw/T004-R1/16-T010-SSH-precondition.txt",
+      "sha256": "70e504d524d87618491fdea825db67571c0c66d997aa5a9a4567a3e3e74ab27f"
+    }
+  ],
+  "plan_sha256": "168f112cc8f169f7297df1cb9223bf1a67cb5b70bffeef31fdd5a9e3922dc5c0",
+  "policy_sha256": "296306d56fd3990edd27f4229085dab10e74c113bae8b3fec51514608f747cc4"
+}

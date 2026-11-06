@@ -6,9 +6,9 @@ Caso hipotético: Centro Médico Horizonte CR. Se comparan riesgos y controles d
 
 - CP1: inventario, VLAN, redes, reglas/aplicaciones ACL y hashes completados.
 - CP2: política propuesta y 14 casos generados; mecanismo de evidencia, comparación y validación preparado.
-- CP3: en curso. T001-R1, T002-R1 y T013-R1 registrados con evidencia real; 11 casos pendientes. Ver docs/advance2/CP3_EXECUTION_LOG.md.
-- CP4: herramientas verificadas; cierre experimental pendiente de CP3. CSV vacíos y métricas null no significan controles conformes.
-- CP5: esquemas de análisis y trazabilidad; sin hallazgos experimentales ni recomendaciones finales.
+- CP3: completo. 14 casos representados en 16 ejecuciones, 13 casos válidos; T010 indeterminado por prerrequisito SSH no verificado. Evidencia/manifiestos inmutables. Ver [bitácora](../../docs/advance2/CP3_EXECUTION_LOG.md) y [reporte CP3](../../docs/advance2/CP3_REPORT.md).
+- CP4: revisión formal pendiente. Comparación y resumen regenerados; validación de evidencia y cobertura completa pasan sin errores críticos.
+- CP5: análisis académico y recomendaciones finales pendientes. Nueve casos P=C=O; cuatro allow válidos conservan C unknown y T010 tiene O indeterminada. No es una evaluación general de seguridad.
 
 La tabla de commits/checkpoints está en `docs/advance2/CHECKPOINTS.md`. Baseline y alcance: `docs/advance2/BASELINE.md`.
 
@@ -51,7 +51,7 @@ python research/advance2/scripts/validate_results.py
 
 Cada ejecución se guarda como T001-R1, T001-R2, etc. El registrador rechaza rutas existentes, valida en copia temporal antes de publicar y agrega observaciones; no sobrescribe evidencia previa. No ejecutar colectores concurrentemente. Una interrupción entre publicar y agregar CSV deja un manifiesto huérfano que el validador detecta: conservarlo y reconciliar con auditoría, nunca borrarlo.
 
-Los `manifest.template.json` son plantillas sin observación y nunca se cuentan como evidencia. El CSV observations empieza solo con encabezado. El resumen usa la primera ejecución registrada por caso; las repeticiones se conservan en results.csv sin elegir el resultado más conveniente.
+Los `manifest.template.json` son plantillas sin observación y nunca se cuentan como evidencia. El CSV observations empezó solo con encabezado; ahora conserva todas las ejecuciones reales. El resumen usa la primera ejecución registrada por caso; las repeticiones se conservan en results.csv sin elegir el resultado más conveniente.
 
 Para cerrar CP3/CP4:
 
@@ -59,7 +59,7 @@ Para cerrar CP3/CP4:
 python research/advance2/scripts/validate_results.py --require-complete
 ```
 
-En CP2 este comando debe fallar porque aún faltan ejecuciones. Un caso puede cerrarse como indeterminate con evidencia real de la limitación; no se convierte en bloqueo de seguridad.
+En el checkpoint CP2 este comando fallaba por falta de ejecuciones; al cerrar CP3 pasa con los 14 casos representados. Un caso puede cerrarse como indeterminate con evidencia real de la limitación; no se convierte en bloqueo de seguridad.
 
 ## Métricas y causalidad
 
@@ -71,4 +71,10 @@ Un deny puede ser falta de respuesta, routing, servicio ausente o ACL. Registrar
 
 Packet Tracer representa protocolos y equipos simplificados. No prueba RF, Evil Twin real, WPA3/Dragonblood, OWE, TLS/certificados reales ni clientes modernos. Los servicios ausentes no se habilitan para forzar éxito. La administración SSH de RADIUS puede no estar implementada; T010 será indeterminate si no existe. La red externa debe ser un host fuera del ASA; DMZ/hairpin no prueba Internet.
 
-`analysis/` contiene plantillas y revisión preliminar de configuración; no conclusiones experimentales ni controles finales. No iniciar remediación antes del cierre del baseline. No hacer merge automático.
+`analysis/` contiene plantillas y revisión preliminar de configuración; las observaciones CP3 están en results/ y en el reporte CP3. No hay controles finales ni Capítulo IV. No iniciar remediación antes del cierre del baseline. No hacer merge automático.
+
+## Procedencia de la copia guardada
+
+La revisión final encontró la copia runtime de 254166 bytes con última escritura 2026-11-05 23:38:40 UTC (17:38:40 Costa Rica), antes de las pruebas de la sesión actual. Los dos originales tienen 258544 bytes y conservan sus hashes. Al consultar, el usuario respondió: «Sí, lo guardé sin cambiar configuración».
+
+Se preservó la copia guardada y un registro de hashes, fechas y ejecuciones posteriores en `research/advance2/evidence/preflight/CP3-02/` (ruta desde la raíz del repositorio). Los manifiestos originales de las pruebas no se reescribieron. El commit baseline identifica la fuente original, sin certificar igualdad binaria de la copia guardada. La ausencia de cambios de configuración en ese guardado está sustentada por la declaración del usuario; no se afirma haber comparado todos los estados internos de ambos PKT. Esta limitación debe acompañar el uso académico de los resultados. Para exigir equivalencia binaria estricta, sería necesaria otra campaña desde una copia nueva y verificada; no se sustituye ni borra esta campaña.

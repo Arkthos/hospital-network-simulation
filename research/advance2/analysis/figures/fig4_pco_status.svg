@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380">
+<style>text{font-family:Arial,sans-serif;fill:#222}.t{font-size:20px;font-weight:bold}.l{font-size:14px}.n{font-size:16px;font-weight:bold}.axis{stroke:#555;stroke-width:1}.bar{fill:#6b7280}.note{font-size:12px;fill:#555}</style>
+<text x="360" y="30" text-anchor="middle" class="t">Estado analítico de los 14 casos después de CP4</text>
+<line x1="80" y1="315" x2="680" y2="315" class="axis"/>
+<rect x="120" y="90" width="120" height="225" class="bar"/><text x="180" y="80" text-anchor="middle" class="n">9</text><text x="180" y="340" text-anchor="middle" class="l">P=C=O</text><text x="180" y="358" text-anchor="middle" class="note">conformidad estricta</text>
+<rect x="300" y="215" width="120" height="100" class="bar"/><text x="360" y="205" text-anchor="middle" class="n">4</text><text x="360" y="340" text-anchor="middle" class="l">P=O; C unknown</text><text x="360" y="358" text-anchor="middle" class="note">válidos, no reclasificados</text>
+<rect x="480" y="290" width="120" height="25" class="bar"/><text x="540" y="280" text-anchor="middle" class="n">1</text><text x="540" y="340" text-anchor="middle" class="l">Indeterminado</text><text x="540" y="358" text-anchor="middle" class="note">T010, prerrequisito ausente</text>
+</svg>

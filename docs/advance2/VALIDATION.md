@@ -47,3 +47,19 @@ La auditoría completa está en `docs/advance2/CP4_AUDIT.md`; el resumen machine
 La revisión final encontró la copia runtime de 254166 bytes con última escritura 2026-11-05 23:38:40 UTC (17:38:40 Costa Rica), antes de las pruebas posteriores. Los dos originales tienen 258544 bytes y conservan sus hashes. Al consultar, el usuario respondió: «Sí, lo guardé sin cambiar configuración».
 
 Se preservó la copia guardada y un registro de hashes, fechas y ejecuciones posteriores en `research/advance2/evidence/preflight/CP3-02/`. Los manifests originales no se reescribieron. El commit baseline identifica la fuente original, sin certificar igualdad binaria de la copia guardada. Para exigir equivalencia binaria estricta sería necesaria otra campaña desde una copia nueva y verificada; CP4 no la exige para el análisis del segundo avance mientras esta limitación se declare expresamente.
+
+
+## Cierre CP5
+
+- Se promovieron seis hallazgos analíticos (F01–F06) únicamente después del cierre CP4.
+- La propuesta contiene siete controles (C01–C07), clasificados por base experimental, experimental+literatura o literatura fuera del simulador.
+- La trazabilidad finding→test→manifest/evidencia→control→verificación se materializa en `research/advance2/analysis/traceability.json`.
+- `case-analysis.csv` conserva los 14 casos con P, C, O, validez, clasificación y causalidad.
+- Se generaron cinco visualizaciones derivadas de los datos; ninguna se presenta como evidencia primaria.
+- Se seleccionaron tres pares de screenshots primarios para el cuerpo y evidencia adicional para anexos.
+- `CP5_ANALYSIS.md` contiene la interpretación completa; `CHAPTER_IV_DRAFT.md` contiene la versión académica para integrar al artículo.
+- `ANNEX_INDEX.md` separa la data dura del cuerpo sin perder acceso a manifests, screenshots, salidas, running-config, hashes y procedencia.
+- No se cambió ningún valor P/C/O, no se reescribió evidencia CP3 y no se inició remediation/.
+- La interpretación conserva T010 como indeterminado, T012/T014 con causalidad possible y la limitación de hash de la copia runtime.
+
+CP5 queda cerrado para fines del segundo avance. La siguiente fase documental consiste en integrar Capítulos III y IV al documento IEEE y realizar audit final contra la rúbrica.

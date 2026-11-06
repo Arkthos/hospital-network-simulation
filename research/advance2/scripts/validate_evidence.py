@@ -4,9 +4,34 @@ import ipaddress
 import re
 from common import ROOT, BASE, digest, read_json, rows, safe_path, plan
 
+def validate_preflight(directory, baseline_commit):
+    errors = []
+    for manifest in directory.glob('*/manifest.json'):
+        try:
+            m = read_json(manifest)
+            if m['kind'] != 'preflight_not_test_result' or m['baseline_commit'] != baseline_commit:
+                raise ValueError('Preflight kind/baseline mismatch')
+            listed = set()
+            for artifact in m['artifacts']:
+                p = (manifest.parent / artifact['path']).resolve()
+                if not p.is_relative_to(manifest.parent.resolve()) or p == manifest.resolve():
+                    raise ValueError('Preflight artifact outside directory')
+                if p in listed:
+                    raise ValueError('Duplicate preflight artifact')
+                listed.add(p)
+                if not p.is_file() or digest(p) != artifact['sha256']:
+                    raise ValueError('Preflight evidence missing/hash mismatch')
+            actual = {p.resolve() for p in manifest.parent.rglob('*') if p.is_file() and p != manifest}
+            if not listed or actual != listed:
+                raise ValueError('Unhashed/unlisted preflight evidence')
+        except (ValueError, KeyError, TypeError, OSError) as e:
+            errors.append(manifest.parent.name + ': ' + str(e))
+    return errors
+
 def validate():
     errors = []
     frozen = read_json(BASE/'baseline/hashes.json')
+    errors.extend(validate_preflight(BASE/'evidence/preflight', frozen['baseline_commit']))
     for f in frozen['files']:
         p = ROOT/f['path']
         if not p.is_file() or digest(p)!=f['sha256']:

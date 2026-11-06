@@ -49,6 +49,23 @@ class PCOTests(unittest.TestCase):
         self.assertEqual(classify('allow','allow','error','false'),'INDETERMINATE')
 
 class EvidenceTests(unittest.TestCase):
+    def test_preflight_integrity_and_scope(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)/'preflight'
+            run = directory/'CP3-fixture'
+            run.mkdir(parents=True)
+            artifact = run/'fixture.txt'
+            artifact.write_text('SOFTWARE FIXTURE', encoding='utf-8')
+            m = dict(kind='preflight_not_test_result', baseline_commit='fixture',
+                     artifacts=[dict(path='fixture.txt', sha256=digest(artifact))])
+            write_json(run/'manifest.json', m)
+            self.assertFalse(validate_evidence.validate_preflight(directory, 'fixture'))
+            artifact.write_text('tampered', encoding='utf-8')
+            self.assertTrue(validate_evidence.validate_preflight(directory, 'fixture'))
+            m['artifacts'][0]['path'] = '../outside.txt'
+            write_json(run/'manifest.json', m)
+            self.assertTrue(any('outside directory' in e for e in validate_evidence.validate_preflight(directory, 'fixture')))
+
     def test_record_retest_refuse_overwrite_and_detect_tampering(self):
         with tempfile.TemporaryDirectory() as tmp:
             base=Path(tmp)/'advance2'

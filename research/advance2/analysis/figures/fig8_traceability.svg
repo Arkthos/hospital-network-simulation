@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="150" viewBox="0 0 980 150">
+<style>text{font-family:Arial,sans-serif;fill:#222}.b{fill:#f3f4f6;stroke:#555;stroke-width:1}.t{font-size:13px;font-weight:bold}.s{font-size:11px}.a{stroke:#555;stroke-width:2;marker-end:url(#m)}</style>
+<defs><marker id="m" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#555"/></marker></defs>
+<rect x="10" y="40" rx="8" width="120" height="55" class="b"/><text x="70" y="63" text-anchor="middle" class="t">Pregunta</text><text x="70" y="82" text-anchor="middle" class="s">de investigación</text>
+<rect x="150" y="40" rx="8" width="110" height="55" class="b"/><text x="205" y="63" text-anchor="middle" class="t">Objetivo</text><text x="205" y="82" text-anchor="middle" class="s">OE1–OE3</text>
+<rect x="280" y="40" rx="8" width="110" height="55" class="b"/><text x="335" y="63" text-anchor="middle" class="t">Caso</text><text x="335" y="82" text-anchor="middle" class="s">T001–T014</text>
+<rect x="410" y="30" rx="8" width="150" height="75" class="b"/><text x="485" y="55" text-anchor="middle" class="t">Evidencia primaria</text><text x="485" y="74" text-anchor="middle" class="s">manifest + SHA-256</text><text x="485" y="91" text-anchor="middle" class="s">captura / salida</text>
+<rect x="580" y="30" rx="8" width="140" height="75" class="b"/><text x="650" y="55" text-anchor="middle" class="t">Resultado P–C–O</text><text x="650" y="74" text-anchor="middle" class="s">validez</text><text x="650" y="91" text-anchor="middle" class="s">causalidad</text>
+<rect x="740" y="40" rx="8" width="100" height="55" class="b"/><text x="790" y="63" text-anchor="middle" class="t">Hallazgo</text><text x="790" y="82" text-anchor="middle" class="s">F01–F06</text>
+<rect x="860" y="40" rx="8" width="110" height="55" class="b"/><text x="915" y="63" text-anchor="middle" class="t">Control</text><text x="915" y="82" text-anchor="middle" class="s">+ verificación</text>
+<line x1="130" y1="67" x2="150" y2="67" class="a"/><line x1="260" y1="67" x2="280" y2="67" class="a"/><line x1="390" y1="67" x2="410" y2="67" class="a"/><line x1="560" y1="67" x2="580" y2="67" class="a"/><line x1="720" y1="67" x2="740" y2="67" class="a"/><line x1="840" y1="67" x2="860" y2="67" class="a"/>
+</svg>

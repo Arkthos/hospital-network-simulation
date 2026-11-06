@@ -1,5 +1,195 @@
 {
-  "status": "CP2: no experimental findings or recommendations",
-  "findings": [],
-  "proposed_controls": []
+  "status": "CP5 analytical traceability complete",
+  "baseline_commit": "2873d7a0cfb71fd768775c32edc6d7b2f9b3ab46",
+  "findings": [
+    {
+      "finding_id": "F01",
+      "tests": [
+        "T001",
+        "T002",
+        "T003",
+        "T004",
+        "T005",
+        "T014"
+      ],
+      "evidence_basis": [
+        "T001-R1",
+        "T002-R1",
+        "T003-R1",
+        "T004-R1",
+        "T005-R1",
+        "T014-R1"
+      ],
+      "controls": [
+        "C01",
+        "C06"
+      ]
+    },
+    {
+      "finding_id": "F02",
+      "tests": [
+        "T006",
+        "T007",
+        "T008"
+      ],
+      "evidence_basis": [
+        "T006-R1",
+        "T007-R1",
+        "T008-R1"
+      ],
+      "controls": [
+        "C02",
+        "C03",
+        "C06"
+      ]
+    },
+    {
+      "finding_id": "F03",
+      "tests": [
+        "T009",
+        "T010",
+        "T014"
+      ],
+      "evidence_basis": [
+        "T009-R1",
+        "T010-R1",
+        "T014-R1"
+      ],
+      "controls": [
+        "C04",
+        "C06"
+      ]
+    },
+    {
+      "finding_id": "F04",
+      "tests": [
+        "T011",
+        "T012",
+        "T013"
+      ],
+      "evidence_basis": [
+        "T011-R1",
+        "T012-R1",
+        "T013-R1",
+        "T013-R2"
+      ],
+      "controls": [
+        "C06"
+      ]
+    },
+    {
+      "finding_id": "F05",
+      "tests": [
+        "T001",
+        "T006",
+        "T009",
+        "T013"
+      ],
+      "evidence_basis": [
+        "results/summary.json",
+        "results/cp4-audit.json"
+      ],
+      "controls": [
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "finding_id": "F06",
+      "tests": [],
+      "evidence_basis": [
+        "T002-R1/09-MLS0-running-config-observed.txt",
+        "T002-R1/10-MLS1-running-config-observed.txt",
+        "baseline/acl_rules.csv",
+        "docs/advance2/CP3_EXECUTION_LOG.md"
+      ],
+      "controls": [
+        "C05"
+      ]
+    }
+  ],
+  "proposed_controls": [
+    {
+      "control_id": "C01",
+      "finding_ids": [
+        "F01"
+      ],
+      "verification_tests": [
+        "T001",
+        "T002",
+        "T003",
+        "T004",
+        "T005",
+        "T014"
+      ],
+      "evidence_class": "experimental"
+    },
+    {
+      "control_id": "C02",
+      "finding_ids": [
+        "F02"
+      ],
+      "verification_tests": [
+        "T006",
+        "T007",
+        "T008"
+      ],
+      "evidence_class": "experimental"
+    },
+    {
+      "control_id": "C03",
+      "finding_ids": [
+        "F02"
+      ],
+      "verification_tests": [
+        "future-authentication-lab"
+      ],
+      "evidence_class": "experimental_plus_literature"
+    },
+    {
+      "control_id": "C04",
+      "finding_ids": [
+        "F03"
+      ],
+      "verification_tests": [
+        "T009",
+        "T014",
+        "future-radius-admin-test"
+      ],
+      "evidence_class": "experimental"
+    },
+    {
+      "control_id": "C05",
+      "finding_ids": [
+        "F05",
+        "F06"
+      ],
+      "verification_tests": [
+        "config-diff-gate"
+      ],
+      "evidence_class": "experimental_plus_governance"
+    },
+    {
+      "control_id": "C06",
+      "finding_ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "verification_tests": [
+        "T001-T014"
+      ],
+      "evidence_class": "experimental"
+    },
+    {
+      "control_id": "C07",
+      "finding_ids": [],
+      "verification_tests": [
+        "separate-real-world-assessment"
+      ],
+      "evidence_class": "literature_outside_simulator"
+    }
+  ]
 }
